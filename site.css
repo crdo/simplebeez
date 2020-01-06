@@ -20,6 +20,10 @@ html {
 	justify-content: space-between;
 }
 
+body {
+	padding: 0 20px;
+}
+
 h1 {
 	font-size: 60px;
 	letter-spacing: 10px;
@@ -56,4 +60,19 @@ p {
 
 footer p {
 	font-size: 16px;
+}
+
+@media (max-width: 968px) {
+	h1 {
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	footer p {
+		font-size: 14px;
+	}
 }
