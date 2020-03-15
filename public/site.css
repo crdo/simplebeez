@@ -282,6 +282,12 @@ header .navigation a:hover {
 	font-size: 130%;
 }
 
+@media (max-width: 1024px) {
+	.service-detail-claim {
+		font-size: 120%;
+	}
+}
+
 .service-detail-background img {
 	max-height: 100%;
 	min-height: 100%;
