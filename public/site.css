@@ -84,7 +84,7 @@ li.triangle:before {
 
 header {
 	padding: 20px 0;
-	border-bottom: 2px solid white;
+	border-bottom: 1px solid white;
 	position: fixed;
 	width: 100%;
 	background-color: transparent;
@@ -220,7 +220,7 @@ header .navigation a:hover {
 }
 
 .spacing-wrapper:not(:first-child) {
-	padding-top: 50px;
+	margin-top: 50px;
 }
 
 .spacing-wrapper:not(:last-child) {
@@ -239,6 +239,12 @@ header .navigation a:hover {
 
 .service-detail {
 	margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+	.service-detail {
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: 1024px) {

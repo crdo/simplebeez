@@ -27,7 +27,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
-                            offset={-20}
+                            offset={-70}
                             duration={500}
                             to="service-0">
                             Finance Transformation
@@ -38,6 +38,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            offset={-70}
                             duration={500}
                             to="service-1">
                             Business Process Management
@@ -48,6 +49,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            offset={-70}
                             duration={500}
                             to="service-2">
                             Interim Management
