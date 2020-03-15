@@ -1,0 +1,34 @@
+{
+  "name": "simplebeez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crdo/simplebeez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crdo/simplebeez/issues"
+  },
+  "homepage": "https://github.com/crdo/simplebeez#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/react": "^16.9.23",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-fontawesome": "^1.7.1",
+    "react-scroll": "^1.7.16"
+  }
+}

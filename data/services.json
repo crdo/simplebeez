@@ -1,0 +1,74 @@
+{
+    "services": [
+        {
+            "id": 0,
+            "title": "Finance Transformation",
+            "logo": "finance-transformations.svg",
+            "background": "finance-transformations.jpg",
+            "claim": "We Bridge the Gap between Business, Finance & IT.",
+            "problems": [
+                "How is your Finance department seen and perceived by their colleagues? Are they seen as people who always bother others with formalities, templates, tables, reports, or controls, and even threaten you with compliance requirements or audits?",
+                "Do others try to avoid them or come to them only when concerned about timely payroll payments? How efficiently does your CFO collaborate with the Head of Sales or HR? How many people in your firm get annoyed and frustrated when hearing the word “budget”?",
+                "Or, would you like your Finance team to be a strong partner for business operations, reaching out to them with trust for advice, insights and guidance so they pull together as a true team working towards the company vision? How far are you with that? Are you looking for a change?"
+            ],
+            "facts": [
+                "“According to Gartner Inc. research from 2019 (Hallmark of winning finance transformations), “just 35% of business partners are satisfied with finance guidance. Finance functions particularly struggle with guidance-based work, which generally consists of operations and enterprise decision support”. Gartner also stated that 7 out of 10 finance transformation efforts are not successful.",
+                "A survey by Youseef Alotaibi and Fei Liu from 2017 (Enterprise information systems), highlights that a significant number of IT projects, such as ERP implementations or specific tools with linkage to Finance, suffer or fail due to “critical misalignment or misunderstandings between business, and IT solution provider”.",
+                "This is caused primarily by the following issues: “1) differences between business strategies and IT strategies; (2) inability of finance and non-financial users to clearly specify their requirements for an IT solution; (3) interaction of staff with different skills and professional background”; and primarily a critical shortage of internal staff capable not only of fully understanding the expected IT solution, but mainly to directly model and functionally design the solution itself. "
+            ],
+            "solutions": [
+                "We strive for and support a transformation of the finance process from “bookkeeping and reporting” towards true “business partnering”.",
+                "We stand by your side during the journey of finance transformation and associated implementations of IT solutions and process work-flows. We contribute to a definition of a transformation concept and strategy, we help to design and choose the right solutions, not limited to IT, and oversee the implementation to ensure success.",
+                "We cooperate with the Beyond Budgeting Round Table institute, which for more than two decades has been building and continuously improving their holistic approach to Finance and leadership, or the so called “Beyond Budgeting”. We help you to move and deploy the agile method for financial management and planning.",
+                "We leverage our broad experience with functional design and modelling of IT solutions with a link to Finance and bridge the gap between business leadership, finance and IT."
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Business Process Management",
+            "logo": "business-process-management.svg",
+            "background": "business-process-management.jpg",
+            "claim": "Dream Big, Work Smarter.",
+            "problems": [
+                "Do you know which part of your company processes drives the added value, and which represent bottlenecks or waste?",
+                "Is it clear to your people who has the authority and accountability for supporting and approving the process changes, and is such ownership undisputed?",
+                "Are you convinced that the deployment of new IT software will solve the long-lasting problem of ineffective communication within the firm, [poor] collaboration between departments, a lack of trust among key people, or weak loyalty toward your company?",
+                "Are your people complaining about boring and routine work but at the same time they do not come up with any initiative or ideas how it could be constructively solved?",
+                "Do you invest lots of money and time into new technologies such as ERP, RPA or data analytics but get frustrated by the gap between reality and expectations?"
+            ],
+            "facts": [
+                "According to a PWC survey from 2018 (Finance executive survey), “finance leaders will need to source talent that can view the world through a process lens.”",
+                "We at Simplebeez are convinced that the limitation of a finance department often comes from insufficient understanding of the dynamics between the available financial information and market situation underpinned by activities and culture within the company.",
+                "A common mistake is often the effort and push to quickly automate already existing inefficiencies and process fragments, usually even through the choice of an inappropriate technological solution."
+            ],
+            "solutions": [
+                "We implement effective Business Process Management (BPM) and re-design your processes for upcoming transformations and automations (“order to cash”, “procure to pay” and “record to report”).",
+                "We help you to transition from a functionally-oriented towards a process-oriented organizational structure, with clearly defined ultimate process owners.",
+                "We are ready to step into ongoing projects that may not be moving forward as expected due to various process constraints."
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Interim Management",
+            "logo": "interim-management.svg",
+            "background": "interim-management.jpg",
+            "claim": "Think Differently, Go Beyond!",
+            "problems": [
+                "Are you planning a critical or strategic project, but face a challenge of not having enough resources with the right skillset and experience? Have you unexpectedly lost a senior person and you need to urgently fill the gap in the team?",
+                "Are you missing an unbiased independent view or opinion, new energy, a vision, enthusiasm or experience from outside?",
+                "Or do you need someone to act on your behalf and communicate unpopular decisions, to remove skeletons from the closet and clean up, so you can focus on strategic directions and business growth?"
+            ],
+            "facts": [
+                "“The key differentiating factor between a consultant and interim executive is decision making”, John Collard, turnaround pro and chairman of the Association of Interim Executives said.",
+                "In the real world it means an interim manager is an undisputed part of your team and takes decisions for which he or she is fully responsible.",
+                "The vast majority of interim managers see the apolitical nature of interim assignments as a critical benefit to a client’s environment that often goes off course when politics come into play. They very often say, “We are not trying to primarily impress anybody or to play politics or different games. We have a clear target and our job is to get things done.”"
+            ],
+            "solutions": [
+                "We work with experienced professionals, who will support your team and take the lead in challenging times in core business areas such as finance, IT, sales, marketing, HR and production.",
+                "We are not only consultants. We are people who have been through our own professional challenges, who led or have been core members on transformations or other projects of various scale and nature, both at a domestic and international level.",
+                "We help you with both short-term and long-term projects, by providing either the consultancy or the senior interim manager.",
+                "We focus on supporting the change management related to transformational activities and projects and providing services to ensure stability during the interim period."
+            ]
+        }
+    ]
+}
