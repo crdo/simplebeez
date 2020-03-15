@@ -264,8 +264,8 @@ header .navigation a:hover {
 }
 
 .service-detail-img img {
-	height: 200px;
-	max-width: 100%;
+	width: 50%;
+	margin: 50px 0;
 }
 
 .service-detail-claim {
