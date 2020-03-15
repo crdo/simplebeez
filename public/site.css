@@ -68,6 +68,11 @@ li.triangle:before {
 	padding: 0 30px;
 }
 
+@media (max-width: 1024px) {
+	.container {
+		padding: 0 20px;
+	}
+}
 .logo {
 	display: flex;
 	align-items: center;
@@ -148,6 +153,13 @@ header .navigation a:hover {
 	margin-top: -10vh;
 }
 
+@media (max-width: 1024px) {
+	.hero h1 {
+		font-size: 34px;
+		margin-top: -10vh;
+	}
+}
+
 .hero p {
 	font-size: 22px;
 }
@@ -176,6 +188,12 @@ header .navigation a:hover {
 	flex-grow: 0;
 }
 
+@media (max-width: 1024px) {
+	.service-title h2 {
+		font-size: 19px;
+	}
+}
+
 .services-list .service {
 	flex-direction: column;
 	text-align: center;
@@ -187,6 +205,12 @@ header .navigation a:hover {
 	padding: 30px;
 	display: flex;
 	/* flex-direction: column; */
+}
+
+@media (max-width: 1024px) {
+	.service {
+		padding: 20px;
+	}
 }
 
 .service:hover {
@@ -207,12 +231,24 @@ header .navigation a:hover {
 	margin-bottom: 150px;
 }
 
+@media (max-width: 1024px) {
+	.spacing-wrapper:not(:last-child) {
+		margin-bottom: 50px;
+	}
+}
+
 .service-description p {
 	text-align: justify;
 }
 
 .service-detail {
 	margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+	.service-detail h1 {
+		font-size: 22px;
+	}
 }
 
 .service-detail-img,
@@ -233,6 +269,7 @@ header .navigation a:hover {
 
 .service-detail-img img {
 	height: 200px;
+	max-width: 100%;
 }
 
 .service-detail-claim {
@@ -317,14 +354,13 @@ input[type="text"],
 input[type="email"],
 textarea {
 	display: block;
-	width: 100%;
 	padding: 5px 10px;
 	background-color: transparent;
 	border: 1px solid #dedede;
 	color: white;
 	font-size: 16px;
 	margin-bottom: 10px;
-	max-width: 80%;
+	max-width: 100%;
 	width: 500px;
 }
 
@@ -336,6 +372,9 @@ input[type="submit"] {
 	border: none;
 }
 
+.contact-form {
+	max-width: 100%;
+}
 .contact-form > form {
 	margin-top: 30px;
 }
