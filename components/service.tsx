@@ -7,6 +7,7 @@ export default function Service({ title, img, description, href }) {
                 activeClass="active"
                 spy={true}
                 smooth={true}
+                offset={-70}
                 duration={500}
                 to={href}>
                 {img &&
