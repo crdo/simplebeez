@@ -7,7 +7,6 @@ body {
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100vh;
 }
 
 * {
@@ -146,6 +145,7 @@ header .navigation a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	height: 100vh;
 }
 
 .hero h1 {
@@ -162,10 +162,6 @@ header .navigation a:hover {
 
 .hero p {
 	font-size: 22px;
-}
-
-.services {
-	padding-top: 50px;
 }
 
 .flex {
@@ -223,7 +219,7 @@ header .navigation a:hover {
 	}
 }
 
-.spacing-wrapper {
+.spacing-wrapper:not(:first-child) {
 	padding-top: 50px;
 }
 
