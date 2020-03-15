@@ -4,7 +4,7 @@ export default function ContactForm() {
             <input type="text" placeholder="Full Name" name="name" id="name" required />
             <input type="email" placeholder="E-mail" name="_replyto" id="email" required />
             <textarea placeholder="Message" name="message" id="message" required />
-            <input type="submit" value="Send" />
+            <button type="submit">Send</button>
         </form>
     )
 }
