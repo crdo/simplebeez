@@ -8,7 +8,7 @@ import Footer from '../components/footer';
 const Home = () => (
     <>
         <Head>
-            <title>SimpleBEEZ - Finance Transformation, Business Process Management, Interim Management</title>
+            <title>SIMPLEBEEZ - Finance Transformation, Business Process Management, Interim Management</title>
             <meta
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
