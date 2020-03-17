@@ -52,6 +52,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            onClick={() => setIsMenuOpen(false)}
                             offset={-70}
                             duration={500}
                             to="service-2">
