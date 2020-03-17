@@ -67,7 +67,7 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
-                <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+                {/* <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
             </div>
         </header>
     )
