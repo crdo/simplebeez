@@ -28,6 +28,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            onClick={() => setIsMenuOpen(false)}
                             offset={-70}
                             duration={500}
                             to="service-0">
@@ -39,6 +40,7 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            onClick={() => setIsMenuOpen(false)}
                             offset={-70}
                             duration={500}
                             to="service-1">
@@ -61,13 +63,14 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            onClick={() => setIsMenuOpen(false)}
                             duration={500}
                             to="kontakt">
                             Contact
                         </Link>
                     </li>
                 </ul>
-                {/* <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
+                <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </div>
         </header>
     )

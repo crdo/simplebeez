@@ -124,27 +124,38 @@ header .navigation {
 
 @media (max-width: 1024px) {
 	.navigation {
-		display: fixed;
-		top: 78px;
+		top: 85px;
 		height: 0;
-		visibility: hidden;
+		background-color: black;
 		flex-direction: column;
 		transition: all 0.5s ease;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		margin-left: -20px !important;
 	}
 
-	/* .navigation.is-open {
-		height: 100px;
-		visibility: visible;
-	} */
+	.navigation li {
+		padding: 7px 0;
+	}
+
+	.navigation.is-open {
+		height: 180px;
+		padding: 15px 0;
+	}
+
+	.smaller .navigation {
+		top: 64px;
+	}
 
 	.hamburger {
-		display: block;
+		display: inline-block !important;
 	}
 }
 
 header .navigation li > a {
 	margin: 20px;
-	padding: 8px 15px;
+	padding: 8px 0 8px 10px;
 	cursor: pointer;
 	position: relative;
 }
@@ -420,7 +431,7 @@ button {
 }
 
 @media (max-width: 1024px) {
-	button {
+	.contact-form button {
 		width: 100%;
 	}
 }
@@ -446,8 +457,8 @@ button {
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
+	display: none;
 	padding: 15px 15px;
-	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
 	transition-duration: 0.15s;
@@ -459,6 +470,7 @@ button {
 	border: 0;
 	margin: 0;
 	overflow: visible;
+	margin-left: auto;
 }
 .hamburger:hover {
 	opacity: 0.7;
