@@ -124,7 +124,7 @@ header .navigation {
 
 @media (max-width: 1024px) {
 	.navigation {
-		top: 75px;
+		top: 68px;
 		height: 0;
 		background-color: black;
 		flex-direction: column;
@@ -145,7 +145,7 @@ header .navigation {
 	}
 
 	.smaller .navigation {
-		top: 54px;
+		top: 44px;
 	}
 
 	.hamburger {
