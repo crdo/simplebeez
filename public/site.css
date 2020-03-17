@@ -31,7 +31,7 @@ p {
 }
 
 @media (max-width: 1024px) {
-	p {
+	.services p {
 		text-align: justify !important;
 	}
 }
