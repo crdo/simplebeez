@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { GA_TRACKING_ID } from "../data/gtag";
 import Header from "../components/header"
 import Hero from "../components/hero";
 import Services from "../components/services";
@@ -8,6 +9,23 @@ import Footer from '../components/footer';
 const Home = () => (
     <>
         <Head>
+            {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            />
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `
+                }}
+            />
+
+
             <title>SIMPLEBEEZ - Finance Transformation, Business Process Management, Interim Management</title>
             <meta
                 name="viewport"
