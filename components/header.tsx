@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
@@ -17,11 +17,12 @@ export default function Header() {
             headerEl.classList.remove("smaller");
         }
     }
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
     return (
         <header id="header">
             <div className="container flex">
                 <div className="logo"><a href="/"><img src="logo.svg" alt="SimpleBEEZ" /></a></div>
-                <ul className="navigation">
+                <ul className={"navigation " + (isMenuOpen && "is-open")}>
                     <li>
                         <Link
                             activeClass="active"
@@ -66,7 +67,18 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
+                <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </div>
         </header>
+    )
+}
+
+function Hamburger({ isOpen, setIsMenuOpen }) {
+    return (
+        <button className={"hamburger hamburger--collapse " + (isOpen && "is-active")} onClick={() => setIsMenuOpen(!isOpen)} type="button">
+            <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+            </span>
+        </button>
     )
 }

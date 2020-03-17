@@ -21,6 +21,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="contact-form">
+                    <h2>Excited or have a question? Get in touch.</h2>
                     <ContactForm />
                 </div>
             </div>
