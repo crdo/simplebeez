@@ -30,6 +30,12 @@ p {
 	margin-bottom: 0;
 }
 
+@media (max-width: 1024px) {
+	p {
+		text-align: justify !important;
+	}
+}
+
 li {
 	position: relative;
 }
