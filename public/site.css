@@ -207,7 +207,6 @@ header .navigation a:hover {
 
 .card {
 	background: white;
-	padding: 30px 0;
 }
 
 .center {
@@ -255,8 +254,8 @@ header .navigation a:hover {
 	}
 }
 
-.spacing-wrapper:not(:first-child) {
-	margin-top: 50px;
+.spacing-wrapper {
+	padding-top: 50px;
 }
 
 .spacing-wrapper:not(:last-child) {
@@ -275,6 +274,7 @@ header .navigation a:hover {
 
 .service-detail {
 	margin-bottom: 30px;
+	padding-top: 20px;
 }
 
 @media (max-width: 1024px) {

@@ -1,7 +1,7 @@
 export default function ServiceDetail({ service }) {
     const { title, problems, logo, claim, background, solutions, id } = service;
     return (
-        <div id={'service-' + id} className="spacing-wrapper">
+        <div id={id} className="spacing-wrapper">
             <div className="card">
                 <div className="container">
                     <div className="service-detail">

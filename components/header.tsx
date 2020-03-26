@@ -29,9 +29,9 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             onClick={() => setIsMenuOpen(false)}
-                            offset={-70}
+                            offset={-20}
                             duration={500}
-                            to="service-0">
+                            to="finance-transformation">
                             Finance Transformation
                         </Link>
                     </li>
@@ -41,9 +41,9 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             onClick={() => setIsMenuOpen(false)}
-                            offset={-70}
+                            offset={-20}
                             duration={500}
-                            to="service-1">
+                            to="business-process-management">
                             Business Process Management
                         </Link>
                     </li>
@@ -53,9 +53,9 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             onClick={() => setIsMenuOpen(false)}
-                            offset={-70}
+                            offset={-20}
                             duration={500}
-                            to="service-2">
+                            to="interim-management">
                             Interim Management
                         </Link>
                     </li>

@@ -1,7 +1,7 @@
 {
     "services": [
         {
-            "id": 0,
+            "id": "finance-transformation",
             "title": "Finance Transformation",
             "logo": "finance-transformations.svg",
             "background": "finance-transformations.jpg",
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": "business-process-management",
             "title": "Business Process Management",
             "logo": "business-process-management.svg",
             "background": "business-process-management.jpg",
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "interim-management",
             "title": "Interim Management",
             "logo": "interim-management.svg",
             "background": "interim-management.jpg",
