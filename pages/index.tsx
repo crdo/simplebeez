@@ -33,7 +33,6 @@ const Home = () => (
                 key="viewport"
             />
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet" />
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         </Head>
         <Header />
         <Hero heading="Think Differently, Go Beyond!" content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." />
