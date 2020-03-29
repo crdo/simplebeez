@@ -56,7 +56,7 @@ export default function FileDownloadModal({ fileName, children, filePath }) {
                 .close {
                     cursor: pointer;
                     font-size: 20px;
-                    margin-right: 30px;
+                    margin-left: 30px;
                 }
                 .header {
                     display: flex;

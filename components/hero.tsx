@@ -1,7 +1,7 @@
-export default function Hero({ heading, content }) {
+export default function Hero({ content, children }) {
     return (
         <div className="hero container">
-            <div className="claim"><h1>{heading}</h1>
+            <div className="claim"><h1>{children}</h1>
                 <p>{content}</p>
             </div>
             <div className="stripe"></div>
@@ -35,7 +35,7 @@ export default function Hero({ heading, content }) {
 
             h1 {
                 font-size: 70px;   
-                line-height: 1.3;             
+                line-height: 1.3;            
             }
 
             @media (min-width: 1024px) {

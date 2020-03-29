@@ -28,7 +28,7 @@ const Home = () => (
             <script src="http://localhost:8097"></script>
 
 
-            <title>SIMPLEBEEZ - Finance Transformation, Business Process Management, Interim Management</title>
+            <title>SIMPLEBEEZ - Your partner for finance transformation</title>
             <meta
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
@@ -37,9 +37,28 @@ const Home = () => (
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet" />
         </Head>
         <Header />
-        <Hero heading="Your&nbsp;partner for&nbsp;finance transformation" content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." />
+        <Hero content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." >
+            <span>Your&nbsp;<span className="triangle">partner</span><br />for&nbsp;finance<br />transformation</span>
+        </Hero>
         <Services />
         <Footer />
+        <style jsx>{`
+            .triangle {
+                position: relative;
+            }
+
+            .triangle:after {
+                content: '';
+                position: absolute;
+                display: block;
+                right: -80px;
+                top: 45px;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+  
+                border-top: 50px solid #f4ae9c;
+            }
+        `}</style>
     </>
 );
 

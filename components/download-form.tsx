@@ -1,4 +1,6 @@
 import useSendGrid from "../hooks/useSendGrid";
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function DownloadForm({ fileName, filePath }) {
@@ -8,13 +10,13 @@ export default function DownloadForm({ fileName, filePath }) {
         <form onSubmit={handleOnSubmit}>
             {!status.info.msg && <>
                 <div className="flex">
-                    <input placeholder="Jméno" id="name" onChange={handleOnChange} value={inputs?.name ?? ''} type="text" required />
-                    <input placeholder="Příjmení" id="surname" onChange={handleOnChange} value={inputs?.surname ?? ''} type="text" required />
+                    <input placeholder="Name" id="name" onChange={handleOnChange} value={inputs?.name ?? ''} type="text" required />
+                    <input placeholder="Surname" id="surname" onChange={handleOnChange} value={inputs?.surname ?? ''} type="text" required />
                 </div>
                 <input placeholder="E-mail" id="email" onChange={handleOnChange} value={inputs?.email ?? ''} type="email" required />
-                <input placeholder="Název společnosti" onChange={handleOnChange} id="company_name" value={inputs?.company_name ?? ''} type="text" required />
+                <input placeholder="Company name" onChange={handleOnChange} id="company_name" value={inputs?.company_name ?? ''} type="text" required />
                 <div className="gdpr">
-                    <label htmlFor="gdpr"><input type="checkbox" onChange={handleOnChange} id="company_gdpr" value={inputs?.company_gdpr} required name="gdpr" /> Souhlasím s <a target="_blank" href="/Privacy_Policy_ENG.pdf">podmínkami ochrany soukormí</a></label>
+                    <label htmlFor="gdpr"><input type="checkbox" onChange={handleOnChange} id="company_gdpr" value={inputs?.company_gdpr} required name="gdpr" /> Agree with the <a target="_blank" href="/Privacy_Policy_ENG.pdf">Privacy policy.</a></label>
                 </div>
                 <button type="submit">Download {fileName}</button>
             </>}
@@ -23,8 +25,7 @@ export default function DownloadForm({ fileName, filePath }) {
             )}
             {!status.info.error && status.info.msg && (
                 <div>
-                    <div className="success">{status.info.msg}</div>
-                    <a href={filePath}>{fileName}</a>
+                    <a className="download" href={filePath}><FontAwesomeIcon height="20" icon={faDownload} />&nbsp;&nbsp;{fileName}</a>
                 </div>
             )}
             <style jsx>{`
@@ -42,6 +43,11 @@ export default function DownloadForm({ fileName, filePath }) {
                 a {
                     color: #f4ae9c;
                     cursor: pointer;
+                }
+
+                .download {
+                    display: flex;
+                    align-items: center;
                 }
 
                 button {
