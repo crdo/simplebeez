@@ -25,6 +25,8 @@ const Home = () => (
                 }}
             />
 
+            <script src="http://localhost:8097"></script>
+
 
             <title>SIMPLEBEEZ - Finance Transformation, Business Process Management, Interim Management</title>
             <meta
@@ -35,7 +37,7 @@ const Home = () => (
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet" />
         </Head>
         <Header />
-        <Hero heading="Think Differently, Go Beyond!" content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." />
+        <Hero heading="Your&nbsp;partner for&nbsp;finance transformation" content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." />
         <Services />
         <Footer />
     </>

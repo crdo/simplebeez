@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
 	exportPathMap: async function(
 		defaultPathMap,
@@ -6,5 +8,8 @@ module.exports = {
 		return {
 			"/": { page: "/" }
 		};
+	},
+	env: {
+		SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
 	}
 };
