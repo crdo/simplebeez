@@ -9,8 +9,9 @@ export default function Footer() {
                     <address>
                         <h2>SIMPLEBEEZ s.r.o.</h2>
                             Zaječická 836/9, Čimice, 184 00 Praha 8 <br />
-                            Tel: 606 123 456 <br />
-                            ICO: 08885516 <br />
+                            Tel: +420 602 496 585 <br />
+                            Tel: +420 602 166 975 <br />
+                            ID: 08885516 <br />
                             E-mail: <a href="mailto:info@simplebeez.com">info@simplebeez.com</a>
                     </address>
                     <div className="social">
