@@ -4,14 +4,14 @@ const sgMail = require("@sendgrid/mail");
 export default async function(req: NowRequest, res: NowResponse) {
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-	const { email, message } = req.body;
+	const { email } = req.body;
 
 	const content = {
 		to: "dominik.crha@gmail.com",
 		from: email,
 		subject: `New Message From - ${email}`,
-		text: message,
-		html: `<p>${message}</p>`
+		text: JSON.stringify(req.body),
+		html: `<p>${JSON.stringify(req.body)}</p>`
 	};
 
 	try {
