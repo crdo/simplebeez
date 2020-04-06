@@ -40,12 +40,16 @@ li {
 	position: relative;
 }
 
+.triangle {
+	line-height: 2;
+}
+
 li.triangle:before {
 	content: "";
 	display: block;
 	position: absolute;
 	left: -20px;
-	top: 5px;
+	top: 10px;
 	width: 0;
 	height: 0;
 	border-top: 8px solid transparent;
@@ -160,10 +164,13 @@ header .navigation {
 	.hamburger {
 		display: inline-block !important;
 	}
+	header .navigation li > a {
+		margin: 20px;
+	}
 }
 
 header .navigation li > a {
-	margin: 20px;
+	margin: 0 30px;
 	padding: 8px 0;
 	cursor: pointer;
 	position: relative;
@@ -189,7 +196,7 @@ header .navigation a:hover {
 }
 
 .card {
-	background: white;
+	background: rgba(250, 250, 250, 0.9);
 }
 
 .services > .spacing-wrapper .card {
@@ -210,7 +217,7 @@ header .navigation a:hover {
 	padding-top: 50px;
 }
 
-.spacing-wrapper:not(:last-child) {
+.spacing-wrapper {
 	margin-bottom: 150px;
 }
 

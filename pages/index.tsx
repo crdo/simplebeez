@@ -5,6 +5,7 @@ import Header from "../components/header"
 import Hero from "../components/hero";
 import Services from "../components/services";
 import Footer from '../components/footer';
+import About from '../components/about';
 
 const Home = () => (
     <>
@@ -17,11 +18,11 @@ const Home = () => (
             <script
                 dangerouslySetInnerHTML={{
                     __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${GA_TRACKING_ID}');
+                        `
                 }}
             />
 
@@ -37,10 +38,11 @@ const Home = () => (
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet" />
         </Head>
         <Header />
-        <Hero content="We dream, we think, and we work to make the world around us more simple, smarter and meaningful." >
-            <span>Your&nbsp;<span className="triangle">partner</span><br />for&nbsp;finance<br />transformation</span>
+        <Hero content="Jednodušší, chytřejší, smysluplná řešení. Spojujeme lidi, procesy a technologie." >
+            <span>Váš&nbsp;<span className="triangle">partner</span><br />pro&nbsp;transformaci<br />financí</span>
         </Hero>
         <Services />
+        <About />
         <Footer />
         <style jsx>{`
             .triangle {
@@ -55,7 +57,6 @@ const Home = () => (
                 top: 45px;
                 border-left: 30px solid transparent;
                 border-right: 30px solid transparent;
-  
                 border-top: 50px solid #f4ae9c;
             }
         `}</style>

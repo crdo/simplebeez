@@ -1,3 +1,7 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
 export default function Hero({ content, children }) {
     return (
         <div className="hero container">
@@ -6,11 +10,23 @@ export default function Hero({ content, children }) {
             </div>
             <div className="stripe"></div>
             <div className="rectangle">
-                <div><div className="unskew"><p className="lead">
-                    Give it a go with us, we are the best!
-                    </p>
-                    <p>Tell me more!</p>
-                </div>
+                <div>
+                    <div className="unskew">
+                        <h2 className="lead">
+                            Unaveni zdlouhavým
+                            budgetováním? Zajímá vás jak
+                            to dělat jinak?
+                        </h2>
+                        <Link
+                            className="link"
+                            spy={true}
+                            smooth={true}
+                            offset={-20}
+                            duration={500}
+                            to="finance-transformation">
+                            Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                        </Link>
+                    </div>
 
                 </div>
             </div>
@@ -24,9 +40,18 @@ export default function Hero({ content, children }) {
                 overflow: hidden;
             }
 
+            :global(.link) {
+                color: #f4ae9c;
+                cursor: pointer;
+            }
+
             .claim {
                 width: 60%;
                 padding-top: 50px;
+            }
+
+            :global(.link svg) {
+                width: 7px;
             }
 
             .claim p {
@@ -54,11 +79,11 @@ export default function Hero({ content, children }) {
 
             p {
                 font-size: 22px;
-                text-align: justify;
             }
 
-            p.lead {
-                font-size: 40px;
+            h2 {
+                font-size: 25px;
+                font-weight: normal;
                 margin-top: 0;
             }
 
@@ -72,19 +97,18 @@ export default function Hero({ content, children }) {
                 display: flex;
                 justify-content: flex-end;
                 margin-left: auto;
-                overflow: hidden
+                overflow: hidden;
             }
 
             .rectangle > div {
                 background: rgba(0, 0, 0, .35);
-                font-size: 40px;
                 padding: 30px 70px 50px 70px;
                 padding-right: 80px;
-                align-self: flex-end;
                 margin-bottom: 10%;
-                transform: skew(-21deg);
                 margin-right: -50px;
-                margin-left: 100px;
+                margin-left: 50px;
+                align-self: flex-end;
+                transform: skew(-21deg);
             }
             div > .unskew {
                 transform: skew(21deg);

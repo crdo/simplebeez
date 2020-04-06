@@ -2,31 +2,30 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Service({ title, img, description, href }) {
     return (
-        <div className="service">
-            <Link
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to={href}>
-                {img &&
-                    <div className="service-img">
-                        <img src={img} alt={title} />
-                    </div>
-                }
-                {title &&
-                    <div className="service-title">
-                        <h2>{title}</h2>
-                    </div>
-                }
-                {description &&
-                    <div className="service-description">
-                        <p>{description}</p>
-                    </div>
-                }
-            </Link>
-            <style jsx>{`
+        <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={500}
+            className="service"
+            to={href}>
+            {img &&
+                <div className="service-img">
+                    <img src={img} alt={title} />
+                </div>
+            }
+            {title &&
+                <div className="service-title">
+                    <h2>{title}</h2>
+                </div>
+            }
+            {description &&
+                <div className="service-description">
+                    <p>{description}</p>
+                </div>
+            }
+            <style global jsx>{`
                 .service {
                     flex-direction: column;
                     text-align: center;
@@ -46,6 +45,6 @@ export default function Service({ title, img, description, href }) {
                     }
                 }
             `}</style>
-        </div>
+        </Link>
     )
 }
