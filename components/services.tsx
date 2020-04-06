@@ -41,7 +41,7 @@ function ServiceList() {
                 }
                 
                 @media (max-width: 1024px) {
-                    .services-list {
+                    .service-list {
                         flex-wrap: wrap;
                     }
                 }

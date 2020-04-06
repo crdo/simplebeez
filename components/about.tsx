@@ -123,20 +123,24 @@ export default function About() {
             }
             .profile {
                 display: flex;
+                flex-direction: column;
             }
-            .profile{
-                padding-bottom: 20px;
+            .profile {
+                padding-bottom: 30px;
             }
             .profile-img {
                 flex-basis: 35%;
+                margin-bottom: 30px;
                 
             }
             .profile-text {
                 flex-basis: 65%;
-                text-align: justify;
                 background: #393939;
                 color: white;
                 padding: 40px;
+            }
+            .profile-text p {
+                text-align: justify;
             }
             img {
                 max-height: 100%;
@@ -152,11 +156,26 @@ export default function About() {
                 margin-bottom: 30px;
             }
             nav li {
-                margin: 20px;
+                margin: 20px 15px;
                 font-size: 17px;
                 cursor: pointer;
             }
 
+            @media (min-width: 1024px) {
+                nav li {
+                    margin: 20px;
+                }
+                .profile {
+                    flex-direction: row;
+                }
+
+                .profile-img {
+                    margin-bottom: 0;
+                }
+                .profile-text {
+                    margin-left: 20px;
+                }
+            }
             .active {
                 position: relative;
             }
@@ -184,11 +203,6 @@ export default function About() {
             .tab p {
                 margin-top: 0;
                 margin-bottom: 20px;
-            }
-            @media (min-width: 102px) {
-                .profile-text {
-                    margin-left: 20px;
-                }
             }
         `}</style>
         </div>
