@@ -53,7 +53,6 @@ export default function Service({ title, img, description, href }) {
                         padding: 20px;
                     }
                 }
-                a 
             `}</style>
         </Link>
     )

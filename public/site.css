@@ -40,10 +40,6 @@ li {
 	position: relative;
 }
 
-li.triangle {
-	/* line-height: 2; */
-}
-
 li.triangle:before {
 	content: "";
 	display: block;
@@ -225,12 +221,8 @@ header .navigation a:hover {
 	}
 }
 
-.services-details .spacing-wrapper {
-	padding-top: 50px;
-}
-
 .spacing-wrapper {
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 }
 
 @media (max-width: 1024px) {

@@ -41,7 +41,7 @@ export default function Header() {
                                     spy={true}
                                     smooth={true}
                                     onClick={() => setIsMenuOpen(false)}
-                                    offset={-20}
+                                    offset={-60}
                                     duration={500}
                                     to="finance-transformation">
                                     Transformace financí
@@ -53,7 +53,7 @@ export default function Header() {
                                     spy={true}
                                     smooth={true}
                                     onClick={() => setIsMenuOpen(false)}
-                                    offset={-20}
+                                    offset={-60}
                                     duration={500}
                                     to="business-process-management">
                                     Business process management
@@ -65,7 +65,7 @@ export default function Header() {
                                     spy={true}
                                     smooth={true}
                                     onClick={() => setIsMenuOpen(false)}
-                                    offset={-20}
+                                    offset={-60}
                                     duration={500}
                                     to="interim-management">
                                     Interim management
