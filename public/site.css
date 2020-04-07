@@ -2,8 +2,7 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	padding: 0;
 	margin: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("bg.png");
+	background-image: url("bg.jpg");
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -111,8 +110,7 @@ header {
 	background-color: transparent;
 	transition: all 0.75s ease;
 	z-index: 100;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("bg.png");
+	background-image: url("bg.jpg");
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
