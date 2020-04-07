@@ -119,7 +119,7 @@ export default function About() {
                 font-size: 22px;
                 margin-top: 0;
             }
-            .h3 a {
+            h3 a {
                 vertical-align: middle;
             }
             a {
