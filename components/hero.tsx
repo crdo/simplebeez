@@ -11,7 +11,7 @@ export default function Hero({ content, children }) {
             </div>
             <div className="stripe"></div>
             <div className="rectangle">
-                <div>
+                <div className="skewed">
                     <h2 className="lead">
                         Unaveni zdlouhavým
                     budgetováním?<br />Zajímá vás jak
@@ -98,6 +98,12 @@ export default function Hero({ content, children }) {
                 flex-basis: 40%;
                 padding-bottom: 100px;
                 margin-left: 50px;
+            }
+
+            .skewed {
+                background: rgba(0, 0, 0, .5);
+                padding: 30px;
+                position: relative;
             }
             `}</style>
         </div>
