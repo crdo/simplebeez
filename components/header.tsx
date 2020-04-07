@@ -119,8 +119,10 @@ export default function Header() {
                     .dropdown-menu {
                         position: absolute;
                         top: 25px;
+                        left: 10px;
                         display: none;
                         padding: none;
+                        padding-left: 20px;
                         background: rgba(0,0,0,0.75);
                     }
 
@@ -137,7 +139,6 @@ export default function Header() {
 
                     .dropdown:hover .dropdown-menu {
                         display: block;
-                        
                     }
                 }
             `}</style>
