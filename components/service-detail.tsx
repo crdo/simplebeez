@@ -8,7 +8,7 @@ export default function ServiceDetail({ service }) {
                         <h1>{title}</h1>
                         <div className="flex">
                             <div className="service-detail-problem">
-                                <h2>Common Challenges</h2>
+                                <h2>Typické výzvy</h2>
                                 {problems.map(p => (
                                     <p>{p}</p>
                                 ))}
@@ -25,7 +25,7 @@ export default function ServiceDetail({ service }) {
                                 <img src={background} alt={title} />
                             </div>
                             <div className="service-detail-solutions">
-                                <h2>How we can help</h2>
+                                <h2>Jak Vám pomůžeme</h2>
                                 <ul>
                                     {solutions.map((s, index) => (
                                         <li key={index} className="triangle"><p>{s}</p></li>
@@ -36,6 +36,11 @@ export default function ServiceDetail({ service }) {
                     </div>
                 </div>
             </div>
+            <style jsx>{`
+                .spacing-wrapper > .card{
+                    padding-bottom: 20px;
+                }
+            `}</style>
         </div>
     )
 }

@@ -32,7 +32,7 @@ export default function FileDownloadModal({ fileName, children, filePath }) {
             >
 
                 <div className="header">
-                    <h2>Let's stay in touch!</h2>
+                    <h2>Zůstaňme v kontaktu!</h2>
                     <div className="close" onClick={closeModal}>✕</div>
                 </div>
                 <DownloadForm fileName={fileName} filePath={filePath} />

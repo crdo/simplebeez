@@ -1,4 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Service({ title, img, description, href }) {
     return (
@@ -25,6 +27,9 @@ export default function Service({ title, img, description, href }) {
                     <p>{description}</p>
                 </div>
             }
+
+            {/* <a className="link">Zjistit více <FontAwesomeIcon icon={faChevronRight} /></a> */}
+
             <style global jsx>{`
                 .service {
                     flex-direction: column;
@@ -33,6 +38,10 @@ export default function Service({ title, img, description, href }) {
                     flex-basis: 100%;
                     padding: 30px;
                     display: flex;
+                }
+
+                .link {
+                    margin-top: auto;
                 }
 
                 .service:hover {
@@ -44,6 +53,7 @@ export default function Service({ title, img, description, href }) {
                         padding: 20px;
                     }
                 }
+                a 
             `}</style>
         </Link>
     )

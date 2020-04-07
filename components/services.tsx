@@ -22,7 +22,7 @@ function ServiceList() {
             <div className="card">
                 <div className="container">
                     <h1 className="underlined center">
-                        Services
+                        Služby
                 </h1>
                     <br />
                     <p>Naší vizí a přáním je pomáhat firmám naplňovat jejich vize, stavět jejich růst a udržitelnost na pevných technologicko-procesních základech. A hlavně budovat prostředí, kde důvěra, spolupráce a efektivní komunikace mezi lidmi a týmy tvoří základ pro vytváření přidané hodnoty.</p>

@@ -18,7 +18,7 @@ export default function Footer() {
                             Zaječická 836/9, Čimice, 184 00 Praha 8 <br />
                             Tel: +420 602 496 585 <br />
                             Tel: +420 602 166 975 <br />
-                            ID: 08885516 <br />
+                            IČO: 08885516 <br />
                             E-mail: <a href="mailto:info@simplebeez.com">info@simplebeez.com</a>
                     </address>
                     <div className="social">
@@ -29,9 +29,9 @@ export default function Footer() {
                     </div>
                 </div>
                 <div>
-                    <h2>Downloads</h2>
+                    <h2>Ke stažení</h2>
                     <div className="downloads">
-                        <FileDownloadModal fileName="This file is interesting AF" filePath="/Privacy_Policy_ENG.pdf" >
+                        <FileDownloadModal fileName="Cashflow Excel Sheet" filePath="/Privacy_Policy_ENG.pdf" >
                             <FontAwesomeIcon icon={faFilePdf} />
                         </FileDownloadModal>
                     </div>

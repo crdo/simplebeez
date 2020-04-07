@@ -96,7 +96,7 @@ export default function Header() {
                             Kontakt
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             activeClass="active"
                             spy={true}
@@ -106,7 +106,7 @@ export default function Header() {
                             to="kontakt">
                             EN
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </div>

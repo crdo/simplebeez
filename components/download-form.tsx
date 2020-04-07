@@ -10,15 +10,15 @@ export default function DownloadForm({ fileName, filePath }) {
         <form onSubmit={handleOnSubmit}>
             {!status.info.msg && <>
                 <div className="flex">
-                    <input placeholder="Name" id="name" onChange={handleOnChange} value={inputs?.name ?? ''} type="text" required />
-                    <input placeholder="Surname" id="surname" onChange={handleOnChange} value={inputs?.surname ?? ''} type="text" required />
+                    <input placeholder="Jméno" id="name" onChange={handleOnChange} value={inputs?.name ?? ''} type="text" required />
+                    <input placeholder="Příjmení" id="surname" onChange={handleOnChange} value={inputs?.surname ?? ''} type="text" required />
                 </div>
                 <input placeholder="E-mail" id="email" onChange={handleOnChange} value={inputs?.email ?? ''} type="email" required />
-                <input placeholder="Company name" onChange={handleOnChange} id="company_name" value={inputs?.company_name ?? ''} type="text" required />
+                <input placeholder="Název firmy" onChange={handleOnChange} id="company_name" value={inputs?.company_name ?? ''} type="text" required />
                 <div className="gdpr">
-                    <label htmlFor="gdpr"><input type="checkbox" onChange={handleOnChange} id="company_gdpr" value={inputs?.company_gdpr} required name="gdpr" /> Agree with the <a target="_blank" href="/Privacy_Policy_ENG.pdf">Privacy policy.</a></label>
+                    <label htmlFor="gdpr"><input type="checkbox" onChange={handleOnChange} id="company_gdpr" value={inputs?.company_gdpr} required name="gdpr" /> Souhlasím s <a target="_blank" href="/Privacy_Policy_CZ.pdf">Privacy policy.</a></label>
                 </div>
-                <button type="submit">Download {fileName}</button>
+                <button type="submit">Stáhnout {fileName}</button>
             </>}
             {status.info.error && (
                 <div className="error">Error: {status.info.msg}</div>

@@ -40,7 +40,7 @@ li {
 	position: relative;
 }
 
-.triangle {
+li.triangle {
 	line-height: 2;
 }
 

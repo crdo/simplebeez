@@ -4,6 +4,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 export default function About() {
     const [activeTab, setActiveTab] = useState(1)
+    const [expand, setExpand] = useState(false)
     return (
         <div className="spacing-wrapper" id="about">
             <div className="card">
@@ -34,11 +35,11 @@ export default function About() {
                         </div>}
                         {activeTab == 2 && <div className="tab">
                             <h2>Realita není úplně růžová</h2>
-                            <p>Podle výzkumu společnosti Gartner, Inc. z roku 2019 (Hallmarks of winning finance transformations), pouze 35 % business partnerů,
-                            myšleno interních oddělení ve firmě, je spokojeno s podporou a přínosem, který jim poskytuje finanční oddělení. My v SIMPLEBEEZ
+                            <p>Podle výzkumu společnosti Gartner, Inc. z roku 2019 (Hallmarks of winning finance transformations), <b>pouze 35 % business partnerů</b>,
+                            myšleno interních oddělení ve firmě, <b>je spokojeno s podporou a přínosem</b>, který jim poskytuje finanční oddělení. My v SIMPLEBEEZ
                             vidíme příležitost především ve zlepšení spolupráce a propojení financí se všemi aktivitami orientovanými na zákazníka. Finance mají
                         před sebou velkou výzvu, jelikož musí udržet současnou kvalitu v oblasti shody (compliance) a k tomu ještě výrazně přidat na znalosti a podpoře ostatních klíčových oblastí firmy.</p>
-                            <p>Současně, Gartner dále uvádí, že 7 z 10 projektů transformace financí, jak uvedeno výše, je neúspěšných. Z našeho pohledu nejde
+                            <p>Současně, Gartner dále uvádí, že <b>7 z 10 projektů transformace financí</b>, jak uvedeno výše, <b>je neúspěšných</b>. Z našeho pohledu nejde
                             jen o neefektivní využití zdrojů společností, ztracené příležitosti, ale převážně pak o frustraci zaměstnanců, dodavatelů řešení a
                         nenaplněná očekávání vedení a majitelů firem. Bohužel sami z vlastních zkušeností můžeme tento trend potvrdit, což je pro nás všechny do budoucna velká výzva.</p>
                             <h2>Lépe, chytřeji a smysluplně</h2>
@@ -56,77 +57,87 @@ export default function About() {
                             </ul>
                         </div>}
                     </div>
-                    <div className="profile">
-                        <div className="profile-img"><img src="/martin.jpg" alt="Martin Prášek" /></div>
-                        <div className="profile-text">
-                            <b>Martin Prášek, partner a spoluzakladatel <a href="#"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></b>
-                            <p>Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a
-                            souvisejících procesů. Jeho osobní specializací jsou implementace ERP a EPM řešení, procesní optimalizace, návrhy a realizace
-                            řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či
-                                s designem operativních nástrojů pro automatizaci nejen financí.</p>
-                            <p>Martin pracoval více než 15 let v mezinárodním prostředí. Je přesvědčen, že přínos projektů či inovativních řešení se měří tím, zda splňuje
-                            očekávání většiny lidí a zda lidé lépe spolupracují a tvoří hodnoty. Řídil mezinárodní týmy v rámci desítek transformačních projektů s
-                                vazbou na finance. Stál také u zrodu a fungování globálního centra sdílených služeb, a to se zákazníky z celého světa.</p>
-                            <p>SIMPLEBEEZ spoluzaložil s vizí úzkého partnerství s klientem a přímou rolí na jeho transformačních iniciativách. Chce poskytovat firmám
-                            ucelené služby od identifikace příležitostí, definování konceptu transformace, poskytnutí chybějící expertízy, návrhu konkrétních řešení až
+                    <div className="profile-list">
+                        <div className="profile">
+                            <div className="profile-img"><img src="/martin.jpg" alt="Martin Prášek" /></div>
+                            <div className="profile-text">
+                                <h3>Martin Prášek, partner a spoluzakladatel <a href="#"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
+                                <p>Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a
+                                souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a EPM</b>řešení, <b>procesní optimalizace</b>, návrhy a realizace
+                                řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či
+                                s <b>funkčním designem operativních nástrojů</b> pro automatizaci nejen financí.</p>
+                                <p>Martin pracoval více než 15 let v mezinárodním prostředí. Je přesvědčen, že přínos projektů či inovativních řešení se měří tím, zda splňuje
+                                očekávání většiny lidí a zda lidé lépe spolupracují a tvoří hodnoty. Řídil mezinárodní týmy v rámci desítek transformačních projektů s
+                                vazbou na finance. Stál také u zrodu a fungování globálního centra sdílených služeb, a to se zákazníky z celého světa. {!expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                {expand && <><p>SIMPLEBEEZ spoluzaložil s vizí úzkého partnerství s klientem a přímou rolí na jeho transformačních iniciativách. Chce poskytovat firmám
+                                ucelené služby od identifikace příležitostí, definování konceptu transformace, poskytnutí chybějící expertízy, návrhu konkrétních řešení až
                                 po jejich zavedení.</p>
-                            <p>“Každý máme svůj profesní či životní příběh, lidské emoce, očekávání a to, co je pro nás dnes a do budoucna důležité a méně důležité.
-                            Vybudovat něco inovativního, nepředstavitelného, z principu složitého, ale současně přínosného a obdivuhodného, není o konkrétních
-                            nástrojích či technologických řešeních, jakých k tomu využít. Je to o spojení různých lidí a rozvinutí jejich skutečného potenciálu a energie
+                                    <p>“Každý máme svůj profesní či životní příběh, lidské emoce, očekávání a to, co je pro nás dnes a do budoucna důležité a méně důležité.
+                                    Vybudovat něco inovativního, nepředstavitelného, z principu složitého, ale současně přínosného a obdivuhodného, není o konkrétních
+                                    nástrojích či technologických řešeních, jakých k tomu využít. Je to o spojení různých lidí a rozvinutí jejich skutečného potenciálu a energie
                                 směrem ke smysluplnému cíli, který je každému jasný a ke kterému budou společně táhnout.”</p>
-                            <p>Rád tráví hodiny na jednom ze svých tří kol a sbírá energii z nových míst. Rád bere sportovní výzvy za své, protože posouvat své hranice
-                            ho strašně baví. Většinu času rád tráví se svými třemi dětmi a partnerkou. Když čas umožní, relaxuje tvorbou elektronické hudby ve svém
-                                domácím studiu či focením.</p>
+                                    <p>Rád tráví hodiny na jednom ze svých tří kol a sbírá energii z nových míst. Rád bere sportovní výzvy za své, protože posouvat své hranice
+                                    ho strašně baví. Většinu času rád tráví se svými třemi dětmi a partnerkou. Když čas umožní, relaxuje tvorbou elektronické hudby ve svém
+                                    domácím studiu či focením. {expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                </>}
+                            </div>
                         </div>
-                    </div>
-                    <div className="profile">
-                        <div className="profile-img">
-                            <img src="/david.jpg" alt="David Štěpán" />
-                        </div>
-                        <div className="profile-text">
-                            <b>David Štěpán, partner a spoluzakladatel <a href="#"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></b>
-                            <p>David pomáhá firmám s transformací financí a vedením lidí. David za posledních více než 15 let pracoval nejen v ČR ale i v Austrálii,
-                            Rumunsku či Bulharsku na různých pozicích v mezinárodních financích. Aby se pustil do podnikání v SIMPLEBEEZ, zanechal svou roli
-                            CFO pro soukromou zahraniční televizi. Od auditu a účetních standardů se David přirozenou cestou posunul k operativě, řídil krizové
-                            projekty, restrukturalizace firem, vymýšlel a zaváděl nové skupinové postupy a systémy.</p>
-                            <p>Jako rozený optimista David nachází inspiraci všude kolem sebe. “Každá dobrá myšlenka stojí za to, aby se nad ní člověk zamyslel a
-                            začal měnit věci k lepšímu, i kdyby to vyžadovalo krátkodobou nejistotu a vystoupení z komfortní zóny.” Takové přesvědčení a energii
-                            vkládá David do SIMPEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich
-                            proměně.”</p>
-                            <p>„Pro mě byla vždy efektivní komunikace a důvěra mezi lidmi klíčová. Excel je možná skvělý analytický nástroj, ale nelze se za něj
-                            schovávat. Hlavně ve financích. Abychom byli lepší, musíme mít všichni jasno, kam kráčíme a proč. No a pak to teprve může začít
+                        <div className="profile">
+                            <div className="profile-img">
+                                <img src="/david.jpg" alt="David Štěpán" />
+                            </div>
+                            <div className="profile-text">
+                                <h3>David Štěpán, partner a spoluzakladatel <a href="#"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
+                                <p>David pomáhá firmám s transformací financí a vedením lidí. David za posledních více než 15 let pracoval nejen v ČR ale i v Austrálii,
+                                Rumunsku či Bulharsku na různých pozicích v mezinárodních financích. Aby se pustil do podnikání v SIMPLEBEEZ, zanechal svou roli
+                                CFO pro soukromou zahraniční televizi. Od auditu a účetních standardů se David přirozenou cestou posunul k operativě, <b>řídil krizové
+                            projekty, restrukturalizace firem</b>, vymýšlel a <b>zaváděl nové skupinové postupy a systémy</b>.</p>
+                                <p>Jako rozený optimista David nachází inspiraci všude kolem sebe. “Každá dobrá myšlenka stojí za to, aby se nad ní člověk zamyslel a
+                                začal měnit věci k lepšímu, i kdyby to vyžadovalo krátkodobou nejistotu a vystoupení z komfortní zóny.” Takové přesvědčení a energii
+                                vkládá David do SIMPEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich
+                                proměně.” {!expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                {expand && <>
+                                    <p>„Pro mě byla vždy efektivní komunikace a důvěra mezi lidmi klíčová. Excel je možná skvělý analytický nástroj, ale nelze se za něj
+                                    schovávat. Hlavně ve financích. Abychom byli lepší, musíme mít všichni jasno, kam kráčíme a proč. No a pak to teprve může začít
                             finančně plánovat a řídit.“</p>
-                            <p>David je přesvědčen, že tradiční budget v dnešní době výrazně naráží na své limity, tak jako tradiční manažerský přístup “příkaz-kontrola”.
+                                    <p>David je přesvědčen, že tradiční budget v dnešní době výrazně naráží na své limity, tak jako tradiční manažerský přístup “příkaz-kontrola”.
                             Proto se věnuje principům Beyond Budgetingu, o kterých neváhá mluvit při jakémkoli setkání.</p>
-                            <p>David rád jezdí na všem co má dvě kola, takže ho můžete potkat na kole ve městě, na horách, nebo v zahraničí na motorce se stanem,
-                            spacákem a foťákem, jak se kochá místní přírodou. “Sport mě mnoho naučil a přinesl mi inspiraci, nadšení, povinnost, radost, individuální
-                            odpovědnost i týmovou hru. Přesto je moje manželka a dvě dcery to nejlepší, co mě na tomto světě potkalo.”</p>
+                                    <p>David rád jezdí na všem co má dvě kola, takže ho můžete potkat na kole ve městě, na horách, nebo v zahraničí na motorce se stanem,
+                                    spacákem a foťákem, jak se kochá místní přírodou. “Sport mě mnoho naučil a přinesl mi inspiraci, nadšení, povinnost, radost, individuální
+                                    odpovědnost i týmovou hru. Přesto je moje manželka a dvě dcery to nejlepší, co mě na tomto světě potkalo.” {expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                </>}
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <style jsx>{`
             .about {
-                padding: 30px 0;
+                padding: 20px 0;
             }
-            b {
+            h3 {
                 font-size: 22px;
+                margin-top: 0;
+            }
+            .h3 a {
+                vertical-align: middle;
+            }
+            a {
+                color: #f4ae9c;
+                cursor: pointer;
             }
             .profile-text :global(.linkedin) {
                 width: 22px;
                 color: #f4ae9c;
                 margin-left: 10px;
             }
-            .profile-text a {
-                vertical-align: middle;
-            }
             .profile {
                 display: flex;
                 flex-direction: column;
-            }
-            .profile {
                 padding-bottom: 30px;
+            }
+            .profile-list {
+                padding-bottom: 20px;
             }
             .profile-img {
                 flex-basis: 35%;
@@ -191,7 +202,7 @@ export default function About() {
             }
 
             .tab {
-                padding: 20px;
+                padding: 40px;
                 background-color: #dedede;
             }
 

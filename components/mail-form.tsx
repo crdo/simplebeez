@@ -23,7 +23,7 @@ export default function MailForm() {
                     onChange={handleOnChange}
                     required
                     value={inputs?.name ?? ''}
-                    placeholder="Full name"
+                    placeholder="Celé jméno"
                 />
                 <textarea
                     id="message"
@@ -31,7 +31,7 @@ export default function MailForm() {
                     onChange={handleOnChange}
                     required
                     value={inputs?.message ?? ''}
-                    placeholder="Message"
+                    placeholder="Zpráva"
                 />
                 <button type="submit" disabled={status.submitting}>
                     {!status.submitting
