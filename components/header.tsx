@@ -32,7 +32,7 @@ export default function Header() {
                             onClick={() => setIsMenuOpen(false)}
                             duration={500}
                             to="services">
-                            Služby
+                            Naše služby
                         </Link>
                         <ul className="dropdown-menu">
                             <li>
@@ -44,7 +44,7 @@ export default function Header() {
                                     offset={-20}
                                     duration={500}
                                     to="finance-transformation">
-                                    Finance Transformation
+                                    Transformace financí
                                 </Link>
                             </li>
                             <li>
@@ -56,7 +56,7 @@ export default function Header() {
                                     offset={-20}
                                     duration={500}
                                     to="business-process-management">
-                                    Business Process Management
+                                    Business process management
                                 </Link>
                             </li>
                             <li>
@@ -68,7 +68,7 @@ export default function Header() {
                                     offset={-20}
                                     duration={500}
                                     to="interim-management">
-                                    Interim Management
+                                    Interim management
                                 </Link>
                             </li>
                         </ul>

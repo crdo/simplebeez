@@ -5,7 +5,7 @@
             "title": "Transformace financí",
             "logo": "finance-transformations.svg",
             "background": "finance-transformations.jpeg",
-            "claim": "We Bridge the Gap between Business, Finance & IT.",
+            "claim": "Propojujeme svět byznysu, financí a IT.",
             "problems": [
                 "Jak lidé ve Vaši společnosti vnímají finanční oddělení? Jsou to ti, kteří je obtěžují s formalitami,formuláři, tabulkami, reporty, kontrolami a hrozí auditem? ",
                 "Nebo dokonce ani o nich Vaši lidé nevědí a nechtějí vědět, jen jsou rádi, když jim z účtárny přijde včas výplata?",
@@ -14,7 +14,7 @@
                 "Jak jste na tom vy? A chtěli byste to změnit?"
             ],
             "solutions": [
-                "Podporujeme proces transformace financí od &quot;účtárny a “reportingu“ ke skutečnému “business partneringu“.",
+                "Podporujeme proces transformace financí od “účtárny a reportingu“ ke skutečnému “business partneringu“.",
                 "Stojíme na straně Vaší společnosti v procesu transformace a implementace nových IT řešení a procesních work-flow. Přispíváme v procesu specifikace konceptu transformace, pomáháme navrhnout a vybrat vhodná, nejen IT řešení, a dohlížíme na úspěšnou implementaci.",
                 "Spolupracujeme s Beyond Budgeting Round Table institutem, který už více než 2 dekády buduje a stále vylepšuje holistický přístup k financím, tzv. Beyond Budgeting. Rádi pomůžeme i Vaši společnosti v transformaci k agilnímu finančnímu řízení a plánování.",
                 "Využíváme své rozsáhlé zkušenosti s funkčním designem IT řešení s vazbou na finance a překlenujeme nesoulad mezi businessem a IT světem."
@@ -22,10 +22,10 @@
         },
         {
             "id": "business-process-management",
-            "title": "Business Process Management",
+            "title": "Business process management",
             "logo": "business-process-management.svg",
             "background": "business-process-management.jpeg",
-            "claim": "Dream Big, Work Smarter.",
+            "claim": "Pracuj chytře, ne tvrdě.",
             "problems": [
                 "Víte, kde u Vás ve společnosti vzniká přidaná hodnota a kde naopak ne?",
                 "Vědí Vaši zaměstnanci, kdo má za pravomoc změny procesů podpořit a schválit a je tato pravomoc nezpochybnitelná?",
@@ -43,10 +43,10 @@
         },
         {
             "id": "interim-management",
-            "title": "Interim Management",
+            "title": "Interim management",
             "logo": "interim-management.svg",
             "background": "interim-management.jpeg",
-            "claim": "Let the partnering begin.",
+            "claim": "Dobré partnerství je základ.",
             "problems": [
                 "Plánujete kritický nebo strategický projekt a nejste si jisti, jestli na to máte dostatečné a ty správné lidské zdroje? Vypadl Vám náhle seniorní člověk a vy potřebujete zaplnit chybějící článek v týmu?",
                 "Chybí Vám nezávislý názor, nová energie nebo vize, entuziasmus, zkušenosti odjinud?",

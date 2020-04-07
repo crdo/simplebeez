@@ -40,26 +40,24 @@ const Home = () => (
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         </Head>
         <Header />
-        <Hero content="Jednodušší, chytřejší, smysluplná řešení. Spojujeme lidi, procesy a technologie." >
-            <span>Váš&nbsp;<span className="triangle">partner</span><br />pro&nbsp;transformaci<br />financí</span>
-        </Hero>
+        <Hero />
         <Services />
         <About />
         <Footer />
-        <style jsx>{`
+        <style global jsx>{`
             .triangle {
                 position: relative;
             }
 
-            .triangle:after {
+            h1 .triangle:after {
                 content: '';
                 position: absolute;
                 display: block;
-                right: -80px;
-                top: 45px;
-                border-left: 30px solid transparent;
-                border-right: 30px solid transparent;
-                border-top: 50px solid #f4ae9c;
+                right: -30px;
+                top: 15px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 17px solid #f4ae9c;
             }
         `}</style>
     </>

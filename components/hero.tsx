@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 
-export default function Hero({ content, children }) {
+export default function Hero() {
     return (
         <div className="hero container">
-            <div className="claim"><h1>{children}</h1>
-                <p>{content}</p>
+            <div className="claim"><h1><span>Váš&nbsp;<span className="triangle">partner</span><br />pro&nbsp;transformaci<br />financí</span></h1>
+                <p>Jednodušší, chytřejší, smysluplná řešení.<br />Spojujeme lidi, procesy a technologie.</p>
             </div>
             <div className="stripe"></div>
             <div className="rectangle">
                 <div className="skewed">
-                    <h2 className="lead">
+                    <h2>
                         Unaveni zdlouhavým
                     budgetováním?<br />Zajímá vás jak
                     to dělat jinak?
@@ -33,77 +33,149 @@ export default function Hero({ content, children }) {
                 color: white;
                 height: 100vh;
                 display: flex;
+                flex-direction: column;
                 padding-top: 97px;
                 height: 100vh;
-                overflow: hidden;
-            }
-
-            :global(.link) {
-                color: #f4ae9c;
-                cursor: pointer;
             }
 
             .claim {
-                flex-basis: 50%;
-                padding-top: 50px;
-            }
-
-            :global(.link svg) {
-                width: 7px;
-            }
-
-            .claim p {
-                width: 75%;
+                flex: 1 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
             }
 
             h1 {
-                font-size: 70px;   
-                line-height: 1.3;            
-            }
-
-            @media (min-width: 1024px) {
-                h1 {
-                    font-size: 34px;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                h1 {
-                font-size: 80px;   
-                margin-top: 100px;
-                line-height: 1.3;             
-                }
-            }
-
-            p {
-                font-size: 22px;
+                font-size: 25px; 
+                line-height: 1.3;           
             }
 
             h2 {
-                font-size: 25px;
+                font-size: 14px;
                 font-weight: normal;
                 margin-top: 0;
             }
 
-            .stripe {
-                    flex-basis: 10%;
-                    background: rgba(244, 174, 156, .75);
-                    transform: skew(-21deg);  
-                    z-index: -1;
+            p {
+                font-size: 14px;
             }
+
+            .stripe {
+                display: none;
+                flex: 0 0 125px;
+                background: rgba(244, 174, 156, .75);
+                transform: skew(-21deg);  
+                z-index: -1;
+            }
+
             .rectangle { 
+                flex: 1 0 0;
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: column;
-                flex-basis: 40%;
-                padding-bottom: 100px;
-                margin-left: 50px;
+                margin-bottom: 20px;
+            }
+
+            .triangle:after {
+                right: -25px;
+                top: 15px;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 13px solid #f4ae9c;
+            }
+
+            @media only screen and (min-width: 321px) {
+                h1 {
+                    font-size: 30px; 
+                }
+                p, h2 {
+                    font-size: 16px;
+                }
+            }
+
+            @media only screen and (min-width: 768px) {
+                h1 {
+                    font-size: 40px; 
+                }
+                p, h2 {
+                    font-size: 20px;
+                }
+                .triangle:after {
+                    right: -30px;
+                    top: 20px;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 17px solid #f4ae9c;
+                }
+            }
+
+            @media only screen and (min-width: 1025px) {
+                h1 {
+                    font-size: 40px; 
+                    margin-top: 10%;
+                }
+                p, h2 {
+                    font-size: 20px;
+                }
+
+                .hero {
+                    flex-direction: row;
+                }
+
+                .claim {
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+                .stripe {
+                    display: block;
+                }
+                .rectangle {
+                    flex: 1 0 0;
+                    margin-bottom: 30px;
+                }
+                .triangle:after {
+                    right: -30px;
+                    top: 23px;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 17px solid #f4ae9c;
+                }
+            }
+
+            @media only screen and (min-width: 1300px) {
+                h1 {
+                    font-size: 65px; 
+                    margin-top: 10%;
+                    margin-bottom: 10px;
+                }
+                p, h2 {
+                    font-size: 22px;
+                }
+                .triangle:after {
+                    right: -55px;
+                    top: 35px;
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
+                    border-top: 32px solid #f4ae9c;
+                }
             }
 
             .skewed {
                 background: rgba(0, 0, 0, .5);
-                padding: 30px;
+                padding: 20px;
                 position: relative;
+            }
+
+
+
+            :global(.link svg) {
+                width: 7px;
+            }
+            
+            :global(.link) {
+                color: #f4ae9c;
+                cursor: pointer;
             }
             `}</style>
         </div>
