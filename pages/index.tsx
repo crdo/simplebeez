@@ -6,6 +6,7 @@ import Hero from "../components/hero";
 import Services from "../components/services";
 import Footer from '../components/footer';
 import About from '../components/about';
+import Download from '../components/download';
 
 const Home = () => (
     <>
@@ -41,10 +42,14 @@ const Home = () => (
         </Head>
         <Header />
         <Hero />
+        <Download />
         <Services />
         <About />
         <Footer />
         <style global jsx>{`
+            :root {
+                --primary: #f4ae9c;
+            }
             .triangle {
                 position: relative;
             }

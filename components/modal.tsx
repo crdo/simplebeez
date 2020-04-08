@@ -24,7 +24,7 @@ export default function FileDownloadModal({ fileName, children, filePath }) {
     }
     return (
         <div>
-            <a onClick={openModal}>{children} {fileName}</a>
+            <a onClick={openModal}>{children}</a>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
