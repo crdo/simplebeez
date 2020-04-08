@@ -75,7 +75,7 @@ li.triangle:before {
 	bottom: -10px;
 	left: 50%;
 	transform: translate(-50%);
-	width: 200px;
+	width: 180px;
 	height: 5px;
 	background: #f4ae9c;
 }

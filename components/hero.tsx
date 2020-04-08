@@ -21,7 +21,7 @@ export default function Hero() {
                         className="link"
                         spy={true}
                         smooth={true}
-                        offset={-20}
+                        offset={-70}
                         duration={500}
                         to="finance-transformation">
                         Zjistit více <FontAwesomeIcon icon={faChevronRight} />
