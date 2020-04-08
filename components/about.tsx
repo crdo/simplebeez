@@ -4,7 +4,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 export default function About() {
     const [activeTab, setActiveTab] = useState(1)
-    const [expand, setExpand] = useState(false)
+    const [expand, setExpand] = useState({ "martin": false, "david": false })
     return (
         <div className="spacing-wrapper" id="about">
             <div className="card">
@@ -68,8 +68,8 @@ export default function About() {
                                 s <b>funkčním designem operativních nástrojů</b> pro automatizaci nejen financí.</p>
                                 <p>Martin pracoval více než 15 let v mezinárodním prostředí. Je přesvědčen, že přínos projektů či inovativních řešení se měří tím, zda splňuje
                                 očekávání většiny lidí a zda lidé lépe spolupracují a tvoří hodnoty. Řídil mezinárodní týmy v rámci desítek transformačních projektů s
-                                vazbou na finance. Stál také u zrodu a fungování globálního centra sdílených služeb, a to se zákazníky z celého světa. {!expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
-                                {expand && <><p>SIMPLEBEEZ spoluzaložil s vizí úzkého partnerství s klientem a přímou rolí na jeho transformačních iniciativách. Chce poskytovat firmám
+                                vazbou na finance. Stál také u zrodu a fungování globálního centra sdílených služeb, a to se zákazníky z celého světa. {!expand.martin && <a onClick={() => setExpand(prevState => ({ ...prevState, "martin": !expand.martin }))}>{expand.martin ? 'Méně' : 'Více'}</a>}</p>
+                                {expand.martin && <><p>SIMPLEBEEZ spoluzaložil s vizí úzkého partnerství s klientem a přímou rolí na jeho transformačních iniciativách. Chce poskytovat firmám
                                 ucelené služby od identifikace příležitostí, definování konceptu transformace, poskytnutí chybějící expertízy, návrhu konkrétních řešení až
                                 po jejich zavedení.</p>
                                     <p>“Každý máme svůj profesní či životní příběh, lidské emoce, očekávání a to, co je pro nás dnes a do budoucna důležité a méně důležité.
@@ -78,7 +78,7 @@ export default function About() {
                                 směrem ke smysluplnému cíli, který je každému jasný a ke kterému budou společně táhnout.”</p>
                                     <p>Rád tráví hodiny na jednom ze svých tří kol a sbírá energii z nových míst. Rád bere sportovní výzvy za své, protože posouvat své hranice
                                     ho strašně baví. Většinu času rád tráví se svými třemi dětmi a partnerkou. Když čas umožní, relaxuje tvorbou elektronické hudby ve svém
-                                    domácím studiu či focením. {expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                    domácím studiu či focením. {expand.martin && <a onClick={() => setExpand(prevState => ({ ...prevState, "martin": !expand.martin }))}>{expand.martin ? 'Méně' : 'Více'}</a>}</p>
                                 </>}
                             </div>
                         </div>
@@ -95,8 +95,8 @@ export default function About() {
                                 <p>Jako rozený optimista David nachází inspiraci všude kolem sebe. “Každá dobrá myšlenka stojí za to, aby se nad ní člověk zamyslel a
                                 začal měnit věci k lepšímu, i kdyby to vyžadovalo krátkodobou nejistotu a vystoupení z komfortní zóny.” Takové přesvědčení a energii
                                 vkládá David do SIMPLEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich
-                                proměně.” {!expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
-                                {expand && <>
+                                proměně.” {!expand.david && <a onClick={() => setExpand(prevState => ({ ...prevState, "david": !expand.david }))}>{expand.david ? 'Méně' : 'Více'}</a>}</p>
+                                {expand.david && <>
                                     <p>„Pro mě byla vždy efektivní komunikace a důvěra mezi lidmi klíčová. Excel je možná skvělý analytický nástroj, ale nelze se za něj
                                     schovávat. Hlavně ve financích. Abychom byli lepší, musíme mít všichni jasno, kam kráčíme a proč. No a pak to teprve může začít
                             finančně plánovat a řídit.“</p>
@@ -104,7 +104,7 @@ export default function About() {
                             Proto se věnuje principům Beyond Budgetingu, o kterých neváhá mluvit při jakémkoli setkání.</p>
                                     <p>David rád jezdí na všem co má dvě kola, takže ho můžete potkat na kole ve městě, na horách, nebo v zahraničí na motorce se stanem,
                                     spacákem a foťákem, jak se kochá místní přírodou. “Sport mě mnoho naučil a přinesl mi inspiraci, nadšení, povinnost, radost, individuální
-                                    odpovědnost i týmovou hru. Přesto je moje manželka a dvě dcery to nejlepší, co mě na tomto světě potkalo.” {expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
+                                    odpovědnost i týmovou hru. Přesto je moje manželka a dvě dcery to nejlepší, co mě na tomto světě potkalo.” {expand.david && <a onClick={() => setExpand(prevState => ({ ...prevState, "david": !expand.david }))}>{expand.david ? 'Méně' : 'Více'}</a>}</p>
                                 </>}
                             </div>
                         </div>
