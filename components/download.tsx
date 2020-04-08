@@ -19,7 +19,7 @@ export default function Download() {
             <style global jsx>{`
             .download {
                 background: #393939;
-                padding: 75px 0;
+                padding: 60px 0;
                 color: white;
             }
             .version {
