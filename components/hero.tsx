@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 function DemoCarousel() {
     return (
-        <Carousel interval={5000} infiniteLoop={true} autoPlay={true} transitionTime={1000} showArrows={false} showStatus={false} showThumbs={false} showIndicators={false} >
+        <Carousel interval={6500} infiniteLoop={true} autoPlay={true} transitionTime={1000} showArrows={false} showStatus={false} showThumbs={false} showIndicators={false} >
             <div>
                 <h2>
                     Unaveni zdlouhavým
