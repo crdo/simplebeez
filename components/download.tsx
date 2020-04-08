@@ -39,6 +39,7 @@ export default function Download() {
             @media only screen and (min-width: 768px) {
                 .button a {
                     width: auto;
+                    margin-left: 30px;
             }
         `}</style>
         </div>
