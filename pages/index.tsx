@@ -66,15 +66,13 @@ const Home = () => (
             }
             .carousel .slide {
                 padding-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
                 background: transparent;
             }
 
             .carousel .slide h2 {
                 font-size: 20px;
-            }
-
-            @media only screen and (min-width: 1025px) {
-
             }
         `}</style>
     </>

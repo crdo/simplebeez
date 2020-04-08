@@ -138,14 +138,16 @@ function DemoCarousel() {
 
 export default function Hero() {
     return (
-        <div className="hero container">
-            <div className="claim"><h1><span>Váš&nbsp;<span className="triangle">partner</span><br />pro&nbsp;transformaci<br />financí</span></h1>
-                <p>Jednodušší, chytřejší, smysluplná řešení.<br />Spojujeme lidi, procesy a technologie.</p>
-            </div>
-            <div className="stripe"></div>
-            <div className="rectangle">
-                <div className="skewed">
-                    <DemoCarousel />
+        <div className="container">
+            <div className="hero">
+                <div className="claim"><h1><span>Váš&nbsp;<span className="triangle">partner</span><br />pro&nbsp;transformaci<br />financí</span></h1>
+                    <p>Jednodušší, chytřejší, smysluplná řešení.<br />Spojujeme lidi, procesy a technologie.</p>
+                </div>
+                <div className="stripe"></div>
+                <div className="rectangle">
+                    <div className="skewed">
+                        <DemoCarousel />
+                    </div>
                 </div>
             </div>
             <style jsx>{`
@@ -156,6 +158,7 @@ export default function Hero() {
                 flex-direction: column;
                 padding-top: 97px;
                 height: 100vh;
+                overflow: hidden;
             }
 
             .claim {
@@ -254,7 +257,7 @@ export default function Hero() {
                     display: block;
                 }
                 .rectangle {
-                    width: 20%;
+                    width: 15%;
                     margin-bottom: 30px;
                 }
                 .triangle:after {
@@ -263,6 +266,14 @@ export default function Hero() {
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
                     border-top: 17px solid #f4ae9c;
+                }
+                :global(.carousel-root) {
+                    transform: skew(20deg);
+                }
+                .skewed {
+                    transform: skew(-20deg);
+                    padding-right: 100px !important;
+                    margin-right: -100px;
                 }
             }
 
