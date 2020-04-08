@@ -36,9 +36,9 @@ export default function MailForm() {
                 <button type="submit" disabled={status.submitting}>
                     {!status.submitting
                         ? !status.submitted
-                            ? 'Send'
-                            : 'Sent'
-                        : 'Sending...'}
+                            ? 'Poslat'
+                            : 'Posláno'
+                        : 'Posílám...'}
                 </button>
             </form>
             {status.info.error && (

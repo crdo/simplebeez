@@ -42,7 +42,7 @@ export default function Hero() {
                 flex: 1 0 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 text-align: center;
             }
 
@@ -125,7 +125,6 @@ export default function Hero() {
 
                 .claim {
                     text-align: left;
-                    justify-content: flex-start;
                 }
                 .stripe {
                     display: block;

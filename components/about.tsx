@@ -63,7 +63,7 @@ export default function About() {
                             <div className="profile-text">
                                 <h3>Martin Prášek, partner a spoluzakladatel <a href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
                                 <p>Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a
-                                souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a EPM</b>řešení, <b>procesní optimalizace</b>, návrhy a realizace
+                                souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a EPM</b> řešení, <b>procesní optimalizace</b>, návrhy a realizace
                                 řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či
                                 s <b>funkčním designem operativních nástrojů</b> pro automatizaci nejen financí.</p>
                                 <p>Martin pracoval více než 15 let v mezinárodním prostředí. Je přesvědčen, že přínos projektů či inovativních řešení se měří tím, zda splňuje
