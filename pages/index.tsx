@@ -65,14 +65,14 @@ const Home = () => (
                 bottom: -5px;
             }
             .carousel .slide {
-                padding-bottom: 40px;
-                padding-left: 40px;
-                padding-right: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
                 background: transparent;
             }
 
             .carousel .slide h2 {
                 font-size: 20px;
+                font-weight: 400;
             }
         `}</style>
     </>
