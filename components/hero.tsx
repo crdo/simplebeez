@@ -172,7 +172,7 @@ export default function Hero() {
             h1 {
                 font-size: 25px; 
                 line-height: 1.3;      
-                margin-top: 10%;     
+                margin-top: 10%;    
             }
 
             h2 {
@@ -241,7 +241,13 @@ export default function Hero() {
                 h1 {
                     font-size: 40px; 
                     margin-top: 15%;
+                    margin-left: 5%; 
                 }
+
+                h1, p {
+                    margin-left: 5%;
+                }
+
                 p, h2 {
                     font-size: 20px;
                 }
