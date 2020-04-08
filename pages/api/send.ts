@@ -7,7 +7,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 	const { email } = req.body;
 
 	const content = {
-		to: "dominik.crha@gmail.com;martin@simplebeez.com;david@simplebeez.com",
+		to: ["crha@havit.cz", "martin@simplebeez.com", "david@simplebeez.com"],
 		from: email,
 		subject: `SIMPLEBEEZ.COM New Message From - ${email}`,
 		text: JSON.stringify(req.body),

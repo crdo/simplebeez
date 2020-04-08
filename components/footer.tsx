@@ -31,7 +31,7 @@ export default function Footer() {
                 <div>
                     <h2>Ke stažení</h2>
                     <div className="downloads">
-                        <FileDownloadModal fileName="Cash flow planning soubor" filePath="/Privacy_Policy_ENG.pdf" >
+                        <FileDownloadModal fileName="Cash flow planning" filePath="/Privacy_Policy_ENG.pdf" >
                             <FontAwesomeIcon icon={faFileExcel} /> Nástroj na plánování operativního cash flow
                         </FileDownloadModal>
                     </div>

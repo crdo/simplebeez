@@ -8,7 +8,7 @@ export default function Download() {
             <div className="container">
                 <h3>Nástroj na plánování operativního cash flow </h3>
                 <div className="button">
-                    <FileDownloadModal fileName="" filePath="/Privacy_Policy_ENG.pdf" >
+                    <FileDownloadModal fileName="Cash flow planning" filePath="/Privacy_Policy_ENG.pdf" >
                         Stáhnout
                     </FileDownloadModal>
                 </div>
