@@ -14,7 +14,7 @@ export default function Download() {
                 </div>
                 <p>Snažili jsme se vytvořit srozumitelný model plánování spotřeby a příjmu peněz pro podnikatele ale i samostatně výdělečné osoby. To vše v nejoblíbenějším a nejrozšířenějším analytickém nástroji dnešní doby, v MS Excel.</p>
                 <div className="version">verze 1.0</div>
-                <div className="date">8.4.2020</div>
+                <div className="date">8. 4. 2020</div>
             </div>
             <style global jsx>{`
             .download {
