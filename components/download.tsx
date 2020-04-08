@@ -25,9 +25,6 @@ export default function Download() {
             .version {
                 color: var(--primary);
             }
-            .button svg {
-                width: 13px;
-            }
             .button a {
                 background: var(--primary);
                 color: black;
@@ -35,6 +32,13 @@ export default function Download() {
                 border-radius: 10px;
                 float: right;
                 font-size: 20px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            @media only screen and (min-width: 1025px) {
+                .button a {
+                    width: auto;
             }
         `}</style>
         </div>
