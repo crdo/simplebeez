@@ -66,8 +66,8 @@ const Home = () => (
             }
             .carousel .slide {
                 padding-bottom: 40px;
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
                 background: transparent;
             }
 
