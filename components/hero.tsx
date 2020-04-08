@@ -1,6 +1,139 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { Carousel } from 'react-responsive-carousel';
+
+function DemoCarousel() {
+    return (
+        <Carousel interval={5000} infiniteLoop={true} autoPlay={true} transitionTime={1000} showArrows={false} showStatus={false} showThumbs={false}>
+            <div>
+                <h2>
+                    Unaveni zdlouhavým
+                    budgetováním?<br />Zajímá vás jak
+                    to dělat jinak?
+                            </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="finance-transformation">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Přemýšlíte o transformaci
+                    vašeho finančního oddělení?
+                            </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="finance-transformation">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Toužíte po skutečném
+                    finančním byznys partneringu?
+                    A pořád tam nejste?
+                            </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="finance-transformation">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Ambice na větší projekt, ale
+                    nemáte na to ty správné lidi?</h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="interim-management">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Chybí vám zkušený seniorní
+                    člověk, který vám pomůže v
+                    náročném období?
+                    </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="interim-management">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Chcete optimalizovat interní
+                    procesy, které Vás zpomalují a
+                    otravují?
+                    </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="business-process-management">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Čeká Vás implementace
+                    nového ERP řešení a už teď
+                    máte obavy?
+                    </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="finance-transformation">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+            <div>
+                <h2>
+                    Chcete dostat procesně i
+                    systémově pod kontrolu vaše
+                    řízení výdajů firmy?
+                    </h2>
+                <Link
+                    className="link"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    to="business-process-management">
+                    Zjistit více <FontAwesomeIcon icon={faChevronRight} />
+                </Link>
+            </div>
+        </Carousel>
+    );
+};
 
 
 export default function Hero() {
@@ -12,20 +145,7 @@ export default function Hero() {
             <div className="stripe"></div>
             <div className="rectangle">
                 <div className="skewed">
-                    <h2>
-                        Unaveni zdlouhavým
-                    budgetováním?<br />Zajímá vás jak
-                    to dělat jinak?
-                            </h2>
-                    <Link
-                        className="link"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="finance-transformation">
-                        Zjistit více <FontAwesomeIcon icon={faChevronRight} />
-                    </Link>
+                    <DemoCarousel />
                 </div>
             </div>
             <style jsx>{`
@@ -113,7 +233,7 @@ export default function Hero() {
             @media only screen and (min-width: 1025px) {
                 h1 {
                     font-size: 40px; 
-                    margin-top: 10%;
+                    margin-top: 15%;
                 }
                 p, h2 {
                     font-size: 20px;
@@ -130,7 +250,7 @@ export default function Hero() {
                     display: block;
                 }
                 .rectangle {
-                    flex: 1 0 0;
+                    width: 20%;
                     margin-bottom: 30px;
                 }
                 .triangle:after {
@@ -145,7 +265,7 @@ export default function Hero() {
             @media only screen and (min-width: 1300px) {
                 h1 {
                     font-size: 65px; 
-                    margin-top: 10%;
+                    margin-top: 15%;
                     margin-bottom: 10px;
                 }
                 p, h2 {

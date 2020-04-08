@@ -33,14 +33,12 @@
     "@now/node": "^1.5.0",
     "@sendgrid/mail": "^6.5.5",
     "dotenv": "^8.2.0",
-    "next": "^9.3.0",
+    "next": "^9.3.4",
     "react": "^16.13.0",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.0",
     "react-modal": "^3.11.2",
-    "react-motion-slider": "^0.4.1",
-    "react-scroll": "^1.7.16",
-    "react-slick": "^0.25.2",
-    "slick-carousel": "^1.8.1"
+    "react-responsive-carousel": "3.1.57",
+    "react-scroll": "^1.7.16"
   }
 }

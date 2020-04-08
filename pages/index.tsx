@@ -59,6 +59,24 @@ const Home = () => (
                 border-right: 10px solid transparent;
                 border-top: 17px solid #f4ae9c;
             }
+            .carousel {
+            }
+            .carousel .control-dots {
+                padding: 0;
+                bottom: -5px;
+            }
+            .carousel .slide {
+                padding-bottom: 40px;
+                background: transparent;
+            }
+
+            .carousel .slide h2 {
+                font-size: 20px;
+            }
+
+            @media only screen and (min-width: 1025px) {
+
+            }
         `}</style>
     </>
 );
