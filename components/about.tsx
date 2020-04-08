@@ -61,7 +61,7 @@ export default function About() {
                         <div className="profile">
                             <div className="profile-img"><img src="/martin.jpg" alt="Martin Prášek" /></div>
                             <div className="profile-text">
-                                <h3>Martin Prášek, partner a spoluzakladatel <a href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
+                                <h3>Martin Prášek, partner a spoluzakladatel <a target="_blank" href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
                                 <p>Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a
                                 souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a EPM</b> řešení, <b>procesní optimalizace</b>, návrhy a realizace
                                 řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či
@@ -87,7 +87,7 @@ export default function About() {
                                 <img src="/david.jpg" alt="David Štěpán" />
                             </div>
                             <div className="profile-text">
-                                <h3>David Štěpán, partner a spoluzakladatel <a href="https://www.linkedin.com/in/david-stepan-fcca-2708661/"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
+                                <h3>David Štěpán, partner a spoluzakladatel <a target="_blank" href="https://www.linkedin.com/in/david-stepan-fcca-2708661/"><FontAwesomeIcon className="linkedin" icon={faLinkedinIn} /></a></h3>
                                 <p>David pomáhá firmám s transformací financí a vedením lidí. David za posledních více než 15 let pracoval nejen v ČR ale i v Austrálii,
                                 Rumunsku či Bulharsku na různých pozicích v mezinárodních financích. Aby se pustil do podnikání v SIMPLEBEEZ, zanechal svou roli
                                 CFO pro soukromou zahraniční televizi. Od auditu a účetních standardů se David přirozenou cestou posunul k operativě, <b>řídil krizové
