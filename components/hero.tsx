@@ -268,10 +268,10 @@ export default function Hero() {
                     border-top: 17px solid #f4ae9c;
                 }
                 :global(.carousel-root) {
-                    transform: skew(20deg);
+                    transform: skew(21deg);
                 }
                 .skewed {
-                    transform: skew(-20deg);
+                    transform: skew(-21deg);
                     padding-right: 100px !important;
                     margin-right: -100px;
                 }
