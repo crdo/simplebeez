@@ -94,7 +94,7 @@ export default function About() {
                             projekty, restrukturalizace firem</b>, vymýšlel a <b>zaváděl nové skupinové postupy a systémy</b>.</p>
                                 <p>Jako rozený optimista David nachází inspiraci všude kolem sebe. “Každá dobrá myšlenka stojí za to, aby se nad ní člověk zamyslel a
                                 začal měnit věci k lepšímu, i kdyby to vyžadovalo krátkodobou nejistotu a vystoupení z komfortní zóny.” Takové přesvědčení a energii
-                                vkládá David do SIMPEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich
+                                vkládá David do SIMPLEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich
                                 proměně.” {!expand && <a onClick={() => setExpand(!expand)}>{expand ? 'Méně' : 'Více'}</a>}</p>
                                 {expand && <>
                                     <p>„Pro mě byla vždy efektivní komunikace a důvěra mezi lidmi klíčová. Excel je možná skvělý analytický nástroj, ale nelze se za něj

@@ -37,7 +37,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="contact-form">
-                    <h2>Excited or have a question? Get in touch.</h2>
+                    <h2>Nadšeni nebo máte dotazy?</h2>
                     {/* <ContactForm /> */}
                     <MailForm />
                 </div>
