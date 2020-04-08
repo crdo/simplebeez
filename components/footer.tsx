@@ -3,7 +3,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faFileExcel } from '@fortawesome/free-solid-svg-icons'
 
 import FileDownloadModal from './modal'
 import MailForm from './mail-form'
@@ -32,7 +32,7 @@ export default function Footer() {
                     <h2>Ke stažení</h2>
                     <div className="downloads">
                         <FileDownloadModal fileName="Cash flow planning soubor" filePath="/Privacy_Policy_ENG.pdf" >
-                            <FontAwesomeIcon icon={faFilePdf} />
+                            <FontAwesomeIcon icon={faFileExcel} /> Nástroj na plánování operativního cash flow
                         </FileDownloadModal>
                     </div>
                 </div>
