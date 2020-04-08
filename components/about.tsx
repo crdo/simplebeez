@@ -140,12 +140,12 @@ export default function About() {
                 padding-bottom: 20px;
             }
             .profile-img {
-                flex-basis: 35%;
+                flex: 0 0 35%;
                 margin-bottom: 30px;
                 
             }
             .profile-text {
-                flex-basis: 65%;
+                flex: 0 0 65%;
                 background: #393939;
                 color: white;
                 padding: 40px;
@@ -154,8 +154,8 @@ export default function About() {
                 text-align: justify;
             }
             img {
-                max-height: 100%;
                 min-height: 100%;
+                min-width: 100%;
                 max-width: 100%;
                 -o-object-fit: cover;
                 object-fit: cover;

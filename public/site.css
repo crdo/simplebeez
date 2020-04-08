@@ -75,7 +75,7 @@ li.triangle:before {
 	bottom: -10px;
 	left: 50%;
 	transform: translate(-50%);
-	width: 100px;
+	width: 200px;
 	height: 5px;
 	background: #f4ae9c;
 }
@@ -274,6 +274,7 @@ header .navigation a:hover {
 .service-detail-img img {
 	width: 50%;
 	margin: 50px 0;
+	max-height: 200px;
 }
 
 .service-detail-claim {

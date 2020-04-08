@@ -35,7 +35,7 @@ function ServiceList() {
             </div>
             <style jsx>{`
                 .service-list {
-                    margin-top: 100px;
+                    margin-top: 50px;
                     display: flex;
                     flex-grow: 0;
                 }
