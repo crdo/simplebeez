@@ -168,7 +168,8 @@ export default function Hero() {
 
             h1 {
                 font-size: 25px; 
-                line-height: 1.3;           
+                line-height: 1.3;      
+                margin-top: 10%;     
             }
 
             h2 {
@@ -194,6 +195,9 @@ export default function Hero() {
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: column;
+                width: 500px;
+                max-width: 100%;
+                margin: 0 auto;
                 margin-bottom: 20px;
             }
 

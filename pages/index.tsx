@@ -59,8 +59,7 @@ const Home = () => (
                 border-right: 10px solid transparent;
                 border-top: 17px solid #f4ae9c;
             }
-            .carousel {
-            }
+
             .carousel .control-dots {
                 padding: 0;
                 bottom: -5px;
