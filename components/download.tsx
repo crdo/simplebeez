@@ -36,7 +36,7 @@ export default function Download() {
                 text-align: center;
                 margin-bottom: 20px;
             }
-            @media only screen and (min-width: 1025px) {
+            @media only screen and (min-width: 768px) {
                 .button a {
                     width: auto;
             }
