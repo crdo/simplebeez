@@ -173,6 +173,7 @@ export default function Hero() {
                 font-size: 25px; 
                 line-height: 1.3;      
                 margin-top: 10%;    
+                text-align: center;
             }
 
             h2 {
@@ -183,6 +184,7 @@ export default function Hero() {
 
             p {
                 font-size: 14px;
+                text-align: center;
             }
 
             .stripe {
@@ -246,6 +248,7 @@ export default function Hero() {
 
                 h1, p {
                     margin-left: 5%;
+                    text-align: left;
                 }
 
                 p, h2 {

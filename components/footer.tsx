@@ -4,6 +4,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFileExcel } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 import FileDownloadModal from './modal'
 import MailForm from './mail-form'
@@ -33,6 +34,9 @@ export default function Footer() {
                     <div className="downloads">
                         <FileDownloadModal fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" >
                             <FontAwesomeIcon icon={faFileExcel} /> Nástroj na plánování operativního cash flow
+                        </FileDownloadModal>
+                        <FileDownloadModal fileName="Privacy Policy" filePath="/Privacy_Policy_CZ" >
+                            <FontAwesomeIcon icon={faFilePdf} /> Privacy Policy
                         </FileDownloadModal>
                     </div>
                 </div>
