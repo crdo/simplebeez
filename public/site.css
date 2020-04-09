@@ -2,14 +2,25 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	padding: 0;
 	margin: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("bg.png");
+}
+
+body,
+header {
+	background-image: url("bg.jpg");
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+}
+
+@media (max-width: 1024px) {
+	body,
+	header {
+		background-image: url("bg-mobile.jpg");
+		background-size: 100%;
+	}
 }
 
 * {
@@ -45,7 +56,7 @@ li.triangle:before {
 	display: block;
 	position: absolute;
 	left: -20px;
-	top: 5px;
+	top: 6px;
 	width: 0;
 	height: 0;
 	border-top: 8px solid transparent;
@@ -64,7 +75,7 @@ li.triangle:before {
 	bottom: -10px;
 	left: 50%;
 	transform: translate(-50%);
-	width: 100px;
+	width: 180px;
 	height: 5px;
 	background: #f4ae9c;
 }
@@ -87,8 +98,20 @@ li.triangle:before {
 }
 
 .logo img {
-	width: 225px;
+	width: 150px;
 	transition: all 0.5s ease;
+}
+
+@media (min-width: 1024px) {
+	.logo img {
+		width: 200px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.logo img {
+		width: 250px;
+	}
 }
 
 header {
@@ -102,7 +125,8 @@ header {
 }
 
 header.smaller {
-	background-color: black;
+	background-color: black !important;
+	background-image: none;
 	padding: 10px 0;
 }
 
@@ -124,11 +148,11 @@ header .navigation {
 
 @media (max-width: 1024px) {
 	.navigation {
-		top: 68px;
+		top: 56px;
 		height: 0;
 		background-color: black;
 		flex-direction: column;
-		transition: all 0.5s ease;
+		transition: all 0.25s ease;
 		overflow: hidden;
 		position: absolute;
 		width: 100%;
@@ -140,7 +164,7 @@ header .navigation {
 	}
 
 	.navigation.is-open {
-		height: 180px;
+		height: 295px;
 		padding: 15px 0;
 	}
 
@@ -151,10 +175,13 @@ header .navigation {
 	.hamburger {
 		display: inline-block !important;
 	}
+	header .navigation li > a {
+		margin: 20px;
+	}
 }
 
 header .navigation li > a {
-	margin: 20px;
+	margin: 0 30px;
 	padding: 8px 0;
 	cursor: pointer;
 	position: relative;
@@ -174,39 +201,13 @@ header .navigation a:hover {
 	color: #f4ae9c;
 }
 
-.hero {
-	color: white;
-	text-align: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 100vh;
-}
-
-.hero h1 {
-	font-size: 44px;
-	margin-top: -10vh;
-}
-
-@media (max-width: 1024px) {
-	.hero h1 {
-		font-size: 34px;
-		margin-top: -10vh;
-	}
-}
-
-.hero p {
-	font-size: 22px;
-}
-
 .flex {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .card {
-	background: white;
+	background: rgba(250, 250, 250, 0.9);
 }
 
 .services > .spacing-wrapper .card {
@@ -217,53 +218,14 @@ header .navigation a:hover {
 	text-align: center;
 }
 
-.services-list {
-	margin-top: 100px;
-	display: flex;
-	flex-grow: 0;
-}
-
 @media (max-width: 1024px) {
 	.service-title h2 {
 		font-size: 19px;
 	}
 }
 
-.services-list .service {
-	flex-direction: column;
-	text-align: center;
-	cursor: pointer;
-}
-
-.service {
-	flex-basis: 100%;
-	padding: 30px;
-	display: flex;
-	/* flex-direction: column; */
-}
-
-@media (max-width: 1024px) {
-	.service {
-		padding: 20px;
-	}
-}
-
-.service:hover {
-	background-color: #dedede;
-}
-
-@media (max-width: 1024px) {
-	.services-list {
-		flex-wrap: wrap;
-	}
-}
-
 .spacing-wrapper {
-	padding-top: 50px;
-}
-
-.spacing-wrapper:not(:last-child) {
-	margin-bottom: 150px;
+	margin-bottom: 75px;
 }
 
 @media (max-width: 1024px) {
@@ -312,6 +274,13 @@ header .navigation a:hover {
 .service-detail-img img {
 	width: 50%;
 	margin: 50px 0;
+	max-height: 200px;
+}
+
+@media (max-width: 1024px) {
+	.service-detail-img img {
+		max-height: 150px;
+	}
 }
 
 .service-detail-claim {
@@ -335,7 +304,6 @@ header .navigation a:hover {
 	min-height: 100%;
 	max-width: 100%;
 	object-fit: cover;
-	filter: grayscale(50%);
 	display: block;
 }
 
@@ -392,16 +360,21 @@ address {
 	font-style: normal;
 }
 
+address,
+.downloads {
+	line-height: 2;
+}
+
 address b {
 	font-size: 120%;
 }
 
 .social {
-	margin: 20px 0;
+	margin: 30px 0;
 }
 
 .social a svg {
-	height: 25px;
+	height: 30px;
 	margin-right: 15px;
 }
 
@@ -492,7 +465,7 @@ button {
 }
 
 .hamburger-box {
-	width: 35px;
+	width: 30px;
 	height: 24px;
 	display: inline-block;
 	position: relative;
@@ -506,8 +479,8 @@ button {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-	width: 35px;
-	height: 4px;
+	width: 30px;
+	height: 3px;
 	background-color: #fff;
 	border-radius: 4px;
 	position: absolute;

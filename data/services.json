@@ -2,72 +2,61 @@
     "services": [
         {
             "id": "finance-transformation",
-            "title": "Finance Transformation",
+            "title": "Transformace financí",
             "logo": "finance-transformations.svg",
-            "background": "finance-transformations.jpg",
-            "claim": "We Bridge the Gap between Business, Finance & IT.",
+            "background": "finance-transformations.jpeg",
+            "claim": "Propojujeme svět byznysu, financí a IT.",
             "problems": [
-                "How is your Finance department seen and perceived by their colleagues? Are they seen as people who always bother others with formalities, templates, tables, reports, or controls, and even threaten you with compliance requirements or audits?",
-                "Do others try to avoid them or come to them only when concerned about timely payroll payments? How efficiently does your CFO collaborate with the Head of Sales or HR? How many people in your firm get annoyed and frustrated when hearing the word “budget”?",
-                "Or, would you like your Finance team to be a strong partner for business operations, reaching out to them with trust for advice, insights and guidance so they pull together as a true team working towards the company vision? How far are you with that? Are you looking for a change?"
-            ],
-            "facts": [
-                "“According to Gartner Inc. research from 2019 (Hallmark of winning finance transformations), “just 35% of business partners are satisfied with finance guidance. Finance functions particularly struggle with guidance-based work, which generally consists of operations and enterprise decision support”. Gartner also stated that 7 out of 10 finance transformation efforts are not successful.",
-                "A survey by Youseef Alotaibi and Fei Liu from 2017 (Enterprise information systems), highlights that a significant number of IT projects, such as ERP implementations or specific tools with linkage to Finance, suffer or fail due to “critical misalignment or misunderstandings between business, and IT solution provider”.",
-                "This is caused primarily by the following issues: “1) differences between business strategies and IT strategies; (2) inability of finance and non-financial users to clearly specify their requirements for an IT solution; (3) interaction of staff with different skills and professional background”; and primarily a critical shortage of internal staff capable not only of fully understanding the expected IT solution, but mainly to directly model and functionally design the solution itself. "
+                "Jak lidé ve Vaši společnosti vnímají finanční oddělení? Jsou to ti, kteří je obtěžují s formalitami, formuláři, tabulkami, reporty, kontrolami a hrozí auditem? ",
+                "Nebo dokonce ani o nich Vaši lidé nevědí a nechtějí vědět, jen jsou rádi, když jim z účtárny přijde včas výplata?",
+                "Jak si rozumí CFO s ředitelem/koulidských zdrojů a pro prodeje? A kolik lidí se u Vás rozčílí, nebo dokonce podlehne úplné frustraci, kdyžslyší slovo “budget“?",
+                "Nebo byste chtěli, aby Vaše finance byly spíše partnerem pro business, které ostatní oddělení ke své práci potřebují, rádi se na ně s důvěrou obracejí a společně táhnou za jeden provaz směrem k dlouhodobé vizi a strategii společnosti?",
+                "Jak jste na tom vy? A chtěli byste to změnit?"
             ],
             "solutions": [
-                "We strive for and support a transformation of the finance process from “bookkeeping and reporting” towards true “business partnering”.",
-                "We stand by your side during the journey of finance transformation and associated implementations of IT solutions and process work-flows. We contribute to a definition of a transformation concept and strategy, we help to design and choose the right solutions, not limited to IT, and oversee the implementation to ensure success.",
-                "We cooperate with the Beyond Budgeting Round Table institute, which for more than two decades has been building and continuously improving their holistic approach to Finance and leadership, or the so called “Beyond Budgeting”. We help you to move and deploy the agile method for financial management and planning.",
-                "We leverage our broad experience with functional design and modelling of IT solutions with a link to Finance and bridge the gap between business leadership, finance and IT."
+                "Podporujeme proces transformace financí od “účtárny a reportingu“ ke skutečnému “business partneringu“.",
+                "Stojíme na straně Vaší společnosti v procesu transformace a implementace nových IT řešení a procesních work-flow. Přispíváme v procesu specifikace konceptu transformace, pomáháme navrhnout a vybrat vhodná, nejen IT řešení, a dohlížíme na úspěšnou implementaci.",
+                "Spolupracujeme s Beyond Budgeting Round Table institutem, který už více než 2 dekády buduje a stále vylepšuje holistický přístup k financím, tzv. Beyond Budgeting. Rádi pomůžeme i Vaši společnosti v transformaci k agilnímu finančnímu řízení a plánování.",
+                "Využíváme své rozsáhlé zkušenosti s funkčním designem IT řešení s vazbou na finance a překlenujeme nesoulad mezi businessem a IT světem."
             ]
         },
         {
             "id": "business-process-management",
-            "title": "Business Process Management",
+            "title": "Business process management",
             "logo": "business-process-management.svg",
-            "background": "business-process-management.jpg",
-            "claim": "Dream Big, Work Smarter.",
+            "background": "business-process-management.jpeg",
+            "claim": "Pracuj chytře, ne tvrdě.",
             "problems": [
-                "Do you know which part of your company processes drives the added value, and which represent bottlenecks or waste?",
-                "Is it clear to your people who has the authority and accountability for supporting and approving the process changes, and is such ownership undisputed?",
-                "Are you convinced that the deployment of new IT software will solve the long-lasting problem of ineffective communication within the firm, [poor] collaboration between departments, a lack of trust among key people, or weak loyalty toward your company?",
-                "Are your people complaining about boring and routine work but at the same time they do not come up with any initiative or ideas how it could be constructively solved?",
-                "Do you invest lots of money and time into new technologies such as ERP, RPA or data analytics but get frustrated by the gap between reality and expectations?"
-            ],
-            "facts": [
-                "According to a PWC survey from 2018 (Finance executive survey), “finance leaders will need to source talent that can view the world through a process lens.”",
-                "We at Simplebeez are convinced that the limitation of a finance department often comes from insufficient understanding of the dynamics between the available financial information and market situation underpinned by activities and culture within the company.",
-                "A common mistake is often the effort and push to quickly automate already existing inefficiencies and process fragments, usually even through the choice of an inappropriate technological solution."
+                "Víte, kde u Vás ve společnosti vzniká přidaná hodnota a kde naopak ne?",
+                "Vědí Vaši zaměstnanci, kdo má za pravomoc změny procesů podpořit a schválit a je tato pravomoc nezpochybnitelná?",
+                "Jste přesvědčeni, že implementací zrovna toho nové softwaru určitě vyřešíte problém neefektivní komunikace uvnitř firmy, váznoucí spolupráci mezi odděleními, předstíranou důvěru mezi lidmi a chabou loajalitu vůči Vaši společnosti?",
+                "Stěžují si u vás lidé na nudnou rutinní práci, ale současně neprojevují jakoukoli iniciativu či nápad, jak věci konstruktivně zjednodušit?",
+                "Máte pocit, že investujete prostředky a čas do ERP, RPA či analytických nástrojů, ale vnímáte frustraci a rozpor s očekáváními?"
             ],
             "solutions": [
-                "We implement effective Business Process Management (BPM) and re-design your processes for upcoming transformations and automations (“order to cash”, “procure to pay” and “record to report”).",
-                "We help you to transition from a functionally-oriented towards a process-oriented organizational structure, with clearly defined ultimate process owners.",
-                "We are ready to step into ongoing projects that may not be moving forward as expected due to various process constraints."
+                "Provádíme ucelenou analýzu vašich klíčových aktivit a procesů a usilujeme o to, abyste většinu svých interních limitovaných zdrojů a lidí využívali skutečně tam, kde pro Váš business přinášejí největší hodnotu. Cílem je dělat věci rychleji, chytřeji a transparentněji tak, abyste jako tým byli schopni lépe rozhodovat a reagovat na nové příležitosti.",
+                "Pomůžeme se zavedením konceptu průběžných zlepšení metodikou Lean a 6 Sigma, protože z praxe silně věříme, že uvolnění rukou Vašich lidí (nejen z finančního oddělení) odstraněním neefektivit či chytrým, nejen technologickým řešením, je naprosto kritické pro zvýšení jejich motivace do větších a strategičtějších transformačních aktivit. Méně je často více.",
+                "Implementujeme efektivní Business Proces Management (BPM) a připravujeme Vaše procesy a kvalitu dat pro zamýšlené automatizace a transformace (“order to cash”, “procure to pay” a “record to report”).",
+                "Asistujeme u transformací z funkčně orientované organizační struktury na procesně orientovanou, s jasně definovanými procesními vlastníky.",
+                "Pomáháme s již probíhajícími implementačními projekty nových IT řešení (např. ERP či P2P), které se neposouvají či nevyvíjejí podle očekávání, především v důsledku složitých interních procesů, chybějícího holistického pohledu nebo nekvalitních dat."
             ]
         },
         {
             "id": "interim-management",
-            "title": "Interim Management",
+            "title": "Interim management",
             "logo": "interim-management.svg",
-            "background": "interim-management.jpg",
-            "claim": "Let the partnering begin.",
+            "background": "interim-management.jpeg",
+            "claim": "Dobré partnerství je základ.",
             "problems": [
-                "Are you planning a critical or strategic project, but face a challenge of not having enough resources with the right skillset and experience? Have you unexpectedly lost a senior person and you need to urgently fill the gap in the team?",
-                "Are you missing an unbiased independent view or opinion, new energy, a vision, enthusiasm or experience from outside?",
-                "Or do you need someone to act on your behalf and communicate unpopular decisions, to remove skeletons from the closet and clean up, so you can focus on strategic directions and business growth?"
-            ],
-            "facts": [
-                "“The key differentiating factor between a consultant and interim executive is decision making”, John Collard, turnaround pro and chairman of the Association of Interim Executives said.",
-                "In the real world it means an interim manager is an undisputed part of your team and takes decisions for which he or she is fully responsible.",
-                "The vast majority of interim managers see the apolitical nature of interim assignments as a critical benefit to a client’s environment that often goes off course when politics come into play. They very often say, “We are not trying to primarily impress anybody or to play politics or different games. We have a clear target and our job is to get things done.”"
+                "Plánujete kritický nebo strategický projekt a nejste si jisti, jestli na to máte dostatečné a ty správné lidské zdroje? Vypadl Vám náhle seniorní člověk a vy potřebujete zaplnit chybějící článek v týmu?",
+                "Chybí Vám nezávislý názor, nová energie nebo vize, entuziasmus, zkušenosti odjinud?",
+                "Nebo potřebujete, aby někdo za Vás udělal a komunikoval nepopulární rozhodnutí, vyhnal kostlivce ze skříní a vymetl pavučiny, abyste se sami mohli soustředit na další směřování a budování firmy?"
             ],
             "solutions": [
-                "We work with experienced professionals, who will support your team and take the lead in challenging times in core business areas such as finance, IT, sales, marketing, HR and production.",
-                "We are not only consultants. We are people who have been through our own professional challenges, who led or have been core members on transformations or other projects of various scale and nature, both at a domestic and international level.",
-                "We help you with both short-term and long-term projects, by providing either the consultancy or the senior interim manager.",
-                "We focus on supporting the change management related to transformational activities and projects and providing services to ensure stability during the interim period."
+                "Spolupracujeme se zkušenými profesionály, kteří podpoří Váš tým v klíčových oblastech, jako jsou finance, IT, prodej, marketing, HR a výroba.",
+                "Nejsme jen konzultanti. Jsme lidé, kteří si prošli svými vlastními profesními výzvami, vedli nebo se podíleli na projektech různých rozsahů a charakteru, jak na domácí tak mezinárodní úrovni.",
+                "Pomáháme Vám jak s krátkodobými, tak i dlouhodobými projekty, jak formou konzultingu, tak i dodáním interim manažera.",
+                "Zaměřujeme se především na podporu řízení změn souvisejících s transformačními aktivitami a projekty, včetně zajištění stability pro přechodná období."
             ]
         }
     ]

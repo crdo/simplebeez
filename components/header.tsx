@@ -23,16 +23,66 @@ export default function Header() {
             <div className="container flex">
                 <div className="logo"><a href="/"><img src="logo.svg" alt="SimpleBEEZ" /></a></div>
                 <ul className={"navigation " + (isMenuOpen && "is-open")}>
-                    <li>
+                    <li className="dropdown">
                         <Link
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            offset={-60}
                             onClick={() => setIsMenuOpen(false)}
-                            offset={-20}
                             duration={500}
-                            to="finance-transformation">
-                            Finance Transformation
+                            to="services">
+                            Naše služby
+                        </Link>
+                        <ul className="dropdown-menu">
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    spy={true}
+                                    smooth={true}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    offset={-60}
+                                    duration={500}
+                                    to="finance-transformation">
+                                    Transformace financí
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    spy={true}
+                                    smooth={true}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    offset={-60}
+                                    duration={500}
+                                    to="business-process-management">
+                                    Business process management
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    spy={true}
+                                    smooth={true}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    offset={-60}
+                                    duration={500}
+                                    to="interim-management">
+                                    Interim management
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className="button">
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            onClick={() => setIsMenuOpen(false)}
+                            duration={500}
+                            to="downloads">
+                            Užitečné materiály
                         </Link>
                     </li>
                     <li>
@@ -40,23 +90,11 @@ export default function Header() {
                             activeClass="active"
                             spy={true}
                             smooth={true}
+                            offset={-70}
                             onClick={() => setIsMenuOpen(false)}
-                            offset={-20}
                             duration={500}
-                            to="business-process-management">
-                            Business Process Management
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            onClick={() => setIsMenuOpen(false)}
-                            offset={-20}
-                            duration={500}
-                            to="interim-management">
-                            Interim Management
+                            to="about">
+                            O nás
                         </Link>
                     </li>
                     <li>
@@ -67,12 +105,63 @@ export default function Header() {
                             onClick={() => setIsMenuOpen(false)}
                             duration={500}
                             to="kontakt">
-                            Contact
+                            Kontakt
                         </Link>
                     </li>
+                    {/* <li>
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            onClick={() => setIsMenuOpen(false)}
+                            duration={500}
+                            to="kontakt">
+                            EN
+                        </Link>
+                    </li> */}
                 </ul>
                 <Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </div>
+            <style jsx>{`
+                .dropdown {
+                    position: relative;
+                }
+                
+                @media (min-width: 1024px) {
+                    .dropdown-menu {
+                        position: absolute;
+                        top: 25px;
+                        left: 10px;
+                        display: none;
+                        padding: none;
+                        padding-left: 20px;
+                        background: rgba(0,0,0,0.75);
+                    }
+
+                    .dropdown-menu li {
+                        text-align: left;
+                        margin: 15px 0; 
+                    }
+
+                    :global(.dropdown-menu li a) {
+                        text-align: left;
+                        margin-left: 0 !important;  
+                        white-space: nowrap;
+                    }
+
+                    .dropdown:hover .dropdown-menu {
+                        display: block;
+                    }
+                    :global(header .button a) {
+                        background: var(--primary);
+                        padding: 7px 15px !important;
+                        color: black;
+                    }
+                    :global(header .button a:hover) {
+                        color: black;
+                    }
+                }
+            `}</style>
         </header>
     )
 }
