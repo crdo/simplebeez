@@ -30,15 +30,13 @@ const Home = () => (
             <script src="http://localhost:8097"></script>
 
 
-            <title>SIMPLEBEEZ - Your partner for finance transformation</title>
+            <title>SIMPLEBEEZ - Váš partner pro transformaci financí</title>
             <meta
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
                 key="viewport"
             />
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet" />
-            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         </Head>
         <Header />
         <Hero />
