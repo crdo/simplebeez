@@ -35,9 +35,7 @@ export default function Footer() {
                         <FileDownloadModal fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" >
                             <FontAwesomeIcon icon={faFileExcel} /> Nástroj na plánování operativního cash flow
                         </FileDownloadModal>
-                        <FileDownloadModal fileName="Privacy Policy" filePath="/Privacy_Policy_CZ" >
-                            <FontAwesomeIcon icon={faFilePdf} /> Privacy Policy
-                        </FileDownloadModal>
+                        <a href="/Privacy_Policy_CZ.pdf"><FontAwesomeIcon icon={faFilePdf} /> Privacy Policy</a>
                     </div>
                 </div>
                 <div className="contact-form">

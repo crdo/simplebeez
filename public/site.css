@@ -277,6 +277,12 @@ header .navigation a:hover {
 	max-height: 200px;
 }
 
+@media (max-width: 1024px) {
+	.service-detail-img img {
+		max-height: 150px;
+	}
+}
+
 .service-detail-claim {
 	background-color: black;
 	color: white;
