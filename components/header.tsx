@@ -152,7 +152,7 @@ export default function Header() {
                     .dropdown:hover .dropdown-menu {
                         display: block;
                     }
-                    :global(.button a) {
+                    :global(header .button a) {
                         background: var(--primary);
                         padding: 7px 15px !important;
                     }
