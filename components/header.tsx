@@ -155,6 +155,10 @@ export default function Header() {
                     :global(header .button a) {
                         background: var(--primary);
                         padding: 7px 15px !important;
+                        color: black;
+                    }
+                    :global(header .button a:hover) {
+                        color: black;
                     }
                 }
             `}</style>
