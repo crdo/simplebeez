@@ -31,14 +31,13 @@ export default function Footer() {
                 <div>
                     <h2>Ke stažení</h2>
                     <div className="downloads">
-                        <FileDownloadModal fileName="Cash flow planning" filePath="/Privacy_Policy_ENG.pdf" >
+                        <FileDownloadModal fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" >
                             <FontAwesomeIcon icon={faFileExcel} /> Nástroj na plánování operativního cash flow
                         </FileDownloadModal>
                     </div>
                 </div>
                 <div className="contact-form">
                     <h2>Nadšeni nebo máte dotazy?</h2>
-                    {/* <ContactForm /> */}
                     <MailForm />
                 </div>
             </div>

@@ -47,9 +47,14 @@ function ServiceList() {
                 }
 
                 p {
-                    max-width: 80%;
                     text-align: center;
                     margin: 0 auto;
+                }
+
+                @media (min-width: 1025px) {
+                    p {
+                        max-width: 80%;
+                    }
                 }
             `}</style>
         </div>

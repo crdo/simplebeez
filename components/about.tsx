@@ -215,6 +215,11 @@ export default function About() {
             .tab p {
                 margin-top: 0;
                 margin-bottom: 20px;
+                text-align: justify;
+            }
+
+            .tab ul {
+                line-height: 1.75
             }
         `}</style>
         </div>

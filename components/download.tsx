@@ -1,14 +1,12 @@
 import FileDownloadModal from "./modal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 export default function Download() {
     return (
         <div className="download" id="downloads">
             <div className="container">
-                <h2>Nástroj na plánování operativního cash flow </h2>
+                <h1>Nástroj na plánování operativního cash flow </h1>
                 <div className="button">
-                    <FileDownloadModal fileName="Cash flow planning" filePath="/Privacy_Policy_ENG.pdf" >
+                    <FileDownloadModal fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx" >
                         Stáhnout
                     </FileDownloadModal>
                 </div>
@@ -36,10 +34,26 @@ export default function Download() {
                 text-align: center;
                 margin-bottom: 20px;
             }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            h1, p {
+                text-align: justify;
+            }
+
+            .version, .date {
+                text-align: center;
+            }
             @media only screen and (min-width: 768px) {
                 .button a {
                     width: auto;
                     margin-left: 30px;
+                }
+                h1, p, .version, .date {
+                    text-align: left;
+                }
             }
         `}</style>
         </div>

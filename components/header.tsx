@@ -81,6 +81,18 @@ export default function Header() {
                             offset={-70}
                             onClick={() => setIsMenuOpen(false)}
                             duration={500}
+                            to="downloads">
+                            Užitečné materiály
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            onClick={() => setIsMenuOpen(false)}
+                            duration={500}
                             to="about">
                             O nás
                         </Link>
