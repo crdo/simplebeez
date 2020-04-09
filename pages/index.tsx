@@ -77,6 +77,18 @@ const Home = () => (
                 font-size: 20px;
                 font-weight: 400;
             }
+            @keyframes shadow-pulse {
+                0% {
+                    box-shadow: 0 0 0 0px rgba(244, 174, 156, 0.25)
+                }
+                100% {
+                    box-shadow: 0 0 0 35px rgba(244, 174, 156, 0);
+                }
+            }
+            header .button a
+            {
+                animation: shadow-pulse 1s infinite;
+            }
         `}</style>
     </>
 );

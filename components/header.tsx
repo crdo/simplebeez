@@ -73,7 +73,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="button">
                         <Link
                             activeClass="active"
                             spy={true}
@@ -151,6 +151,10 @@ export default function Header() {
 
                     .dropdown:hover .dropdown-menu {
                         display: block;
+                    }
+                    :global(.button a) {
+                        background: var(--primary);
+                        padding: 7px 15px !important;
                     }
                 }
             `}</style>

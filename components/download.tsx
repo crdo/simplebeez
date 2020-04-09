@@ -23,7 +23,7 @@ export default function Download() {
             .version {
                 color: var(--primary);
             }
-            .button a {
+            .download .button a {
                 background: var(--primary);
                 color: black;
                 padding: 10px 30px;
