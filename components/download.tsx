@@ -27,7 +27,6 @@ export default function Download() {
                 background: var(--primary);
                 color: black;
                 padding: 10px 30px;
-                border-radius: 10px;
                 float: right;
                 font-size: 20px;
                 width: 100%;
