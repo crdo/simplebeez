@@ -1,13 +1,12 @@
-import { NowRequest, NowResponse } from "@now/node";
 const sgMail = require("@sendgrid/mail");
 
-export default async function (req: NowRequest, res: NowResponse) {
+export default async function (req, res) {
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 	const { email } = req.body;
 
 	const content = {
-		to: ["crha@havit.cz", "martin@simplebeez.com", "david@simplebeez.com"],
+		to: ["martin@simplebeez.com", "david@simplebeez.com"],
 		from: email,
 		subject: `SIMPLEBEEZ.COM New Message From - ${email}`,
 		text: JSON.stringify(req.body),

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,15 @@
     "@now/node": "^1.5.0",
     "@sendgrid/mail": "^6.5.5",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "i18n": "^0.9.0",
+    "i18next": "^19.4.2",
     "next": "^9.3.4",
+    "next-i18next": "^4.3.0",
     "react": "^16.13.0",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.0",
+    "react-html-parser": "^2.0.2",
     "react-modal": "^3.11.2",
     "react-responsive-carousel": "3.1.57",
     "react-scroll": "^1.7.16"

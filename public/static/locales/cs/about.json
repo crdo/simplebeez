@@ -1,0 +1,45 @@
+{
+    "title": "O nás",
+    "vision": {
+        "heading": "Naše vize",
+        "whoWeAre": "Kdo jsme",
+        "whoWeAreDescription": "Jsme tým lidí, které i přes rozdílné zájmy, vzdělání a profesní historii spojuje stejná vize a nadšení pomáhat firmám a hlavně jejich lidem v tom, aby jejich práce byla jednodušší, chytřejší a smysluplná. Je to právě jedinečná kombinace naší vize, myšlení a zkušeností, která, jak věříme, umožní jednotlivcům i týmům být lepší v tom, co dělají.",
+        "optimiticRealists": "Optimističtí realisté",
+        "optimiticRealistsDescription": "Jsme životní optimisté a věříme, že i mnohdy zaběhlé a fungující pracovní postupy jde dělat lépe. Jednoduché otázky, jako „proč to děláte takhle?“ a „dává to pořád smysl?“ dokážou divy. Zlepšení mnohdy není jen o technologii. Právě naopak. Neustále musíme hledat vhodnou kombinaci a vyváženost mezi lidmi, procesem a technologií.",
+        "consistency": "Pravidelnost vítězí nad intenzitou",
+        "consistencyDescription": "Jsme sportovci, takže víme, že i malý kamínek v botě po čase ucítíte - jak je nesnesitelný, jak se zvětšuje - a bude vás brzdit v běhu. Dokud nezastavíte, nesundáte botu a onen malý kamínek nevytřepete, tak nezrychlíte. Ba co víc, možná ani nedoběhnete. Jen dlouhodobý a systematický rozvoj pod odborným vedením může zaručit kýžený efekt. Energie a odhodlání jsou důležité předpoklady,narážejí však na nesystematičnost, nekonzistenci a nahodilost, které je ubíjí.",
+        "meaning": "Práce musí mít smysl",
+        "meaningDescription": "Jsme otcové od rodin, kteří nevěří v klišé „work-life balance“. Žijeme jen jeden život a dlouhodobě nejde kompenzovat jednu frustraci jiným uspokojením. I naše práce musí mít smysl - a i kdyby ji neměla zrovna dnes, musíme aktivně a systematicky pracovat na změně. Totéž platí i o našem soukromém životě."
+    },
+    "mission": {
+        "heading": "Naše mise",
+        "reality": "Realita není úplně růžová",
+        "realityDescription": "Podle výzkumu společnosti Gartner, Inc. z roku 2019 (Hallmarks of winning finance transformations), <b>pouze 35 % business partnerů</b>, myšleno interních oddělení ve firmě, <b>je spokojeno s&nbsp;podporou a přínosem</b>, který jim poskytuje finanční oddělení. My v SIMPLEBEEZ vidíme příležitost především ve zlepšení spolupráce a propojení financí se všemi aktivitami orientovanými na zákazníka. Finance mají před sebou velkou výzvu, jelikož musí udržet současnou kvalitu v oblasti shody (compliance) a k tomu ještě výrazně přidat na znalosti a podpoře ostatních klíčových oblastí firmy.",
+        "realityDescription2": "Současně, Gartner dále uvádí, že <b>7 z 10 projektů transformace financí</b>, jak uvedeno výše, <b>je neúspěšných</b>. Z našeho pohledu nejde jen o neefektivní využití zdrojů společností, ztracené příležitosti, ale převážně pak o frustraci zaměstnanců, dodavatelů řešení a nenaplněná očekávání vedení a majitelů firem. Bohužel sami z vlastních zkušeností můžeme tento trend potvrdit, což je pro nás všechny do budoucna velká výzva.",
+        "better": "Lépe, chytřeji a smysluplně",
+        "betterDescription": "Pro nás tento trend byl a je jeden z hlavních impulzů založení SIMPLEBEEZ. Naši roli nevidíme pouze v eliminaci podobných neúspěchů důrazem na veškeré aspekty těchto transformací, ale i v napomáhání vytvářet nové příležitosti, zlepšování efektivity a finančních výsledků a zavádění nových inovativních řešení. Zkrátka dělat věci lépe, chytřeji a smysluplněji."
+    },
+    "whyUs": {
+        "heading": "Proč se na nás obrátit",
+        "title": "Zajišťujeme udržitelnou rovnováhu mezi investováním do všech 3 pilířů: lidí, procesů a technologií.",
+        "reasons": "<li class='triangle'>Umíme pojmenovat a specifikovat příležitosti a koncepty firemních transformací.</li><li class='triangle'>Navrhujeme řešení (nejen technologické) na míru, které podpoří nové služby a inovativní postupy.</li><li class='triangle'>Řídíme či podporujeme Vaše týmy během potřebné doby či v&nbsp;rámci transformačních projektů.</li><li class='triangle'>Poskytujeme na výsledek orientované experty s&nbsp;holistickým přístupem a zaměřením na přínos pro firmu jako celek.</li><li class='triangle'>Vytváříme prostředí pro koncepční propojování financí, byznysu a IT.</li>"
+    },
+    "martin": {
+        "title": "Martin Prášek, partner a spoluzakladatel",
+        "description": "Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a EPM</b> řešení, <b>procesní optimalizace</b>, návrhy a realizace řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či s <b>funkčním designem operativních nástrojů</b> pro automatizaci nejen financí.",
+        "description2": "Martin pracoval více než 15 let v mezinárodním prostředí. Je přesvědčen, že přínos projektů či inovativních řešení se měří tím, zda splňuje očekávání většiny lidí a zda lidé lépe spolupracují a tvoří hodnoty. Řídil mezinárodní týmy v rámci desítek transformačních projektů s vazbou na finance. Stál také u zrodu a fungování globálního centra sdílených služeb, a to se zákazníky z celého světa.",
+        "descriptionExtended": "SIMPLEBEEZ spoluzaložil s vizí úzkého partnerství s klientem a přímou rolí na jeho transformačních iniciativách. Chce poskytovat firmám ucelené služby od identifikace příležitostí, definování konceptu transformace, poskytnutí chybějící expertízy, návrhu konkrétních řešení až po jejich zavedení.",
+        "descriptionExtended2": "“Každý máme svůj profesní či životní příběh, lidské emoce, očekávání a to, co je pro nás dnes a do budoucna důležité a méně důležité. Vybudovat něco inovativního, nepředstavitelného, z principu složitého, ale současně přínosného a obdivuhodného, není o konkrétních nástrojích či technologických řešeních, jakých k tomu využít. Je to o spojení různých lidí a rozvinutí jejich skutečného potenciálu a energie směrem ke smysluplnému cíli, který je každému jasný a ke kterému budou společně táhnout.”",
+        "descriptionExtended3": "Rád tráví hodiny na jednom ze svých tří kol a sbírá energii z nových míst. Rád bere sportovní výzvy za své, protože posouvat své hranice ho strašně baví. Většinu času rád tráví se svými třemi dětmi a partnerkou. Když čas umožní, relaxuje tvorbou elektronické hudby ve svém domácím studiu či focením."
+    },
+    "david": {
+        "title": "David Štěpán, partner a spoluzakladatel",
+        "description": "David pomáhá firmám s transformací financí a vedením lidí. David za posledních více než 15 let pracoval nejen v ČR ale i v Austrálii, Rumunsku či Bulharsku na různých pozicích v mezinárodních financích. Aby se pustil do podnikání v SIMPLEBEEZ, zanechal svou roli CFO pro soukromou zahraniční televizi. Od auditu a účetních standardů se David přirozenou cestou posunul k operativě, <b>řídil krizové projekty, restrukturalizace firem</b>, vymýšlel a <b>zaváděl nové skupinové postupy a systémy</b>.",
+        "description2": "Jako rozený optimista David nachází inspiraci všude kolem sebe. “Každá dobrá myšlenka stojí za to, aby se nad ní člověk zamyslel a začal měnit věci k lepšímu, i kdyby to vyžadovalo krátkodobou nejistotu a vystoupení z komfortní zóny.” Takové přesvědčení a energii vkládá David do SIMPLEBEEZ. ”Budu rád, když se najdou takoví, kteří se chtějí posunout dál a dají právě nám šanci být při této jejich proměně.”",
+        "descriptionExtended": "„Pro mě byla vždy efektivní komunikace a důvěra mezi lidmi klíčová. Excel je možná skvělý analytický nástroj, ale nelze se za něj schovávat. Hlavně ve financích. Abychom byli lepší, musíme mít všichni jasno, kam kráčíme a proč. No a pak to teprve může začít finančně plánovat a řídit.“",
+        "descriptionExtended2": "David je přesvědčen, že tradiční budget v dnešní době výrazně naráží na své limity, tak jako tradiční manažerský přístup “příkaz-kontrola”. Proto se věnuje principům Beyond Budgetingu, o kterých neváhá mluvit při jakémkoli setkání.",
+        "descriptionExtended3": "David rád jezdí na všem co má dvě kola, takže ho můžete potkat na kole ve městě, na horách, nebo v zahraničí na motorce se stanem, spacákem a foťákem, jak se kochá místní přírodou. “Sport mě mnoho naučil a přinesl mi inspiraci, nadšení, povinnost, radost, individuální odpovědnost i týmovou hru. Přesto je moje manželka a dvě dcery to nejlepší, co mě na tomto světě potkalo.”"
+    },
+    "more": "Více",
+    "less": "Méně"
+}

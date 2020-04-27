@@ -1,47 +1,38 @@
-import React, { useState } from "react";
-
-interface IStatus {
-	submitted: boolean;
-	submitting: boolean;
-	info: {
-		error: boolean;
-		msg?: string;
-	};
-}
+import { useState } from "react";
 
 export default function useSendGrid() {
-	const [status, setStatus] = useState<IStatus>({
+	const [status, setStatus] = useState({
 		submitted: false,
 		submitting: false,
-		info: { error: false, msg: null }
+		info: { error: false, msg: null },
 	});
 
 	const [inputs, setInputs] = useState(null);
 
-	const handleOnSubmit = async e => {
+	const handleOnSubmit = async (e) => {
 		e.preventDefault();
-		setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
+		setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 		const res = await fetch("/api/send", {
 			method: "POST",
 			headers: {
-				"Content-Type": "application/json"
+				"Content-Type": "application/json",
 			},
-			body: JSON.stringify(inputs)
+			body: JSON.stringify(inputs),
 		});
 		const text = await res.text();
 		handleResponse(res.status, text);
 	};
 
-	const handleOnChange = e => {
+	const handleOnChange = (e) => {
 		e.persist();
-		setInputs(prev => ({
+		setInputs((prev) => ({
 			...prev,
-			[e.target.id]: e.target.value
+			[e.target.id]: e.target.value,
 		}));
 		setStatus({
 			submitted: false,
 			submitting: false,
-			info: { error: false, msg: null }
+			info: { error: false, msg: null },
 		});
 	};
 
@@ -50,7 +41,7 @@ export default function useSendGrid() {
 			setStatus({
 				submitted: true,
 				submitting: false,
-				info: { error: false, msg: msg }
+				info: { error: false, msg: msg },
 			});
 			setInputs(null);
 		} else {
@@ -59,8 +50,8 @@ export default function useSendGrid() {
 				submitting: false,
 				info: {
 					error: true,
-					msg: msg
-				}
+					msg: msg,
+				},
 			});
 		}
 	};

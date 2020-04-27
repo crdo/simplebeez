@@ -191,7 +191,7 @@ header .navigation li > a.active:after {
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 3px;
+	height: 2px;
 	background-color: #f4ae9c;
 	bottom: 5px;
 	left: 0;
