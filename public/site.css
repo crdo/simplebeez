@@ -17,7 +17,7 @@ header {
 	body,
 	header {
 		background-image: url("bg-mobile.jpg");
-		background-size: unset;
+		background-size: 100%;
 	}
 }
 @media (max-width: 1024px) and (orientation: landscape) {
