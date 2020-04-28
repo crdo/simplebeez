@@ -1,48 +1,43 @@
 import ServiceDetail from "./service-detail";
 import ServiceList from "./service-list";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 const Services = (props) => {
+	const { t } = useTranslation();
 	return (
 		<div className="services">
 			<ServiceList />
 			<div className="services-details">
 				<ServiceDetail
-					id={props.t("financeTransformations.id")}
-					title={props.t("financeTransformations.title")}
-					problems={props.t("financeTransformations.problems")}
+					id={t("services:financeTransformations.id")}
+					title={t("services:financeTransformations.title")}
+					problems={t("services:financeTransformations.problems")}
 					logo="finance-transformations.svg"
-					claim={props.t("financeTransformations.claim")}
+					claim={t("services:financeTransformations.claim")}
 					background="finance-transformations.jpeg"
-					solutions={props.t("financeTransformations.solutions")}
+					solutions={t("services:financeTransformations.solutions")}
 				/>
 				<ServiceDetail
-					id={props.t("businessProcessManagement.id")}
-					title={props.t("businessProcessManagement.title")}
-					problems={props.t("businessProcessManagement.problems")}
+					id={t("services:businessProcessManagement.id")}
+					title={t("services:businessProcessManagement.title")}
+					problems={t("services:businessProcessManagement.problems")}
 					logo="business-process-management.svg"
-					claim={props.t("businessProcessManagement.claim")}
+					claim={t("services:businessProcessManagement.claim")}
 					background="business-process-management.jpeg"
-					solutions={props.t("businessProcessManagement.solutions")}
+					solutions={t("services:businessProcessManagement.solutions")}
 				/>
 				<ServiceDetail
-					id={props.t("interimManagement.id")}
-					title={props.t("interimManagement.title")}
-					problems={props.t("interimManagement.problems")}
+					id={t("services:interimManagement.id")}
+					title={t("services:interimManagement.title")}
+					problems={t("services:interimManagement.problems")}
 					logo="interim-management.svg"
-					claim={props.t("interimManagement.claim")}
+					claim={t("services:interimManagement.claim")}
 					background="interim-management.jpeg"
-					solutions={props.t("interimManagement.solutions")}
+					solutions={t("services:interimManagement.solutions")}
 				/>
 			</div>
 		</div>
 	);
 };
 
-Services.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["services"],
-	};
-};
-
-export default withTranslation("services")(Services);
+export default Services;

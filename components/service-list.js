@@ -1,33 +1,34 @@
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 import Service from "./service";
 
 const ServiceList = (props) => {
+	const { t } = useTranslation();
 	return (
 		<div className="spacing-wrapper" id="services">
 			<div className="card">
 				<div className="container">
-					<h1 className="underlined center">{props.t("title")}</h1>
+					<h1 className="underlined center">{t("services:title")}</h1>
 					<br />
-					<p>{props.t("description")}</p>
+					<p>{t("services:description")}</p>
 					<div className="service-list">
 						<Service
-							title={props.t("financeTransformations.title")}
+							title={t("services:financeTransformations.title")}
 							href="finance-transformation"
 							img="finance-transformations.svg"
-							description={props.t("financeTransformations.description")}
+							description={t("services:financeTransformations.description")}
 						/>
 						<Service
-							title={props.t("businessProcessManagement.title")}
+							title={t("services:businessProcessManagement.title")}
 							href="business-process-management"
 							img="business-process-management.svg"
-							description={props.t("businessProcessManagement.description")}
+							description={t("services:businessProcessManagement.description")}
 						/>
 						<Service
-							title={props.t("interimManagement.title")}
+							title={t("services:interimManagement.title")}
 							href="interim-management"
 							img="interim-management.svg"
-							description={props.t("interimManagement.descripiton")}
+							description={t("services:interimManagement.descripiton")}
 						/>
 					</div>
 				</div>
@@ -60,10 +61,4 @@ const ServiceList = (props) => {
 	);
 };
 
-ServiceList.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["services"],
-	};
-};
-
-export default withTranslation("services")(ServiceList);
+export default ServiceList;

@@ -5,12 +5,13 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 import FileDownloadModal from "./modal";
 import MailForm from "./mail-form";
 
-const Footer = (props) => {
+const Footer = () => {
+	const { t } = useTranslation();
 	return (
 		<footer id="kontakt">
 			<div className="container flex">
@@ -20,7 +21,7 @@ const Footer = (props) => {
 						Zaječická 836/9, Čimice, 184 00 Praha 8 <br />
 						Tel: +420 602 496 585 <br />
 						Tel: +420 602 166 975 <br />
-						{props.t("id")}: 08885516 <br />
+						{t("footer:id")}: 08885516 <br />
 						E-mail: <a href="mailto:info@simplebeez.com">info@simplebeez.com</a>
 					</address>
 					<div className="social">
@@ -49,21 +50,21 @@ const Footer = (props) => {
 					</div>
 				</div>
 				<div>
-					<h2>{props.t("downloads")}</h2>
+					<h2>{t("footer:downloads")}</h2>
 					<div className="downloads">
 						<FileDownloadModal
 							fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
 							filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
 						>
-							<FontAwesomeIcon icon={faFileExcel} /> {props.t("cashflowTool")}
+							<FontAwesomeIcon icon={faFileExcel} /> {t("footer:cashflowTool")}
 						</FileDownloadModal>
-						<a href={props.t("privacyPolicySource")}>
+						<a href={t("footer:privacyPolicySource")}>
 							<FontAwesomeIcon icon={faFilePdf} /> Privacy Policy
 						</a>
 					</div>
 				</div>
 				<div className="contact-form">
-					<h2>{props.t("cashflowTool")}</h2>
+					<h2>{t("footer:cashflowTool")}</h2>
 					<MailForm />
 				</div>
 			</div>
@@ -71,10 +72,4 @@ const Footer = (props) => {
 	);
 };
 
-Footer.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["footer"],
-	};
-};
-
-export default withTranslation("footer")(Footer);
+export default Footer;

@@ -5,10 +5,13 @@
     "fullName": "Celé jméno",
     "surname": "Příjmení",
     "name": "Jméno",
-    "send": "Odeslat",
     "companyName": "Jméno firmy",
     "agree": "Souhasím s",
     "cashflowTool": "Nástroj na plánování operativního cash flow",
     "excited": "Nadšeni nebo máte dotazy?",
-    "privacyPolicySource": "/Privacy_Policy_CZ.pdf"
+    "privacyPolicySource": "/Privacy_Policy_CZ.pdf",
+    "message": "Zpráva",
+    "sending": "Posílám...",
+    "send": "Odeslat",
+    "sent": "Posláno"
 }

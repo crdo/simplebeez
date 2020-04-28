@@ -1,4 +1,4 @@
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 const ServiceDetail = ({
 	title,
@@ -8,8 +8,8 @@ const ServiceDetail = ({
 	background,
 	solutions,
 	id,
-	t,
 }) => {
+	const { t } = useTranslation();
 	return (
 		<div id={id} className="spacing-wrapper">
 			<div className="card">
@@ -18,7 +18,7 @@ const ServiceDetail = ({
 						<h1>{title}</h1>
 						<div className="flex">
 							<div className="service-detail-problem">
-								<h2>{t("commonChallenges")}</h2>
+								<h2>{t("services:commonChallenges")}</h2>
 								<div
 									dangerouslySetInnerHTML={{
 										__html: problems,
@@ -35,7 +35,7 @@ const ServiceDetail = ({
 								<img src={background} alt={title} />
 							</div>
 							<div className="service-detail-solutions">
-								<h2>{t("howWeCanHelp")}</h2>
+								<h2>{t("services:howWeCanHelp")}</h2>
 								<ul
 									dangerouslySetInnerHTML={{
 										__html: solutions,
@@ -55,10 +55,4 @@ const ServiceDetail = ({
 	);
 };
 
-ServiceDetail.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["services"],
-	};
-};
-
-export default withTranslation("services")(ServiceDetail);
+export default ServiceDetail;

@@ -1,21 +1,22 @@
 import FileDownloadModal from "./modal";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 const Download = (props) => {
+	const { t } = useTranslation();
 	return (
 		<div className="download" id="downloads">
 			<div className="container">
-				<h1>{props.t("title")}</h1>
+				<h1>{t("download:title")}</h1>
 				<div className="button">
 					<FileDownloadModal
 						fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
 						filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
 					>
-						{props.t("download")}
+						{t("download:download")}
 					</FileDownloadModal>
 				</div>
-				<p>{props.t("description")}</p>
-				<div className="version">{props.t("version")} 1.0</div>
+				<p>{t("download:description")}</p>
+				<div className="version">{t("download:version")} 1.0</div>
 				<div className="date">8. 4. 2020</div>
 			</div>
 			<style global jsx>{`
@@ -68,10 +69,4 @@ const Download = (props) => {
 	);
 };
 
-Download.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["download"],
-	};
-};
-
-export default withTranslation("download")(Download);
+export default Download;

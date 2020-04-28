@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { i18n, withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 import Hamburger from "./hamburger";
 
 const Header = (props) => {
@@ -20,6 +20,8 @@ const Header = (props) => {
 		}
 	}
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const { t, lang } = useTranslation();
+	console.log(lang);
 	return (
 		<header id="header">
 			<div className="container flex">
@@ -39,7 +41,7 @@ const Header = (props) => {
 							duration={500}
 							to="services"
 						>
-							{props.t("services")}
+							{t("header:services")}
 						</Link>
 						<ul className="dropdown-menu">
 							<li>
@@ -52,7 +54,7 @@ const Header = (props) => {
 									duration={500}
 									to="finance-transformation"
 								>
-									{props.t("financeTransformation")}
+									{t("header:financeTransformation")}
 								</Link>
 							</li>
 							<li>
@@ -65,7 +67,7 @@ const Header = (props) => {
 									duration={500}
 									to="business-process-management"
 								>
-									{props.t("businessProcessManagement")}
+									{t("header:businessProcessManagement")}
 								</Link>
 							</li>
 							<li>
@@ -78,7 +80,7 @@ const Header = (props) => {
 									duration={500}
 									to="interim-management"
 								>
-									{props.t("interimManagement")}
+									{t("header:interimManagement")}
 								</Link>
 							</li>
 						</ul>
@@ -93,7 +95,7 @@ const Header = (props) => {
 							duration={500}
 							to="downloads"
 						>
-							{props.t("usefulResources")}
+							{t("header:usefulResources")}
 						</Link>
 					</li>
 					<li>
@@ -106,7 +108,7 @@ const Header = (props) => {
 							duration={500}
 							to="about"
 						>
-							{props.t("about")}
+							{t("header:about")}
 						</Link>
 					</li>
 					<li>
@@ -118,17 +120,11 @@ const Header = (props) => {
 							duration={500}
 							to="kontakt"
 						>
-							{props.t("contact")}
+							{t("header:contact")}
 						</Link>
 					</li>
 					<li>
-						<a
-							onClick={() =>
-								i18n.changeLanguage(i18n.language === "en" ? "cs" : "en")
-							}
-						>
-							{props.t("switchLanguage")}
-						</a>
+						<a href={lang == "cs" ? "en" : "/"}>{t("header:switchLanguage")}</a>
 					</li>
 				</ul>
 				<Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -177,10 +173,4 @@ const Header = (props) => {
 	);
 };
 
-Header.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["header"],
-	};
-};
-
-export default withTranslation("header")(Header);
+export default Header;

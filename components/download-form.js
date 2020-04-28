@@ -3,9 +3,9 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { event } from "../data/gtag";
 import { useEffect } from "react";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
-const DownloadForm = ({ fileName, filePath, t }) => {
+const DownloadForm = ({ fileName, filePath }) => {
 	const { handleOnSubmit, handleOnChange, status, inputs } = useSendGrid();
 	useEffect(() => {
 		if (!status.info.error && status.info.msg) {
@@ -17,13 +17,14 @@ const DownloadForm = ({ fileName, filePath, t }) => {
 			});
 		}
 	}, [status]);
+	const { t } = useTranslation();
 	return (
 		<form onSubmit={handleOnSubmit}>
 			{!status.info.msg && (
 				<>
 					<div className="flex">
 						<input
-							placeholder={t("name")}
+							placeholder={t("footer:name")}
 							id="name"
 							onChange={handleOnChange}
 							value={inputs?.name ?? ""}
@@ -31,7 +32,7 @@ const DownloadForm = ({ fileName, filePath, t }) => {
 							required
 						/>
 						<input
-							placeholder={t("surname")}
+							placeholder={t("footer:surname")}
 							id="surname"
 							onChange={handleOnChange}
 							value={inputs?.surname ?? ""}
@@ -48,7 +49,7 @@ const DownloadForm = ({ fileName, filePath, t }) => {
 						required
 					/>
 					<input
-						placeholder={t("companyName")}
+						placeholder={t("footer:companyName")}
 						onChange={handleOnChange}
 						id="company_name"
 						value={inputs?.company_name ?? ""}
@@ -65,13 +66,13 @@ const DownloadForm = ({ fileName, filePath, t }) => {
 								required
 								name="gdpr"
 							/>{" "}
-							{t("agree")}{" "}
+							{t("footer:agree")}{" "}
 							<a target="_blank" href="/Privacy_Policy_CZ.pdf">
 								Privacy policy.
 							</a>
 						</label>
 					</div>
-					<button type="submit">{t("download")}</button>
+					<button type="submit">{t("footer:download")}</button>
 				</>
 			)}
 			{status.info.error && (
@@ -120,10 +121,4 @@ const DownloadForm = ({ fileName, filePath, t }) => {
 	);
 };
 
-DownloadForm.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["footer"],
-	};
-};
-
-export default withTranslation("footer")(DownloadForm);
+export default DownloadForm;

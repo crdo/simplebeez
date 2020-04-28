@@ -2,12 +2,13 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from "react-responsive-carousel";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 const HeroCarousel = (props) => {
+	const { t } = useTranslation();
 	const LearnMore = () => (
 		<span>
-			{props.t("more")} <FontAwesomeIcon icon={faChevronRight} />
+			{t("carousel:more")} <FontAwesomeIcon icon={faChevronRight} />
 		</span>
 	);
 	return (
@@ -22,7 +23,7 @@ const HeroCarousel = (props) => {
 			showIndicators={false}
 		>
 			<div>
-				<h2>{props.t("tired")}</h2>
+				<h2>{t("carousel:tired")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -35,7 +36,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("thinking")}</h2>
+				<h2>{t("carousel:thinking")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -48,7 +49,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("desire")}</h2>
+				<h2>{t("carousel:desire")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -61,7 +62,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("ambitions")}</h2>
+				<h2>{t("carousel:ambitions")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -74,7 +75,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("missing")}</h2>
+				<h2>{t("carousel:missing")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -87,7 +88,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("wishing")}</h2>
+				<h2>{t("carousel:wishing")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -100,7 +101,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("planning")}</h2>
+				<h2>{t("carousel:planning")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -113,7 +114,7 @@ const HeroCarousel = (props) => {
 				</Link>
 			</div>
 			<div>
-				<h2>{props.t("need")}</h2>
+				<h2>{t("carousel:need")}</h2>
 				<Link
 					className="link"
 					spy={true}
@@ -129,10 +130,4 @@ const HeroCarousel = (props) => {
 	);
 };
 
-HeroCarousel.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["carousel"],
-	};
-};
-
-export default withTranslation("carousel")(HeroCarousel);
+export default HeroCarousel;

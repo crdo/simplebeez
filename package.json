@@ -3,9 +3,9 @@
   "version": "1.2.0",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "next-translate && next dev",
+    "build": "next-translate && next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,8 @@
     "@sendgrid/mail": "^7.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "i18n": "^0.9.0",
-    "i18next": "^19.4.4",
     "next": "^9.3.5",
-    "next-i18next": "^4.3.0",
+    "next-translate": "^0.15.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",

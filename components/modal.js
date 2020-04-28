@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import DownloadForm from "./download-form";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 
 const customStyles = {
 	content: {
@@ -14,7 +14,7 @@ const customStyles = {
 	},
 };
 
-const FileDownloadModal = ({ fileName, children, filePath, t }) => {
+const FileDownloadModal = ({ fileName, children, filePath }) => {
 	const [modalIsOpen, setIsOpen] = useState(false);
 	function openModal() {
 		setIsOpen(true);
@@ -23,6 +23,7 @@ const FileDownloadModal = ({ fileName, children, filePath, t }) => {
 	function closeModal() {
 		setIsOpen(false);
 	}
+	const { t } = useTranslation();
 	return (
 		<div>
 			<a onClick={openModal}>{children}</a>
@@ -82,10 +83,4 @@ const FileDownloadModal = ({ fileName, children, filePath, t }) => {
 	);
 };
 
-FileDownloadModal.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["footer"],
-	};
-};
-
-export default withTranslation("footer")(FileDownloadModal);
+export default FileDownloadModal;

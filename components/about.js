@@ -1,65 +1,66 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { withTranslation } from "../i18n";
+import useTranslation from "next-translate/useTranslation";
 import ReactHtmlParser from "react-html-parser";
 
 const About = (props) => {
 	const [activeTab, setActiveTab] = useState(1);
 	const [expand, setExpand] = useState({ martin: false, david: false });
+	const { t } = useTranslation();
 	return (
 		<div className="spacing-wrapper" id="about">
 			<div className="card">
 				<div className="container">
 					<div className="about">
-						<h1>{props.t("title")}</h1>
+						<h1>{t("about:title")}</h1>
 						<nav>
 							<ul>
 								<li
 									className={activeTab == 1 && "active"}
 									onClick={() => setActiveTab(1)}
 								>
-									{props.t("vision.heading")}
+									{t("about:vision.heading")}
 								</li>
 								<li
 									className={activeTab == 2 && "active"}
 									onClick={() => setActiveTab(2)}
 								>
-									{props.t("mission.heading")}
+									{t("about:mission.heading")}
 								</li>
 								<li
 									className={activeTab == 3 && "active"}
 									onClick={() => setActiveTab(3)}
 								>
-									{props.t("whyUs.heading")}
+									{t("about:whyUs.heading")}
 								</li>
 							</ul>
 						</nav>
 						{activeTab == 1 && (
 							<div className="tab">
-								<h2>{props.t("vision.whoWeAre")}</h2>
-								<p>{props.t("vision.whoWeAreDescription")}</p>
-								<h2>{props.t("vision.optimiticRealists")}</h2>
-								<p>{props.t("vision.optimiticRealistsDescription")}</p>
-								<h2>{props.t("vision.consistency")}</h2>
-								<p>{props.t("vision.consistencyDescription")}</p>
-								<h2>{props.t("vision.meaning")}</h2>
-								<p>{props.t("vision.meaningDescription")}</p>
+								<h2>{t("about:vision.whoWeAre")}</h2>
+								<p>{t("about:vision.whoWeAreDescription")}</p>
+								<h2>{t("about:vision.optimiticRealists")}</h2>
+								<p>{t("about:vision.optimiticRealistsDescription")}</p>
+								<h2>{t("about:vision.consistency")}</h2>
+								<p>{t("about:vision.consistencyDescription")}</p>
+								<h2>{t("about:vision.meaning")}</h2>
+								<p>{t("about:vision.meaningDescription")}</p>
 							</div>
 						)}
 						{activeTab == 2 && (
 							<div className="tab">
-								<h2>{props.t("mission.reality")}</h2>
-								<p>{ReactHtmlParser(props.t("mission.realityDescription"))}</p>
-								<p>{ReactHtmlParser(props.t("mission.realityDescription2"))}</p>
-								<h2>{props.t("mission.better")}</h2>
-								<p>{props.t("mission.betterDescription")}</p>
+								<h2>{t("about:mission.reality")}</h2>
+								<p>{ReactHtmlParser(t("about:mission.realityDescription"))}</p>
+								<p>{ReactHtmlParser(t("about:mission.realityDescription2"))}</p>
+								<h2>{t("about:mission.better")}</h2>
+								<p>{t("about:mission.betterDescription")}</p>
 							</div>
 						)}
 						{activeTab == 3 && (
 							<div className="tab">
-								<h2>{props.t("whyUs.title")}</h2>
-								<ul>{ReactHtmlParser(props.t("whyUs.reasons"))}</ul>
+								<h2>{t("about:whyUs.title")}</h2>
+								<ul>{ReactHtmlParser(t("about:whyUs.reasons"))}</ul>
 							</div>
 						)}
 					</div>
@@ -70,7 +71,7 @@ const About = (props) => {
 							</div>
 							<div className="profile-text">
 								<h3>
-									{ReactHtmlParser(props.t("martin.title"))}
+									{ReactHtmlParser(t("about:martin.title"))}
 									<a
 										target="_blank"
 										href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"
@@ -78,9 +79,9 @@ const About = (props) => {
 										<FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
 									</a>
 								</h3>
-								<p>{ReactHtmlParser(props.t("martin.description"))}</p>
+								<p>{ReactHtmlParser(t("about:martin.description"))}</p>
 								<p>
-									{ReactHtmlParser(props.t("martin.description2"))}{" "}
+									{ReactHtmlParser(t("about:martin.description2"))}{" "}
 									{!expand.martin && (
 										<a
 											onClick={() =>
@@ -90,20 +91,20 @@ const About = (props) => {
 												}))
 											}
 										>
-											{expand.martin ? props.t("less") : props.t("more")}
+											{expand.martin ? t("about:less") : t("about:more")}
 										</a>
 									)}
 								</p>
 								{expand.martin && (
 									<>
 										<p>
-											{ReactHtmlParser(props.t("martin.descriptionExtended"))}
+											{ReactHtmlParser(t("about:martin.descriptionExtended"))}
 										</p>
 										<p>
-											{ReactHtmlParser(props.t("martin.descriptionExtended2"))}
+											{ReactHtmlParser(t("about:martin.descriptionExtended2"))}
 										</p>
 										<p>
-											{ReactHtmlParser(props.t("martin.descriptionExtended3"))}{" "}
+											{ReactHtmlParser(t("about:martin.descriptionExtended3"))}{" "}
 											{expand.martin && (
 												<a
 													onClick={() =>
@@ -113,7 +114,7 @@ const About = (props) => {
 														}))
 													}
 												>
-													{expand.martin ? props.t("less") : props.t("more")}
+													{expand.martin ? t("about:less") : t("about:more")}
 												</a>
 											)}
 										</p>
@@ -127,7 +128,7 @@ const About = (props) => {
 							</div>
 							<div className="profile-text">
 								<h3>
-									{ReactHtmlParser(props.t("david.title"))}
+									{ReactHtmlParser(t("about:david.title"))}
 									<a
 										target="_blank"
 										href="https://www.linkedin.com/in/david-stepan-fcca-2708661/"
@@ -135,9 +136,9 @@ const About = (props) => {
 										<FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
 									</a>
 								</h3>
-								<p>{ReactHtmlParser(props.t("david.description"))}</p>
+								<p>{ReactHtmlParser(t("about:david.description"))}</p>
 								<p>
-									{ReactHtmlParser(props.t("david.description2"))}{" "}
+									{ReactHtmlParser(t("about:david.description2"))}{" "}
 									{!expand.david && (
 										<a
 											onClick={() =>
@@ -147,20 +148,20 @@ const About = (props) => {
 												}))
 											}
 										>
-											{expand.david ? props.t("less") : props.t("more")}
+											{expand.david ? t("about:less") : t("about:more")}
 										</a>
 									)}
 								</p>
 								{expand.david && (
 									<>
 										<p>
-											{ReactHtmlParser(props.t("david.descriptionExtended"))}
+											{ReactHtmlParser(t("about:david.descriptionExtended"))}
 										</p>
 										<p>
-											{ReactHtmlParser(props.t("david.descriptionExtended2"))}
+											{ReactHtmlParser(t("about:david.descriptionExtended2"))}
 										</p>
 										<p>
-											{ReactHtmlParser(props.t("david.descriptionExtended3"))}{" "}
+											{ReactHtmlParser(t("about:david.descriptionExtended3"))}{" "}
 											{expand.david && (
 												<a
 													onClick={() =>
@@ -170,7 +171,7 @@ const About = (props) => {
 														}))
 													}
 												>
-													{expand.david ? props.t("less") : props.t("more")}
+													{expand.david ? t("about:less") : t("about:more")}
 												</a>
 											)}
 										</p>
@@ -296,10 +297,4 @@ const About = (props) => {
 	);
 };
 
-About.getInitialProps = async () => {
-	return {
-		namespacesRequired: ["about"],
-	};
-};
-
-export default withTranslation("about")(About);
+export default About;
