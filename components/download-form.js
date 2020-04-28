@@ -67,7 +67,7 @@ const DownloadForm = ({ fileName, filePath }) => {
 								name="gdpr"
 							/>{" "}
 							{t("footer:agree")}{" "}
-							<a target="_blank" href="/Privacy_Policy_CZ.pdf">
+							<a target="_blank" href={t("footer:privacyPolicySource")}>
 								Privacy policy.
 							</a>
 						</label>
