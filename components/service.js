@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import ReactHtmlParser from "react-html-parser";
 
 export default function Service({ title, img, description, href }) {
 	return (
@@ -11,21 +12,15 @@ export default function Service({ title, img, description, href }) {
 			className="service"
 			to={href}
 		>
-			{img && (
-				<div className="service-img">
-					<img src={img} alt={title} />
-				</div>
-			)}
-			{title && (
-				<div className="service-title">
-					<h2>{title}</h2>
-				</div>
-			)}
-			{description && (
-				<div className="service-description">
-					<p>{description}</p>
-				</div>
-			)}
+			<div className="service-img">
+				<img src={img} alt={title} />
+			</div>
+			<div className="service-title">
+				<h2>{title}</h2>
+			</div>
+			<div className="service-description">
+				<p>{ReactHtmlParser(description)}</p>
+			</div>
 
 			<style global jsx>{`
 				.service {
