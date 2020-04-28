@@ -126,6 +126,30 @@ const HeroCarousel = (props) => {
 					<LearnMore />
 				</Link>
 			</div>
+			<style global jsx>{`
+				.service {
+					flex-direction: column;
+					text-align: center;
+					cursor: pointer;
+					flex-basis: 100%;
+					padding: 30px;
+					display: flex;
+				}
+
+				.link {
+					margin-top: auto;
+				}
+
+				.service:hover {
+					background-color: #dedede;
+				}
+
+				@media (max-width: 1024px) {
+					.service {
+						padding: 20px;
+					}
+				}
+			`}</style>
 		</Carousel>
 	);
 };
