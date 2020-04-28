@@ -8,7 +8,7 @@ body {
 body,
 header {
 	background-image: url("bg.jpg");
-	background-position: top center;
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -17,12 +17,14 @@ header {
 	body,
 	header {
 		background-image: url("bg-mobile.jpg");
+		background-size: unset;
 	}
 }
 @media (max-width: 1024px) and (orientation: landscape) {
 	body,
 	header {
 		background-image: url("bg.jpg");
+		background-size: unset;
 	}
 }
 
