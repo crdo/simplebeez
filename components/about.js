@@ -95,31 +95,29 @@ const About = (props) => {
 										</a>
 									)}
 								</p>
-								{expand.martin && (
-									<>
-										<p>
-											{ReactHtmlParser(t("about:martin.descriptionExtended"))}
-										</p>
-										<p>
-											{ReactHtmlParser(t("about:martin.descriptionExtended2"))}
-										</p>
-										<p>
-											{ReactHtmlParser(t("about:martin.descriptionExtended3"))}{" "}
-											{expand.martin && (
-												<a
-													onClick={() =>
-														setExpand((prevState) => ({
-															...prevState,
-															martin: !expand.martin,
-														}))
-													}
-												>
-													{expand.martin ? t("about:less") : t("about:more")}
-												</a>
-											)}
-										</p>
-									</>
-								)}
+								<div className={expand.martin ? "show" : "hide"}>
+									<p>
+										{ReactHtmlParser(t("about:martin.descriptionExtended"))}
+									</p>
+									<p>
+										{ReactHtmlParser(t("about:martin.descriptionExtended2"))}
+									</p>
+									<p>
+										{ReactHtmlParser(t("about:martin.descriptionExtended3"))}{" "}
+										{expand.martin && (
+											<a
+												onClick={() =>
+													setExpand((prevState) => ({
+														...prevState,
+														martin: !expand.martin,
+													}))
+												}
+											>
+												{expand.martin ? t("about:less") : t("about:more")}
+											</a>
+										)}
+									</p>
+								</div>
 							</div>
 						</div>
 						<div className="profile">
@@ -152,31 +150,27 @@ const About = (props) => {
 										</a>
 									)}
 								</p>
-								{expand.david && (
-									<>
-										<p>
-											{ReactHtmlParser(t("about:david.descriptionExtended"))}
-										</p>
-										<p>
-											{ReactHtmlParser(t("about:david.descriptionExtended2"))}
-										</p>
-										<p>
-											{ReactHtmlParser(t("about:david.descriptionExtended3"))}{" "}
-											{expand.david && (
-												<a
-													onClick={() =>
-														setExpand((prevState) => ({
-															...prevState,
-															david: !expand.david,
-														}))
-													}
-												>
-													{expand.david ? t("about:less") : t("about:more")}
-												</a>
-											)}
-										</p>
-									</>
-								)}
+								<div className={expand.david ? "show" : "hide"}>
+									<p>{ReactHtmlParser(t("about:david.descriptionExtended"))}</p>
+									<p>
+										{ReactHtmlParser(t("about:david.descriptionExtended2"))}
+									</p>
+									<p>
+										{ReactHtmlParser(t("about:david.descriptionExtended3"))}{" "}
+										{expand.david && (
+											<a
+												onClick={() =>
+													setExpand((prevState) => ({
+														...prevState,
+														david: !expand.david,
+													}))
+												}
+											>
+												{expand.david ? t("about:less") : t("about:more")}
+											</a>
+										)}
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -196,6 +190,14 @@ const About = (props) => {
 				a {
 					color: #f4ae9c;
 					cursor: pointer;
+				}
+				:global(.hide) {
+					opacity: 0;
+					transition: all 0.5s ease;
+				}
+				:global(.show) {
+					opacity: 1;
+					transition: all 0.5s ease;
 				}
 				.profile-text :global(.linkedin) {
 					width: 22px;
