@@ -22,7 +22,7 @@ const Download = (props) => {
 			<style global jsx>{`
 				.download {
 					background: #393939;
-					padding: 60px 0;
+					padding: 50px 0;
 					color: white;
 				}
 				.version {
