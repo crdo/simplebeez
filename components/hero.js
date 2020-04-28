@@ -44,7 +44,7 @@ const Hero = () => {
 				}
 
 				h1 {
-					font-size: 25px;
+					font-size: 30px;
 					line-height: 1.3;
 					margin-top: 10%;
 					text-align: center;
