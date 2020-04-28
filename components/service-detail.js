@@ -19,11 +19,7 @@ const ServiceDetail = ({
 						<div className="flex">
 							<div className="service-detail-problem">
 								<h2>{t("services:commonChallenges")}</h2>
-								<div
-									dangerouslySetInnerHTML={{
-										__html: problems,
-									}}
-								/>
+								<div>{ReactHtmlParser(problems)}</div>
 							</div>
 							<div className="service-detail-img">
 								<img src={logo} alt={title} />
@@ -36,11 +32,7 @@ const ServiceDetail = ({
 							</div>
 							<div className="service-detail-solutions">
 								<h2>{t("services:howWeCanHelp")}</h2>
-								<ul
-									dangerouslySetInnerHTML={{
-										__html: solutions,
-									}}
-								/>
+								<ul>{ReactHtmlParser(solutions)}</ul>
 							</div>
 						</div>
 					</div>

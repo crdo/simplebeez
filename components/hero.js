@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import HeroCarousel from "./carousel";
+import ReactHtmlParser from "react-html-parser";
 
 const Hero = () => {
 	const { t } = useTranslation();
@@ -8,7 +9,7 @@ const Hero = () => {
 			<div className="hero">
 				<div className="claim">
 					<h1>
-						<span dangerouslySetInnerHTML={{ __html: t("hero:claim") }} />
+						<span>{ReactHtmlParser(t("hero:claim"))}</span>
 					</h1>
 					<p>
 						{t("hero:motto")}
