@@ -33,7 +33,7 @@ const FileDownloadModal = ({ fileName, children, filePath }) => {
 				style={customStyles}
 			>
 				<div className="header">
-					<h2>{t("downloads")}</h2>
+					<h2>{t("footer:downloads")}</h2>
 					<div className="close" onClick={closeModal}>
 						✕
 					</div>
