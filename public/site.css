@@ -10,16 +10,13 @@ header {
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
 	body,
 	header {
 		background-image: url("bg-mobile.jpg");
-		background-size: 100%;
+		background-size: cover;
 	}
 }
 
