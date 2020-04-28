@@ -64,7 +64,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="contact-form">
-					<h2>{t("footer:cashflowTool")}</h2>
+					<h2>{t("footer:excited")}</h2>
 					<MailForm />
 				</div>
 			</div>
