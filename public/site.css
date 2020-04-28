@@ -24,7 +24,7 @@ header {
 	body,
 	header {
 		background-image: url("bg.jpg");
-		background-size: unset;
+		background-size: 100%;
 	}
 }
 

@@ -9,8 +9,8 @@ const Download = (props) => {
 				<h1>{t("download:title")}</h1>
 				<div className="button">
 					<FileDownloadModal
-						fileName="Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
-						filePath="/Simplebeez_CF_Soubor_v1.0_08-04-20202.xlsx"
+						fileName="Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
+						filePath="/Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
 					>
 						{t("download:download")}
 					</FileDownloadModal>
