@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import ReactHtmlParser from "react-html-parser";
 
 const ServiceDetail = ({
 	title,
