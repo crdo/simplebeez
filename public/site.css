@@ -152,7 +152,7 @@ header .navigation {
 		height: 0;
 		background-color: black;
 		flex-direction: column;
-		transition: all 0.25s ease;
+		transition: all 0.5s ease;
 		overflow: hidden;
 		position: absolute;
 		width: 100%;
@@ -164,7 +164,7 @@ header .navigation {
 	}
 
 	.navigation.is-open {
-		height: 295px;
+		height: 335px;
 		padding: 15px 0;
 	}
 
