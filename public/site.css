@@ -2,6 +2,7 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	padding: 0;
 	margin: 0;
+	height: 100vh;
 }
 
 body,
@@ -9,21 +10,19 @@ header {
 	background-image: url("bg.jpg");
 	background-position: top center;
 	background-attachment: fixed;
-	background-size: auto 100vh;
+	background-size: cover;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
 	body,
 	header {
 		background-image: url("bg-mobile.jpg");
-		background-size: auto 100vh;
 	}
 }
 @media (max-width: 1024px) and (orientation: landscape) {
 	body,
 	header {
 		background-image: url("bg.jpg");
-		background-size: auto 100vh;
 	}
 }
 
