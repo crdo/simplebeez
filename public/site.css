@@ -9,7 +9,7 @@ header {
 	background-image: url("bg.jpg");
 	background-position: top center;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: auto 100vh;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
