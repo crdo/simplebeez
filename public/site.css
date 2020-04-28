@@ -19,6 +19,13 @@ header {
 		background-size: auto 100vh;
 	}
 }
+@media (max-width: 1024px) and (orientation: landscape) {
+	body,
+	header {
+		background-image: url("bg.jpg");
+		background-size: auto 100vh;
+	}
+}
 
 * {
 	box-sizing: border-box;
@@ -95,7 +102,7 @@ li.triangle:before {
 }
 
 .logo img {
-	width: 150px;
+	width: 175px;
 	transition: all 0.5s ease;
 }
 
@@ -128,7 +135,13 @@ header.smaller {
 }
 
 header.smaller .logo img {
-	width: 200px;
+	width: 150px;
+}
+
+@media (min-width: 1024px) {
+	header.smaller .logo img {
+		width: 175px;
+	}
 }
 
 header .navigation {
