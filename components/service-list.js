@@ -28,7 +28,7 @@ const ServiceList = (props) => {
 							title={t("services:interimManagement.title")}
 							href="interim-management"
 							img="interim-management.svg"
-							description={t("services:interimManagement.descripiton")}
+							description={t("services:interimManagement.description")}
 						/>
 					</div>
 				</div>
