@@ -59,7 +59,7 @@ const Home = () => {
 					bottom: -5px;
 				}
 				.carousel .slide {
-					padding-left: 20px;
+					padding-left: 16px;
 					padding-right: 20px;
 					background: transparent;
 				}
