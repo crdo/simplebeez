@@ -54,17 +54,6 @@ const Home = () => {
 					position: relative;
 				}
 
-				h1 .triangle:after {
-					content: "";
-					position: absolute;
-					display: block;
-					right: -30px;
-					top: 15px;
-					border-left: 10px solid transparent;
-					border-right: 10px solid transparent;
-					border-top: 17px solid #f4ae9c;
-				}
-
 				.carousel .control-dots {
 					padding: 0;
 					bottom: -5px;
@@ -89,6 +78,45 @@ const Home = () => {
 				}
 				header .button a {
 					animation: shadow-pulse 1s infinite;
+				}
+
+				h1 .triangle:after {
+					content: "";
+					position: absolute;
+					display: block;
+					right: -25px;
+					top: 15px;
+					border-left: 8px solid transparent;
+					border-right: 8px solid transparent;
+					border-top: 13px solid #f4ae9c;
+				}
+
+				@media only screen and (min-width: 768px) {
+					h1 .triangle:after {
+						right: -30px;
+						top: 20px;
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-top: 17px solid #f4ae9c;
+					}
+				}
+				@media only screen and (min-width: 1025px) {
+					h1 .triangle:after {
+						right: -30px;
+						top: 23px;
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-top: 17px solid #f4ae9c;
+					}
+				}
+				@media only screen and (min-width: 1300px) {
+					h1 .triangle:after {
+						right: -55px;
+						top: 35px;
+						border-left: 20px solid transparent;
+						border-right: 20px solid transparent;
+						border-top: 32px solid #f4ae9c;
+					}
 				}
 			`}</style>
 		</>

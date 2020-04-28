@@ -79,14 +79,6 @@ const Hero = () => {
 					margin-bottom: 20px;
 				}
 
-				:global(.triangle:after) {
-					right: -25px;
-					top: 15px;
-					border-left: 8px solid transparent;
-					border-right: 8px solid transparent;
-					border-top: 13px solid #f4ae9c;
-				}
-
 				@media only screen and (min-width: 321px) {
 					h1 {
 						font-size: 30px;
@@ -104,13 +96,6 @@ const Hero = () => {
 					p,
 					h2 {
 						font-size: 20px;
-					}
-					:global(.triangle:after) {
-						right: -30px;
-						top: 20px;
-						border-left: 10px solid transparent;
-						border-right: 10px solid transparent;
-						border-top: 17px solid #f4ae9c;
 					}
 				}
 
@@ -146,13 +131,6 @@ const Hero = () => {
 						width: 15%;
 						margin-bottom: 30px;
 					}
-					:global(.triangle:after) {
-						right: -30px;
-						top: 23px;
-						border-left: 10px solid transparent;
-						border-right: 10px solid transparent;
-						border-top: 17px solid #f4ae9c;
-					}
 					:global(.carousel-root) {
 						transform: skew(21deg);
 					}
@@ -172,13 +150,6 @@ const Hero = () => {
 					p,
 					h2 {
 						font-size: 22px;
-					}
-					:global(.triangle:after) {
-						right: -55px;
-						top: 35px;
-						border-left: 20px solid transparent;
-						border-right: 20px solid transparent;
-						border-top: 32px solid #f4ae9c;
 					}
 				}
 
