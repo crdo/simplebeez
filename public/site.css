@@ -46,12 +46,6 @@ p {
 	margin-bottom: 0;
 }
 
-@media (max-width: 1024px) {
-	.services p {
-		text-align: justify !important;
-	}
-}
-
 li {
 	position: relative;
 }
