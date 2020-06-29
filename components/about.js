@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import useTranslation from "next-translate/useTranslation";
 import ReactHtmlParser from "react-html-parser";
+import Download from "./download";
+import { TabContext } from "../context/tabContext";
 
 const About = (props) => {
-	const [activeTab, setActiveTab] = useState(1);
+	const [activeTab, setActiveTab] = useContext(TabContext);
 	const [expand, setExpand] = useState({ martin: false, david: false });
 	const { t } = useTranslation();
 	return (
@@ -34,6 +36,18 @@ const About = (props) => {
 								>
 									{t("about:whyUs.heading")}
 								</li>
+								<li
+									className={activeTab == 4 && "active"}
+									onClick={() => setActiveTab(4)}
+								>
+									{t("about:news.heading")}
+								</li>
+								<li
+									className={activeTab == 5 && "active"}
+									onClick={() => setActiveTab(5)}
+								>
+									{t("about:downloads.heading")}
+								</li>
 							</ul>
 						</nav>
 						{activeTab == 1 && (
@@ -61,6 +75,18 @@ const About = (props) => {
 							<div className="tab">
 								<h2>{t("about:whyUs.title")}</h2>
 								<ul>{ReactHtmlParser(t("about:whyUs.reasons"))}</ul>
+							</div>
+						)}
+						{activeTab == 4 && (
+							<div className="tab">
+								<h2>{t("about:news.title")}</h2>
+								<p>{ReactHtmlParser(t("about:news.content"))}</p>
+								<div>{t("about:news.date")}</div>
+							</div>
+						)}
+						{activeTab == 5 && (
+							<div className="tab">
+								<Download />
 							</div>
 						)}
 					</div>

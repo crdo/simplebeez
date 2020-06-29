@@ -17,7 +17,8 @@
             "footer",
             "header",
             "hero",
-            "services"
+            "services",
+            "onestream"
         ]
     }
 }

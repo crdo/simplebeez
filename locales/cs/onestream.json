@@ -1,0 +1,30 @@
+{
+    "content": "OneStream Software poskytuje špičkové řešení CPM, které sjednocuje a zjednodušuje finanční konsolidaci, plánování, vykazování, analýzu a kvalitu finančních údajů pro sofistikované organizace a firmy. Jednotná platforma OneStream, nasazená prostřednictvím cloudu nebo přímo na místě (on premise), umožňuje organizacím modernizovat finance, nahradit několik starších aplikací a snížit celkové náklady na držení a správu finančních systémů. OneStream umožňuje finančním týmům, aby trávily méně času integrací dat a údržbou systému, a více času zaměřili na zvyšování výkonnosti firmy.",
+    "content2": "OneStream XF MarketPlace obsahuje více než 50 řešení ke stažení, které zákazníkům umožňují snadno rozšířit hodnotu své platformy CPM a rychle reagovat na měnící se potřeby finančního a provozního řízení. Řešení zahrnují: Rekonciliaci účtů a zůstatků, Plánování lidí, Plánování kapitálu a další.",
+    "cards": [
+        {
+            "title": "Finanční závěrka a konsolidace",
+            "description": "Zjednodušte finanční závěrku a konsolidaci při současném řešení složitých mezinárodních požadavků na účetnictví a výkaznictví. Poskytněte rychlý přehled o finančních a provozních výsledcích. Automatizujte a urychlete proces finanční závěrky."
+        },
+        {
+            "title": "Plánování, rozpočtování a forecasting",
+            "description": "Získejte agilitu v plánování s podporou strategických, finančních a provozních potřeb plánování v jediném, jednotném řešení. Srovnejte firemní plány/budgety a forecasty s jednotlivými podrobnými operačními plány. Zlepšujte svou agilitu při rozhodování prostřednictvím průběžných plánů a forecastů a plánování založeného na klíčových faktorech (drive-based planning)."
+        },
+        {
+            "title": "Reporting a analýza",
+            "description": "Poskytujte správné informace ve správném formátu ve správný čas s jednotnou platformou pro finanční, statutární a manažerské výkaznictví a analýzu. Získejte jednotný vhled na finančních a provozních výsledky díky systémovému výkaznictví, analýze, integraci Microsoft Excel a Office."
+        },
+        {
+            "title": "Řízení kvality finančních údajů",
+            "description": "Zvyšte důvěru ve finanční a provozní výsledky díky robustní integraci dat, validaci, certifikaci a auditní historii. Eliminujte procesy integrace dat v tzv. „black boxu“."
+        },
+        {
+            "title": "Cloud nebo On-Premise flexibilní možnosti nasazení",
+            "description": "Vyberte si co Vám nejvíce vyhovuje pokud jde o modely nasazení – můžete rovnou do cloudu, nebo až když bude vaše organizace na to připravena. Produkt OneStream XF, který byl navržen od prvního dne tak, aby plně využil výhod cloudu a virtualizace (využívá technologii Microsoft Azure), nabízí flexibilitu, pokud jde o možnosti nasazení, ať už on-premise nebo v cloudu."
+        },
+        {
+            "title": "Moderní, škálovatelná technologická architektura",
+            "description": "ZOsvoboďte se od omezení starších systémů a řešení, které se nadají škálovat a neřeší dnešní náročné požadavky na plánování a reporting. Díky moderní, rozšiřitelné platformě získáte bezpečnost, dostupnost, škálovatelnost a výkon, který potřebujete."
+        }
+    ]
+}

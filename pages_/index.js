@@ -7,7 +7,8 @@ import Hero from "../components/hero";
 import Services from "../components/services";
 import Footer from "../components/footer";
 import About from "../components/about";
-import Download from "../components/download";
+import { TabProvider } from "../context/tabContext";
+import OneStream from "../components/onestream";
 
 const Home = () => {
 	const { t } = useTranslation();
@@ -40,12 +41,14 @@ const Home = () => {
 					rel="stylesheet"
 				/>
 			</Head>
-			<Header />
-			<Hero />
-			<Download />
-			<Services />
-			<About />
-			<Footer />
+			<TabProvider>
+				<Header />
+				<Hero />
+				<OneStream />
+				<Services />
+				<About />
+				<Footer />
+			</TabProvider>
 			<style global jsx>{`
 				:root {
 					--primary: #f4ae9c;

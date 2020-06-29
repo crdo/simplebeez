@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link } from "react-scroll";
 import useTranslation from "next-translate/useTranslation";
 import Hamburger from "./hamburger";
+import { TabContext } from "../context/tabContext";
 
 const Header = (props) => {
 	useEffect(() => {
@@ -21,7 +22,11 @@ const Header = (props) => {
 	}
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const { t, lang } = useTranslation();
-	console.log(lang);
+	const [activeTab, setActiveTab] = useContext(TabContext);
+	const handleTabLinkClick = (activeTab) => {
+		setIsMenuOpen(false);
+		setActiveTab(activeTab);
+	};
 	return (
 		<header id="header">
 			<div className="container flex">
@@ -93,12 +98,12 @@ const Header = (props) => {
 							offset={-70}
 							onClick={() => setIsMenuOpen(false)}
 							duration={500}
-							to="downloads"
+							to="onestream"
 						>
-							{t("header:usefulResources")}
+							{t("header:oneStream")}
 						</Link>
 					</li>
-					<li>
+					<li className="dropdown">
 						<Link
 							activeClass="active"
 							spy={true}
@@ -110,6 +115,73 @@ const Header = (props) => {
 						>
 							{t("header:about")}
 						</Link>
+						<ul className="dropdown-menu">
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(1)}
+									duration={500}
+									to="about"
+								>
+									{t("header:vision")}
+								</Link>
+							</li>
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(2)}
+									duration={500}
+									to="about"
+								>
+									{t("header:mission")}
+								</Link>
+							</li>
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(3)}
+									duration={500}
+									to="about"
+								>
+									{t("header:whyUs")}
+								</Link>
+							</li>
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(4)}
+									duration={500}
+									to="about"
+								>
+									{t("header:news")}
+								</Link>
+							</li>
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(5)}
+									duration={500}
+									to="about"
+								>
+									{t("header:downloads")}
+								</Link>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<Link
