@@ -24,7 +24,7 @@ const OneStream = () => {
 				}
 				.card {
 					margin: 0 0 75px 0;
-					padding: 50px 0;
+					padding: 75px 0;
 				}
 			`}</style>
 		</div>

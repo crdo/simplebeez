@@ -95,7 +95,7 @@ const Header = (props) => {
 							activeClass="active"
 							spy={true}
 							smooth={true}
-							offset={-70}
+							offset={-150}
 							onClick={() => setIsMenuOpen(false)}
 							duration={500}
 							to="onestream"
