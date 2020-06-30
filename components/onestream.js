@@ -42,9 +42,9 @@ const OneStreamCard = ({ title, description }) => {
 const OneStream = () => {
 	const { t } = useTranslation();
 	return (
-		<div>
+		<div id="onestream">
 			<div className="card">
-				<div className="container" id="onestream">
+				<div className="container">
 					<div className="center">
 						<img src="/onestream.png" className="onestream" alt="OneStream" />
 					</div>
@@ -87,7 +87,10 @@ const OneStream = () => {
 					</div>
 					<p className="center">
 						{ReactHtmlParser(t("onestream:learnMore"))}{" "}
-						<a href="https://www.onestreamsoftware.com">OneStream Software</a>.
+						<a href="https://www.onestreamsoftware.com" target="_blank">
+							OneStream Software
+						</a>
+						.
 					</p>
 				</div>
 			</div>
