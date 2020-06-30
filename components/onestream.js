@@ -97,6 +97,7 @@ const OneStream = () => {
 				}
 				.onestream {
 					width: 250px;
+					margin-bottom: 20px;
 				}
 				.onestream-cards {
 					margin-top: 75px;
