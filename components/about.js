@@ -254,7 +254,7 @@ const About = (props) => {
 					margin-bottom: 30px;
 				}
 				.profile-text {
-					flex: 0 0 65%;
+					flex: 0 0 calc(65% - 20px);
 					background: #393939;
 					color: white;
 					padding: 40px;
