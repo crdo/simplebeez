@@ -169,7 +169,7 @@ header .navigation {
 	}
 
 	.navigation.is-open {
-		height: 420px;
+		height: 100vh;
 		padding: 15px 0;
 	}
 

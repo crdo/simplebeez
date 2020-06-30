@@ -161,7 +161,20 @@ const Header = (props) => {
 									spy={false}
 									smooth={true}
 									offset={-70}
-									onClick={() => handleTabLinkClick(4)}
+									onClick={() => handleTabLinkClick(5)}
+									duration={500}
+									to="about"
+								>
+									{t("header:references")}
+								</Link>
+							</li>
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(5)}
 									duration={500}
 									to="about"
 								>
@@ -174,7 +187,7 @@ const Header = (props) => {
 									spy={false}
 									smooth={true}
 									offset={-70}
-									onClick={() => handleTabLinkClick(5)}
+									onClick={() => handleTabLinkClick(6)}
 									duration={500}
 									to="about"
 								>
