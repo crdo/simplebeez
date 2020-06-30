@@ -270,13 +270,10 @@ const About = (props) => {
 					object-fit: cover;
 				}
 				nav ul {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-between;
 					background: black;
 					color: white;
 					margin-bottom: 30px;
-					padding: 0 20px;
+					padding: 10px 20px;
 				}
 				nav li {
 					margin: 20px 15px;
@@ -285,6 +282,10 @@ const About = (props) => {
 				}
 
 				@media (min-width: 1024px) {
+					nav ul {
+						display: flex;
+						padding: 0 20px;
+					}
 					nav li {
 						margin: 20px;
 					}
