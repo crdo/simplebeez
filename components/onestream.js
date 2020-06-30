@@ -11,11 +11,12 @@ const OneStreamCard = ({ title, description }) => {
 					background: white;
 					border: 1px solid #393939;
 					text-align: center;
-					padding: 25px;
+					padding: 35px 25px;
 					margin-bottom: 30px;
 				}
 				.title {
 					font-weight: bold;
+					font-size: 20px;
 					margin-bottom: 20px;
 				}
 				.description {
