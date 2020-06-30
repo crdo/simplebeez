@@ -40,11 +40,17 @@ const About = (props) => {
 									className={activeTab == 4 && "active"}
 									onClick={() => setActiveTab(4)}
 								>
-									{t("about:news.heading")}
+									{t("about:references.heading")}
 								</li>
 								<li
 									className={activeTab == 5 && "active"}
 									onClick={() => setActiveTab(5)}
+								>
+									{t("about:news.heading")}
+								</li>
+								<li
+									className={activeTab == 6 && "active"}
+									onClick={() => setActiveTab(6)}
 								>
 									{t("about:downloads.heading")}
 								</li>
@@ -79,12 +85,17 @@ const About = (props) => {
 						)}
 						{activeTab == 4 && (
 							<div className="tab">
+								<h2>{t("about:references.heading")}</h2>
+							</div>
+						)}
+						{activeTab == 5 && (
+							<div className="tab">
 								<h2>{t("about:news.title")}</h2>
 								<p>{ReactHtmlParser(t("about:news.content"))}</p>
 								<div>{t("about:news.date")}</div>
 							</div>
 						)}
-						{activeTab == 5 && (
+						{activeTab == 6 && (
 							<div className="tab">
 								<Download />
 							</div>
@@ -260,9 +271,12 @@ const About = (props) => {
 				}
 				nav ul {
 					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
 					background: black;
 					color: white;
 					margin-bottom: 30px;
+					padding: 0 20px;
 				}
 				nav li {
 					margin: 20px 15px;
