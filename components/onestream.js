@@ -48,8 +48,10 @@ const OneStream = () => {
 					<div className="center">
 						<img src="/onestream.png" className="onestream" alt="OneStream" />
 					</div>
-					<p>{t("onestream:content")}</p>
-					<p>{t("onestream:content2")}</p>
+					<p>{ReactHtmlParser(t("onestream:content"))}</p>
+					<p>{ReactHtmlParser(t("onestream:content1"))}</p>
+					<p>{ReactHtmlParser(t("onestream:content2"))}</p>
+					<p>{ReactHtmlParser(t("onestream:content3"))}</p>
 				</div>
 
 				<div className="container">

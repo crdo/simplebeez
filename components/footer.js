@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
@@ -46,6 +47,9 @@ const Footer = () => {
 							href="https://www.linkedin.com/company/simplebeez-s-r-o/"
 						>
 							<FontAwesomeIcon icon={faLinkedin} />
+						</a>
+						<a target="_blank" href="https://twitter.com/simplebeez">
+							<FontAwesomeIcon icon={faTwitter} />
 						</a>
 					</div>
 				</div>

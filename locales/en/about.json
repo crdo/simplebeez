@@ -24,6 +24,15 @@
         "title": "We ensure a sustainable balance between investing in three critical pillars of every transformation: people, processes and technologies.",
         "reasons": "<li class='triangle'>We can identify opportunities and objectives of finance transformations.</li><li class='triangle'>We design and deploy bespoke solutions (not only technological) that support new services and innovative practices.</li><li class='triangle'>We manage or support your teams during any necessary period of the transformation project.</li><li class='triangle'>We work with and can provide result-oriented experts with a holistic approach and focus on the benefits for the company as a whole.</li><li class='triangle'>We create an environment for building a bridge between finance, business and IT.</li>"
     },
+    "news": {
+        "heading": "News",
+        "title": "News",
+        "content": "SIMPLEBEEZ announced a strategic partnership with OneStream Software. The full version of the press release can be <a href='/SIMPLEBEEZ_OneStream_PressRelease_July2020_ENG.pdf'>downloaded here</a>.",
+        "date": "July 30, 2020"
+    },
+    "references": {
+        "heading": "Testimonials"
+    },
     "martin": {
         "title": "Martin Prášek, partner and co-founder",
         "description": "Martin is in charge of services provided to support innovative solutions, centralization of back-office functions and to streamline financial and core business processes. His personal specializations are implementation of ERP and CPM solutions, process optimization, strong expertise in P2P process and world-class or custom-built P2P solutions, document management systems, or RPA applications. He will also help you to build shared services operating model or functionally design tools to automate not only finance.",
@@ -39,6 +48,9 @@
         "descriptionExtended": "“For me, effective communication and trust among people has always been crucial. Excel may be a great analytics tool, but don’t hide behind it. To be better, we all need to be clear where we are going and why want it. Only then we can start planning and managing it also from a financial point of view.”",
         "descriptionExtended2": "David is convinced that the traditional budgeting process today is severely hitting its limits, as is the traditional „command-control“ management approach. Therefore, he devotes himself to the Beyond Budgeting principles, which he does not hesitate to talk about at any meeting.",
         "descriptionExtended3": "David likes riding two-wheelers, so you can meet him either on a bike in the city and mountains or on a motorbike abroad with a tent, sleeping bag and camera to enjoy the local nature. “Playing sports has taught and shown me a great example of inspiration, passion, commitment, challenges, joy, individual responsibility and teamwork. Yet my wife and two daughters are the best thing that has ever happened to me in this world.”"
+    },
+    "downloads": {
+        "heading": "Useful Resources"
     },
     "more": "More",
     "less": "Less"

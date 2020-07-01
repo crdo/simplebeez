@@ -224,8 +224,8 @@ const About = (props) => {
 				h3 a {
 					vertical-align: middle;
 				}
-				a {
-					color: #f4ae9c;
+				:global(.tab a) {
+					text-decoration: underline;
 					cursor: pointer;
 				}
 				:global(.hide) {
