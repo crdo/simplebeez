@@ -27,8 +27,8 @@
     "news": {
         "heading": "News",
         "title": "News",
-        "content": "SIMPLEBEEZ announced a strategic partnership with OneStream Software. The full version of the press release can be <a href='/SIMPLEBEEZ_OneStream_PressRelease_July2020_ENG.pdf'>downloaded here</a>.",
-        "date": "July 30, 2020"
+        "content": "SIMPLEBEEZ announced a strategic partnership with OneStream Software. The full version of the press release can be <a class='underline' href='/SIMPLEBEEZ_OneStream_PressRelease_July2020_ENG.pdf'>downloaded here</a>.",
+        "date": "July 2, 2020"
     },
     "references": {
         "heading": "Testimonials"

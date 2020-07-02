@@ -11,7 +11,7 @@ export default function Testimonial({ person, role, company, text }) {
 			</div>
 			<style jsx>{`
 				.testimonial {
-					margin-bottom: 30px;
+					margin-bottom: 50px;
 				}
 
 				.testimonial > div {
@@ -23,6 +23,7 @@ export default function Testimonial({ person, role, company, text }) {
 				}
 				p {
 					text-align: justify;
+					margin-top: 0;
 				}
 				@media only screen and (min-width: 768px) {
 				}

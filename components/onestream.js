@@ -122,6 +122,9 @@ const OneStream = () => {
 				a {
 					color: var(--primary);
 				}
+				h2 {
+					font-size: 20px;
+				}
 				@media only screen and (min-width: 768px) {
 					.onestream-cards {
 						display: flex;

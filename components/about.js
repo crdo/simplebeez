@@ -281,6 +281,9 @@ const About = (props) => {
 				.profile-text p {
 					text-align: justify;
 				}
+				:global(.underline) {
+					text-decoration: underline;
+				}
 				img {
 					min-height: 100%;
 					min-width: 100%;
