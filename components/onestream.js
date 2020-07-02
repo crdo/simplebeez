@@ -14,9 +14,12 @@ const OneStreamCard = ({ title, description }) => {
 					padding: 35px 25px;
 					margin-bottom: 30px;
 				}
+				.onestream-card:hover {
+					background: #393939;
+					color: white;
+				}
 				.onestream-card:hover .title {
-					text-decoration: underline;
-					text-decoration-color: var(--primary);
+					color: var(--primary);
 				}
 				.title {
 					font-weight: bold;
