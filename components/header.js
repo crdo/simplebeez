@@ -90,7 +90,7 @@ const Header = (props) => {
 							</li>
 						</ul>
 					</li>
-					<li className="button">
+					<li>
 						<Link
 							activeClass="active"
 							spy={true}
@@ -161,7 +161,7 @@ const Header = (props) => {
 									spy={false}
 									smooth={true}
 									offset={-70}
-									onClick={() => handleTabLinkClick(5)}
+									onClick={() => handleTabLinkClick(4)}
 									duration={500}
 									to="about"
 								>

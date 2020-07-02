@@ -14,6 +14,10 @@ const OneStreamCard = ({ title, description }) => {
 					padding: 35px 25px;
 					margin-bottom: 30px;
 				}
+				.onestream-card:hover .title {
+					text-decoration: underline;
+					text-decoration-color: var(--primary);
+				}
 				.title {
 					font-weight: bold;
 					font-size: 20px;
@@ -50,8 +54,19 @@ const OneStream = () => {
 					</div>
 					<p>{ReactHtmlParser(t("onestream:content"))}</p>
 					<p>{ReactHtmlParser(t("onestream:content1"))}</p>
+					<br />
+					<h2>{ReactHtmlParser(t("onestream:about"))}</h2>
 					<p>{ReactHtmlParser(t("onestream:content2"))}</p>
 					<p>{ReactHtmlParser(t("onestream:content3"))}</p>
+					<p className="center">
+						{ReactHtmlParser(t("onestream:learnMore"))}{" "}
+						<b>
+							<a href="https://www.onestreamsoftware.com" target="_blank">
+								OneStream Software
+							</a>
+						</b>
+						.
+					</p>
 				</div>
 
 				<div className="container">
@@ -87,13 +102,6 @@ const OneStream = () => {
 							description={t("onestream:modernAndScalable.description")}
 						/>
 					</div>
-					<p className="center">
-						{ReactHtmlParser(t("onestream:learnMore"))}{" "}
-						<a href="https://www.onestreamsoftware.com" target="_blank">
-							OneStream Software
-						</a>
-						.
-					</p>
 				</div>
 			</div>
 			<style jsx>{`

@@ -5,6 +5,7 @@ import useTranslation from "next-translate/useTranslation";
 import ReactHtmlParser from "react-html-parser";
 import Download from "./download";
 import { TabContext } from "../context/tabContext";
+import Testimonial from "./testimonial";
 
 const About = (props) => {
 	const [activeTab, setActiveTab] = useContext(TabContext);
@@ -22,37 +23,37 @@ const About = (props) => {
 									className={activeTab == 1 && "active"}
 									onClick={() => setActiveTab(1)}
 								>
-									{t("about:vision.heading")}
+									<span>{t("about:vision.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 2 && "active"}
 									onClick={() => setActiveTab(2)}
 								>
-									{t("about:mission.heading")}
+									<span>{t("about:mission.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 3 && "active"}
 									onClick={() => setActiveTab(3)}
 								>
-									{t("about:whyUs.heading")}
+									<span>{t("about:whyUs.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 4 && "active"}
 									onClick={() => setActiveTab(4)}
 								>
-									{t("about:references.heading")}
+									<span>{t("about:references.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 5 && "active"}
 									onClick={() => setActiveTab(5)}
 								>
-									{t("about:news.heading")}
+									<span>{t("about:news.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 6 && "active"}
 									onClick={() => setActiveTab(6)}
 								>
-									{t("about:downloads.heading")}
+									<span>{t("about:downloads.heading")}</span>
 								</li>
 							</ul>
 						</nav>
@@ -85,7 +86,25 @@ const About = (props) => {
 						)}
 						{activeTab == 4 && (
 							<div className="tab">
-								<h2>{t("about:references.heading")}</h2>
+								<h2>Martin Prášek, CMA</h2>
+								<Testimonial
+									company={t("testimonials:martin1.company")}
+									person={t("testimonials:martin1.person")}
+									role={t("testimonials:martin1.role")}
+									text={t("testimonials:martin1.text")}
+								/>
+								<Testimonial
+									company={t("testimonials:martin2.company")}
+									person={t("testimonials:martin2.person")}
+									role={t("testimonials:martin2.role")}
+									text={t("testimonials:martin2.text")}
+								/>
+								<Testimonial
+									company={t("testimonials:martin3.company")}
+									person={t("testimonials:martin3.person")}
+									role={t("testimonials:martin3.role")}
+									text={t("testimonials:martin3.text")}
+								/>
 							</div>
 						)}
 						{activeTab == 5 && (
@@ -224,8 +243,8 @@ const About = (props) => {
 				h3 a {
 					vertical-align: middle;
 				}
-				:global(.tab a) {
-					text-decoration: underline;
+				a {
+					color: var(--primary);
 					cursor: pointer;
 				}
 				:global(.hide) {
@@ -257,7 +276,7 @@ const About = (props) => {
 					flex: 0 0 calc(65% - 20px);
 					background: #393939;
 					color: white;
-					padding: 40px;
+					padding: 40px 30px;
 				}
 				.profile-text p {
 					text-align: justify;
@@ -300,12 +319,12 @@ const About = (props) => {
 						margin-left: 20px;
 					}
 				}
-				.active {
+				nav li span {
 					position: relative;
 				}
 
-				.active:after,
-				nav li:hover:after {
+				.active span:after,
+				nav li:hover span:after {
 					content: "";
 					display: block;
 					position: absolute;
@@ -316,7 +335,7 @@ const About = (props) => {
 				}
 
 				.tab {
-					padding: 40px;
+					padding: 40px 30px;
 					background-color: #dedede;
 				}
 
