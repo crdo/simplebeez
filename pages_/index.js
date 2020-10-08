@@ -1,17 +1,18 @@
-import Head from "next/head";
-import useTranslation from "next-translate/useTranslation";
+import Head from "next/head"
+import useTranslation from "next-translate/useTranslation"
 
-import { GA_TRACKING_ID } from "../data/gtag";
-import Header from "../components/header";
-import Hero from "../components/hero";
-import Services from "../components/services";
-import Footer from "../components/footer";
-import About from "../components/about";
-import { TabProvider } from "../context/tabContext";
-import OneStream from "../components/onestream";
+import { GA_TRACKING_ID } from "../data/gtag"
+import Header from "../components/header"
+import Hero from "../components/hero"
+import Services from "../components/services"
+import Footer from "../components/footer"
+import About from "../components/about"
+import { TabProvider } from "../context/tabContext"
+import OneStream from "../components/onestream"
+import ClientCarousel from "../components/client-carousel"
 
 const Home = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 	return (
 		<>
 			<Head>
@@ -47,6 +48,7 @@ const Home = () => {
 				<OneStream />
 				<Services />
 				<About />
+				<ClientCarousel />
 				<Footer />
 			</TabProvider>
 			<style global jsx>{`
@@ -121,9 +123,12 @@ const Home = () => {
 						border-top: 32px solid #f4ae9c;
 					}
 				}
+				.slick-slide img {
+					margin: auto;
+				}
 			`}</style>
 		</>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home
