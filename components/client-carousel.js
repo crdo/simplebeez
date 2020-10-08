@@ -36,26 +36,28 @@ const ClientCarousel = () => {
 		<div className="card">
 			<div className="container">
 				<h1>{t("common:ourClients")}</h1>
-				<Slider {...settings}>
-					<div>
-						<img src="/clients/zasilkovna.png" />
-					</div>
-					<div>
-						<img src="/clients/radio-cas.jpg" />
-					</div>
-					<div>
-						<img src="/clients/campbells.png" />
-					</div>
-					<div>
-						<img src="/clients/radio-relax.jpg" />
-					</div>
-					<div>
-						<img src="/clients/bolthouse-farms.png" />
-					</div>
-					<div>
-						<img src="/clients/radio-rebel.jpg" />
-					</div>
-				</Slider>
+				<div className="slider">
+					<Slider {...settings}>
+						<div>
+							<img src="/clients/zasilkovna.png" />
+						</div>
+						<div>
+							<img src="/clients/radio-cas.jpg" />
+						</div>
+						<div>
+							<img src="/clients/campbells.png" />
+						</div>
+						<div>
+							<img src="/clients/radio-relax.jpg" />
+						</div>
+						<div>
+							<img src="/clients/bolthouse-farms.png" />
+						</div>
+						<div>
+							<img src="/clients/radio-rebel.jpg" />
+						</div>
+					</Slider>
+				</div>
 			</div>
 			<style jsx>{`
 				.container {
@@ -70,8 +72,11 @@ const ClientCarousel = () => {
 				}
 				.card {
 					background: white;
-					padding: 20px 0 50px 0;
+					padding: 20px 0 20px 0;
 					margin-bottom: 75px;
+				}
+				.slider {
+					margin: 100px 0;
 				}
 			`}</style>
 		</div>
