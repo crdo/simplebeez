@@ -39,22 +39,28 @@ const ClientCarousel = () => {
 				<div className="slider">
 					<Slider {...settings}>
 						<div>
-							<img src="/clients/zasilkovna.png" />
+							<img alt="Zásilkovna" src="/clients/zasilkovna.png" />
 						</div>
 						<div>
-							<img src="/clients/radio-cas.jpg" />
+							<img alt="Rádio Čas" src="/clients/radio-cas.jpg" />
 						</div>
 						<div>
-							<img src="/clients/campbells.png" />
+							<img alt="Solar Turbines" src="/clients/solar-turbines.jpg" />
 						</div>
 						<div>
-							<img src="/clients/radio-relax.jpg" />
+							<img alt="Campbells" src="/clients/campbells.png" />
 						</div>
 						<div>
-							<img src="/clients/bolthouse-farms.png" />
+							<img alt="Rádio Relax" src="/clients/radio-relax.jpg" />
 						</div>
 						<div>
-							<img src="/clients/radio-rebel.jpg" />
+							<img alt="CME" src="/clients/cme.jpg" />
+						</div>
+						<div>
+							<img alt="Bolthouse Farms" src="/clients/bolthouse-farms.png" />
+						</div>
+						<div>
+							<img alt="Rádio Rebel" src="/clients/radio-rebel.jpg" />
 						</div>
 					</Slider>
 				</div>
@@ -64,7 +70,7 @@ const ClientCarousel = () => {
 					position: relative;
 				}
 				img {
-					height: 200px;
+					height: 150px;
 					filter: grayscale(100%);
 				}
 				img:hover {
@@ -76,7 +82,7 @@ const ClientCarousel = () => {
 					margin-bottom: 75px;
 				}
 				.slider {
-					margin: 100px 0;
+					margin: 75px 0;
 				}
 			`}</style>
 		</div>
@@ -101,7 +107,7 @@ function ChevronRight(props) {
 				svg {
 					position: absolute;
 					right: 0;
-					top: 80px;
+					top: 50px;
 					z-index: 10;
 				}
 				svg:hover {
@@ -131,7 +137,7 @@ function ChevronLeft(props) {
 				svg {
 					position: absolute;
 					left: 0;
-					top: 70px;
+					top: 50px;
 					z-index: 10;
 				}
 				svg:hover {
