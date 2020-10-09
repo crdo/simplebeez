@@ -33,6 +33,9 @@
     "references": {
         "heading": "Reference"
     },
+    "team": {
+        "heading": "Náš tým"
+    },
     "martin": {
         "title": "Martin Prášek, partner a spoluzakladatel",
         "description": "Martin má na starosti služby především pro podporu inovativních řešení, centralizace back-office funkcí a digitalizace financí a souvisejících procesů. Jeho osobní specializací jsou <b>implementace ERP a CPM</b> řešení, <b>procesní optimalizace</b>, návrhy a realizace řešení pro P2P (řízení výdajů firmy), procesní workflow či aplikace RPA. Pomůže Vám také s vybudováním centra sdílených služeb či s <b>funkčním designem operativních nástrojů</b> pro automatizaci nejen financí.",

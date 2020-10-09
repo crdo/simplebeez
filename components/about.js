@@ -1,16 +1,16 @@
-import { useState, useContext } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import useTranslation from "next-translate/useTranslation";
-import ReactHtmlParser from "react-html-parser";
-import Download from "./download";
-import { TabContext } from "../context/tabContext";
-import Testimonial from "./testimonial";
+import { useState, useContext } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import useTranslation from "next-translate/useTranslation"
+import ReactHtmlParser from "react-html-parser"
+import Download from "./download"
+import { TabContext } from "../context/tabContext"
+import Testimonial from "./testimonial"
 
 const About = (props) => {
-	const [activeTab, setActiveTab] = useContext(TabContext);
-	const [expand, setExpand] = useState({ martin: false, david: false });
-	const { t } = useTranslation();
+	const [activeTab, setActiveTab] = useContext(TabContext)
+	const [expand, setExpand] = useState({ martin: false, david: false })
+	const { t } = useTranslation()
 	return (
 		<div className="spacing-wrapper" id="about">
 			<div className="card">
@@ -35,23 +35,29 @@ const About = (props) => {
 									className={activeTab == 3 && "active"}
 									onClick={() => setActiveTab(3)}
 								>
-									<span>{t("about:whyUs.heading")}</span>
+									<span>{t("about:team.heading")}</span>
 								</li>
 								<li
 									className={activeTab == 4 && "active"}
 									onClick={() => setActiveTab(4)}
 								>
-									<span>{t("about:references.heading")}</span>
+									<span>{t("about:whyUs.heading")}</span>
 								</li>
-								<li
+								{/* <li
 									className={activeTab == 5 && "active"}
 									onClick={() => setActiveTab(5)}
+								>
+									<span>{t("about:references.heading")}</span>
+								</li> */}
+								<li
+									className={activeTab == 6 && "active"}
+									onClick={() => setActiveTab(6)}
 								>
 									<span>{t("about:news.heading")}</span>
 								</li>
 								<li
-									className={activeTab == 6 && "active"}
-									onClick={() => setActiveTab(6)}
+									className={activeTab == 7 && "active"}
+									onClick={() => setActiveTab(7)}
 								>
 									<span>{t("about:downloads.heading")}</span>
 								</li>
@@ -79,12 +85,136 @@ const About = (props) => {
 							</div>
 						)}
 						{activeTab == 3 && (
+							<div className="profile-list">
+								<div className="profile">
+									<div className="profile-img">
+										<img src="/martin.jpg" alt="Martin Prášek" />
+									</div>
+									<div className="profile-text">
+										<h3>
+											{ReactHtmlParser(t("about:martin.title"))}
+											<a
+												target="_blank"
+												href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"
+											>
+												<FontAwesomeIcon
+													className="linkedin"
+													icon={faLinkedinIn}
+												/>
+											</a>
+										</h3>
+										<p>{ReactHtmlParser(t("about:martin.description"))}</p>
+										<p>
+											{ReactHtmlParser(t("about:martin.description2"))}{" "}
+											{!expand.martin && (
+												<a
+													onClick={() =>
+														setExpand((prevState) => ({
+															...prevState,
+															martin: !expand.martin,
+														}))
+													}
+												>
+													{expand.martin ? t("about:less") : t("about:more")}
+												</a>
+											)}
+										</p>
+										<div className={expand.martin ? "show" : "hide"}>
+											<p>
+												{ReactHtmlParser(t("about:martin.descriptionExtended"))}
+											</p>
+											<p>
+												{ReactHtmlParser(
+													t("about:martin.descriptionExtended2")
+												)}
+											</p>
+											<p>
+												{ReactHtmlParser(
+													t("about:martin.descriptionExtended3")
+												)}{" "}
+												{expand.martin && (
+													<a
+														onClick={() =>
+															setExpand((prevState) => ({
+																...prevState,
+																martin: !expand.martin,
+															}))
+														}
+													>
+														{expand.martin ? t("about:less") : t("about:more")}
+													</a>
+												)}
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="profile">
+									<div className="profile-img">
+										<img src="/david.jpg" alt="David Štěpán" />
+									</div>
+									<div className="profile-text">
+										<h3>
+											{ReactHtmlParser(t("about:david.title"))}
+											<a
+												target="_blank"
+												href="https://www.linkedin.com/in/david-stepan-fcca-2708661/"
+											>
+												<FontAwesomeIcon
+													className="linkedin"
+													icon={faLinkedinIn}
+												/>
+											</a>
+										</h3>
+										<p>{ReactHtmlParser(t("about:david.description"))}</p>
+										<p>
+											{ReactHtmlParser(t("about:david.description2"))}{" "}
+											{!expand.david && (
+												<a
+													onClick={() =>
+														setExpand((prevState) => ({
+															...prevState,
+															david: !expand.david,
+														}))
+													}
+												>
+													{expand.david ? t("about:less") : t("about:more")}
+												</a>
+											)}
+										</p>
+										<div className={expand.david ? "show" : "hide"}>
+											<p>
+												{ReactHtmlParser(t("about:david.descriptionExtended"))}
+											</p>
+											<p>
+												{ReactHtmlParser(t("about:david.descriptionExtended2"))}
+											</p>
+											<p>
+												{ReactHtmlParser(t("about:david.descriptionExtended3"))}{" "}
+												{expand.david && (
+													<a
+														onClick={() =>
+															setExpand((prevState) => ({
+																...prevState,
+																david: !expand.david,
+															}))
+														}
+													>
+														{expand.david ? t("about:less") : t("about:more")}
+													</a>
+												)}
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						)}
+						{activeTab == 4 && (
 							<div className="tab">
 								<h2>{t("about:whyUs.title")}</h2>
 								<ul>{ReactHtmlParser(t("about:whyUs.reasons"))}</ul>
 							</div>
 						)}
-						{activeTab == 4 && (
+						{/* {activeTab == 5 && (
 							<div className="tab">
 								<h2>Martin Prášek, CMA</h2>
 								<Testimonial
@@ -106,129 +236,19 @@ const About = (props) => {
 									text={t("testimonials:martin3.text")}
 								/>
 							</div>
-						)}
-						{activeTab == 5 && (
+						)} */}
+						{activeTab == 6 && (
 							<div className="tab">
 								<h2>{t("about:news.title")}</h2>
 								<p>{ReactHtmlParser(t("about:news.content"))}</p>
 								<div>{t("about:news.date")}</div>
 							</div>
 						)}
-						{activeTab == 6 && (
+						{activeTab == 7 && (
 							<div className="tab">
 								<Download />
 							</div>
 						)}
-					</div>
-					<div className="profile-list">
-						<div className="profile">
-							<div className="profile-img">
-								<img src="/martin.jpg" alt="Martin Prášek" />
-							</div>
-							<div className="profile-text">
-								<h3>
-									{ReactHtmlParser(t("about:martin.title"))}
-									<a
-										target="_blank"
-										href="https://www.linkedin.com/in/martin-prášek-cma-8109ba18/"
-									>
-										<FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
-									</a>
-								</h3>
-								<p>{ReactHtmlParser(t("about:martin.description"))}</p>
-								<p>
-									{ReactHtmlParser(t("about:martin.description2"))}{" "}
-									{!expand.martin && (
-										<a
-											onClick={() =>
-												setExpand((prevState) => ({
-													...prevState,
-													martin: !expand.martin,
-												}))
-											}
-										>
-											{expand.martin ? t("about:less") : t("about:more")}
-										</a>
-									)}
-								</p>
-								<div className={expand.martin ? "show" : "hide"}>
-									<p>
-										{ReactHtmlParser(t("about:martin.descriptionExtended"))}
-									</p>
-									<p>
-										{ReactHtmlParser(t("about:martin.descriptionExtended2"))}
-									</p>
-									<p>
-										{ReactHtmlParser(t("about:martin.descriptionExtended3"))}{" "}
-										{expand.martin && (
-											<a
-												onClick={() =>
-													setExpand((prevState) => ({
-														...prevState,
-														martin: !expand.martin,
-													}))
-												}
-											>
-												{expand.martin ? t("about:less") : t("about:more")}
-											</a>
-										)}
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="profile">
-							<div className="profile-img">
-								<img src="/david.jpg" alt="David Štěpán" />
-							</div>
-							<div className="profile-text">
-								<h3>
-									{ReactHtmlParser(t("about:david.title"))}
-									<a
-										target="_blank"
-										href="https://www.linkedin.com/in/david-stepan-fcca-2708661/"
-									>
-										<FontAwesomeIcon className="linkedin" icon={faLinkedinIn} />
-									</a>
-								</h3>
-								<p>{ReactHtmlParser(t("about:david.description"))}</p>
-								<p>
-									{ReactHtmlParser(t("about:david.description2"))}{" "}
-									{!expand.david && (
-										<a
-											onClick={() =>
-												setExpand((prevState) => ({
-													...prevState,
-													david: !expand.david,
-												}))
-											}
-										>
-											{expand.david ? t("about:less") : t("about:more")}
-										</a>
-									)}
-								</p>
-								<div className={expand.david ? "show" : "hide"}>
-									<p>{ReactHtmlParser(t("about:david.descriptionExtended"))}</p>
-									<p>
-										{ReactHtmlParser(t("about:david.descriptionExtended2"))}
-									</p>
-									<p>
-										{ReactHtmlParser(t("about:david.descriptionExtended3"))}{" "}
-										{expand.david && (
-											<a
-												onClick={() =>
-													setExpand((prevState) => ({
-														...prevState,
-														david: !expand.david,
-													}))
-												}
-											>
-												{expand.david ? t("about:less") : t("about:more")}
-											</a>
-										)}
-									</p>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -359,7 +379,7 @@ const About = (props) => {
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default About;
+export default About
