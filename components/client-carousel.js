@@ -33,7 +33,7 @@ const ClientCarousel = () => {
 		// },
 	}
 	return (
-		<div className="card">
+		<div className="card" id="references">
 			<div className="container">
 				<h1>{t("common:ourClients")}</h1>
 				<div className="slider">

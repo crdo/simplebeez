@@ -216,6 +216,18 @@ const Header = (props) => {
 							smooth={true}
 							onClick={() => setIsMenuOpen(false)}
 							duration={500}
+							to="references"
+						>
+							{t("header:references")}
+						</Link>
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							spy={true}
+							smooth={true}
+							onClick={() => setIsMenuOpen(false)}
+							duration={500}
 							to="kontakt"
 						>
 							{t("header:contact")}
