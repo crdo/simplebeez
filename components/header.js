@@ -1,32 +1,32 @@
-import { useEffect, useState, useContext } from "react";
-import { Link } from "react-scroll";
-import useTranslation from "next-translate/useTranslation";
-import Hamburger from "./hamburger";
-import { TabContext } from "../context/tabContext";
+import { useEffect, useState, useContext } from "react"
+import { Link } from "react-scroll"
+import useTranslation from "next-translate/useTranslation"
+import Hamburger from "./hamburger"
+import { TabContext } from "../context/tabContext"
 
 const Header = (props) => {
 	useEffect(() => {
-		window.addEventListener("scroll", resizeHeaderOnScroll);
-	}, []);
+		window.addEventListener("scroll", resizeHeaderOnScroll)
+	}, [])
 
 	function resizeHeaderOnScroll() {
 		const distanceY = window.pageYOffset || document.documentElement.scrollTop,
 			shrinkOn = 50,
-			headerEl = document.getElementById("header");
+			headerEl = document.getElementById("header")
 
 		if (distanceY > shrinkOn) {
-			headerEl.classList.add("smaller");
+			headerEl.classList.add("smaller")
 		} else {
-			headerEl.classList.remove("smaller");
+			headerEl.classList.remove("smaller")
 		}
 	}
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const { t, lang } = useTranslation();
-	const [activeTab, setActiveTab] = useContext(TabContext);
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const { t, lang } = useTranslation()
+	const [activeTab, setActiveTab] = useContext(TabContext)
 	const handleTabLinkClick = (activeTab) => {
-		setIsMenuOpen(false);
-		setActiveTab(activeTab);
-	};
+		setIsMenuOpen(false)
+		setActiveTab(activeTab)
+	}
 	return (
 		<header id="header">
 			<div className="container flex">
@@ -152,7 +152,7 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:whyUs")}
+									{t("header:team")}
 								</Link>
 							</li>
 							<li>
@@ -165,16 +165,29 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:references")}
+									{t("header:whyUs")}
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link
 									activeClass="active"
 									spy={false}
 									smooth={true}
 									offset={-70}
 									onClick={() => handleTabLinkClick(5)}
+									duration={500}
+									to="about"
+								>
+									{t("header:references")}
+								</Link>
+							</li> */}
+							<li>
+								<Link
+									activeClass="active"
+									spy={false}
+									smooth={true}
+									offset={-70}
+									onClick={() => handleTabLinkClick(6)}
 									duration={500}
 									to="about"
 								>
@@ -187,7 +200,7 @@ const Header = (props) => {
 									spy={false}
 									smooth={true}
 									offset={-70}
-									onClick={() => handleTabLinkClick(6)}
+									onClick={() => handleTabLinkClick(7)}
 									duration={500}
 									to="about"
 								>
@@ -195,6 +208,18 @@ const Header = (props) => {
 								</Link>
 							</li>
 						</ul>
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							spy={true}
+							smooth={true}
+							onClick={() => setIsMenuOpen(false)}
+							duration={500}
+							to="references"
+						>
+							{t("header:references")}
+						</Link>
 					</li>
 					<li>
 						<Link
@@ -255,7 +280,7 @@ const Header = (props) => {
 				}
 			`}</style>
 		</header>
-	);
-};
+	)
+}
 
-export default Header;
+export default Header

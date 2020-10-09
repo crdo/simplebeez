@@ -33,6 +33,9 @@
     "references": {
         "heading": "Testimonials"
     },
+    "team": {
+        "heading": "Our Team"
+    },
     "martin": {
         "title": "Martin Prášek, partner and co-founder",
         "description": "Martin is in charge of services provided to support innovative solutions, centralization of back-office functions and to streamline financial and core business processes. His personal specializations are implementation of ERP and CPM solutions, process optimization, strong expertise in P2P process and world-class or custom-built P2P solutions, document management systems, or RPA applications. He will also help you to build shared services operating model or functionally design tools to automate not only finance.",
