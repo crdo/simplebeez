@@ -58,7 +58,9 @@ const Home = () => {
 				.triangle {
 					position: relative;
 				}
-
+				*:focus {
+					outline: none;
+				}
 				.carousel .control-dots {
 					padding: 0;
 					bottom: -5px;
