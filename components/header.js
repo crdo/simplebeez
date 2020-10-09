@@ -214,7 +214,7 @@ const Header = (props) => {
 							activeClass="active"
 							spy={true}
 							smooth={true}
-							offset={-50}
+							offset={-70}
 							onClick={() => setIsMenuOpen(false)}
 							duration={500}
 							to="references"
