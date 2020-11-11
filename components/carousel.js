@@ -1,16 +1,16 @@
-import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { Carousel } from "react-responsive-carousel";
-import useTranslation from "next-translate/useTranslation";
+import { Link } from "react-scroll"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { Carousel } from "react-responsive-carousel"
+import { FormattedMessage } from "react-intl"
 
 const HeroCarousel = (props) => {
-	const { t } = useTranslation();
 	const LearnMore = () => (
 		<span>
-			{t("carousel:more")} <FontAwesomeIcon icon={faChevronRight} />
+			<FormattedMessage defaultMessage="Learn more" id="carousel:more" />{" "}
+			<FontAwesomeIcon icon={faChevronRight} />
 		</span>
-	);
+	)
 	return (
 		<div>
 			<Carousel
@@ -24,7 +24,12 @@ const HeroCarousel = (props) => {
 				showIndicators={false}
 			>
 				<div>
-					<h2>{t("carousel:tired")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Tired of lengthy budgeting process? Curious how to make it differently?"
+							id="carousel:tired"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -37,7 +42,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:thinking")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Thinking of transforming your finance department?"
+							id="carousel:thinking"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -50,7 +60,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:desire")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Hoping for true finance business partnering? Still not there yet?"
+							id="carousel:desire"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -63,7 +78,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:ambitions")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Ambition for a big project but not having the right people?"
+							id="carousel:ambitions"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -76,7 +96,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:missing")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Lacking an experienced senior person to help you during difficult times?"
+							id="carousel:missing"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -89,7 +114,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:wishing")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Wishing to streamline internal processes which annoys and slows you down?"
+							id="carousel:wishing"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -102,7 +132,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:planning")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Planning for a new ERP solution implementation and worried already?"
+							id="carousel:planning"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -115,7 +150,12 @@ const HeroCarousel = (props) => {
 					</Link>
 				</div>
 				<div>
-					<h2>{t("carousel:need")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="In a need for a better control over your overall spend management?"
+							id="carousel:need"
+						/>
+					</h2>
 					<Link
 						className="link"
 						spy={true}
@@ -153,7 +193,7 @@ const HeroCarousel = (props) => {
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default HeroCarousel;
+export default HeroCarousel

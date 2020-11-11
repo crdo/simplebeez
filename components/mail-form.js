@@ -1,10 +1,10 @@
-import React from "react";
-import useSendGrid from "../hooks/useSendGrid";
-import useTranslation from "next-translate/useTranslation";
+import React from "react"
+import useSendGrid from "../hooks/useSendGrid"
+import { useIntl } from "react-intl"
 
 export default function MailForm() {
-	const { handleOnSubmit, handleOnChange, status, inputs } = useSendGrid();
-	const { t } = useTranslation();
+	const { handleOnSubmit, handleOnChange, status, inputs } = useSendGrid()
+	const intl = useIntl()
 	return (
 		<main>
 			<form onSubmit={handleOnSubmit}>
@@ -24,7 +24,10 @@ export default function MailForm() {
 					onChange={handleOnChange}
 					required
 					value={inputs?.name ?? ""}
-					placeholder={t("footer:fullName")}
+					placeholder={intl.formatMessage({
+						id: "common:fullName",
+						defaultMessage: "Full name",
+					})}
 				/>
 				<textarea
 					id="message"
@@ -32,14 +35,26 @@ export default function MailForm() {
 					onChange={handleOnChange}
 					required
 					value={inputs?.message ?? ""}
-					placeholder={t("footer:message")}
+					placeholder={intl.formatMessage({
+						id: "common:message",
+						defaultMessage: "Message",
+					})}
 				/>
 				<button type="submit" disabled={status.submitting}>
 					{!status.submitting
 						? !status.submitted
-							? t("footer:send")
-							: t("footer:sent")
-						: t("footer:sending")}
+							? intl.formatMessage({
+									id: "common:send",
+									defaultMessage: "Send",
+							  })
+							: intl.formatMessage({
+									id: "common:sent",
+									defaultMessage: "Sent",
+							  })
+						: intl.formatMessage({
+								id: "common:sending",
+								defaultMessage: "Sending",
+						  })}
 				</button>
 			</form>
 			{status.info.error && (
@@ -49,5 +64,5 @@ export default function MailForm() {
 				<div className="success">{status.info.msg}</div>
 			)}
 		</main>
-	);
+	)
 }

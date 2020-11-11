@@ -1,12 +1,13 @@
-import useSendGrid from "../hooks/useSendGrid";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { event } from "../data/gtag";
-import { useEffect } from "react";
-import useTranslation from "next-translate/useTranslation";
+import useSendGrid from "../hooks/useSendGrid"
+import { faDownload } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { event } from "../data/gtag"
+import { useEffect } from "react"
+import { useIntl } from "react-intl"
 
 const DownloadForm = ({ fileName, filePath }) => {
-	const { handleOnSubmit, handleOnChange, status, inputs } = useSendGrid();
+	const { handleOnSubmit, handleOnChange, status, inputs } = useSendGrid()
+	const intl = useIntl()
 	useEffect(() => {
 		if (!status.info.error && status.info.msg) {
 			event({
@@ -14,17 +15,19 @@ const DownloadForm = ({ fileName, filePath }) => {
 				category: "Web",
 				label: "",
 				value: { fileName },
-			});
+			})
 		}
-	}, [status]);
-	const { t } = useTranslation();
+	}, [status])
 	return (
 		<form onSubmit={handleOnSubmit}>
 			{!status.info.msg && (
 				<>
 					<div className="flex">
 						<input
-							placeholder={t("footer:name")}
+							placeholder={intl.formatMessage({
+								id: "common:name",
+								defaultMessage: "Name",
+							})}
 							id="name"
 							onChange={handleOnChange}
 							value={inputs?.name ?? ""}
@@ -32,7 +35,10 @@ const DownloadForm = ({ fileName, filePath }) => {
 							required
 						/>
 						<input
-							placeholder={t("footer:surname")}
+							placeholder={intl.formatMessage({
+								id: "common:surname",
+								defaultMessage: "Surname",
+							})}
 							id="surname"
 							onChange={handleOnChange}
 							value={inputs?.surname ?? ""}
@@ -49,7 +55,10 @@ const DownloadForm = ({ fileName, filePath }) => {
 						required
 					/>
 					<input
-						placeholder={t("footer:companyName")}
+						placeholder={intl.formatMessage({
+							id: "common:companyName",
+							defaultMessage: "Company Name",
+						})}
 						onChange={handleOnChange}
 						id="company_name"
 						value={inputs?.company_name ?? ""}
@@ -66,13 +75,27 @@ const DownloadForm = ({ fileName, filePath }) => {
 								required
 								name="gdpr"
 							/>{" "}
-							{t("footer:agree")}{" "}
-							<a target="_blank" href={t("footer:privacyPolicySource")}>
+							{intl.formatMessage({
+								id: "common:agree",
+								defaultMessage: "Agree with",
+							})}{" "}
+							<a
+								target="_blank"
+								href={intl.formatMessage({
+									id: "common:privacyPolicySource",
+									defaultMessage: "Name",
+								})}
+							>
 								Privacy policy.
 							</a>
 						</label>
 					</div>
-					<button type="submit">{t("footer:download")}</button>
+					<button type="submit">
+						{intl.formatMessage({
+							id: "common:download",
+							defaultMessage: "Download",
+						})}
+					</button>
 				</>
 			)}
 			{status.info.error && (
@@ -118,7 +141,7 @@ const DownloadForm = ({ fileName, filePath }) => {
 				}
 			`}</style>
 		</form>
-	);
-};
+	)
+}
 
-export default DownloadForm;
+export default DownloadForm

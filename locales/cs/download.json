@@ -1,6 +1,6 @@
 {
-    "title": "Nástroj na plánování operativního cash flow",
-    "description": "Připravili jsme pro Vás srozumitelný model plánování spotřeby a příjmu peněz pro podnikatele ale i samostatně výdělečné osoby. To vše v nejoblíbenějším a nejrozšířenějším analytickém nástroji dnešní doby, v MS Excel.",
-    "download": "Stáhnout",
-    "version": "verze"
+    "download:title": "Nástroj na plánování operativního cash flow",
+    "download:description": "Připravili jsme pro Vás srozumitelný model plánování spotřeby a příjmu peněz pro podnikatele ale i samostatně výdělečné osoby. To vše v nejoblíbenějším a nejrozšířenějším analytickém nástroji dnešní doby, v MS Excel.",
+    "download:download": "Stáhnout",
+    "download:version": "verze"
 }

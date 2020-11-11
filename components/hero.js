@@ -1,20 +1,38 @@
-import useTranslation from "next-translate/useTranslation";
-import HeroCarousel from "./carousel";
-import ReactHtmlParser from "react-html-parser";
+import { FormattedMessage } from "react-intl"
+import HeroCarousel from "./carousel"
 
 const Hero = () => {
-	const { t } = useTranslation();
 	return (
 		<div className="container">
 			<div className="hero">
 				<div className="claim">
 					<h1>
-						<span>{ReactHtmlParser(t("hero:claim"))}</span>
+						<span>
+							{
+								<FormattedMessage
+									defaultMessage="<a>Your partner</a> for finance transformation"
+									id="hero:claim"
+									values={{
+										a: (...chunks) => (
+											<div>
+												<span className="triangle">{chunks}</span>
+											</div>
+										),
+									}}
+								/>
+							}
+						</span>
 					</h1>
 					<p>
-						{t("hero:motto")}
+						<FormattedMessage
+							defaultMessage="Simpler, smarter, meaningful solutions."
+							id="hero:motto"
+						/>
 						<br />
-						{t("hero:motto2")}
+						<FormattedMessage
+							defaultMessage="Connecting people, process and technology."
+							id="hero:motto2"
+						/>
 					</p>
 				</div>
 				<div className="stripe"></div>
@@ -170,7 +188,7 @@ const Hero = () => {
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default Hero;
+export default Hero

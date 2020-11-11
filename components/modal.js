@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Modal from "react-modal";
-import DownloadForm from "./download-form";
-import useTranslation from "next-translate/useTranslation";
+import { useState } from "react"
+import Modal from "react-modal"
+import DownloadForm from "./download-form"
+import { FormattedMessage } from "react-intl"
 
 const customStyles = {
 	content: {
@@ -12,18 +12,17 @@ const customStyles = {
 		marginRight: "-50%",
 		transform: "translate(-50%, -50%)",
 	},
-};
+}
 
 const FileDownloadModal = ({ fileName, children, filePath }) => {
-	const [modalIsOpen, setIsOpen] = useState(false);
+	const [modalIsOpen, setIsOpen] = useState(false)
 	function openModal() {
-		setIsOpen(true);
+		setIsOpen(true)
 	}
 
 	function closeModal() {
-		setIsOpen(false);
+		setIsOpen(false)
 	}
-	const { t } = useTranslation();
 	return (
 		<div>
 			<a onClick={openModal}>{children}</a>
@@ -33,7 +32,12 @@ const FileDownloadModal = ({ fileName, children, filePath }) => {
 				style={customStyles}
 			>
 				<div className="header">
-					<h2>{t("footer:fillToDownload")}</h2>
+					<h2>
+						<FormattedMessage
+							defaultMessage="Fill the form to get access to the tool"
+							id="footer:fillToDownload"
+						/>
+					</h2>
 					<div className="close" onClick={closeModal}>
 						✕
 					</div>
@@ -80,7 +84,7 @@ const FileDownloadModal = ({ fileName, children, filePath }) => {
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default FileDownloadModal;
+export default FileDownloadModal

@@ -1,9 +1,8 @@
 import React from "react"
 import Slider from "react-slick"
-import useTranslation from "next-translate/useTranslation"
+import { FormattedMessage } from "react-intl"
 
 const ClientCarousel = () => {
-	const { t } = useTranslation()
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -28,14 +27,16 @@ const ClientCarousel = () => {
 				},
 			},
 		],
-		// customPaging: function () {
-		// 	return <Dot />
-		// },
 	}
 	return (
 		<div className="card" id="references">
 			<div className="container">
-				<h1>{t("common:ourClients")}</h1>
+				<h1>
+					<FormattedMessage
+						defaultMessage="References and clients"
+						id="common:ourClients"
+					/>
+				</h1>
 				<div className="slider">
 					<Slider {...settings}>
 						<div>
