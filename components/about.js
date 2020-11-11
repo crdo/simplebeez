@@ -2,7 +2,6 @@ import { useState, useContext } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { FormattedMessage } from "react-intl"
-import Image from "next/image"
 
 import Download from "./download"
 import { TabContext } from "../context/tabContext"
@@ -184,7 +183,7 @@ const About = () => {
 							<div className="profile-list">
 								<div className="profile">
 									<div className="profile-img">
-										<Image src="/martin.jpg" alt="Martin Prášek" />
+										<img src="/martin.jpg" alt="Martin Prášek" layout="fill" />
 									</div>
 									<div className="profile-text">
 										<h3>
@@ -297,7 +296,7 @@ const About = () => {
 								</div>
 								<div className="profile">
 									<div className="profile-img">
-										<Image src="/david.jpg" alt="David Štěpán" />
+										<img src="/david.jpg" alt="David Štěpán" layout="fill" />
 									</div>
 									<div className="profile-text">
 										<h3>
@@ -319,12 +318,18 @@ const About = () => {
 											<FormattedMessage
 												defaultMessage="David helps companies transform their finance function and lead people. Over the last 15 years, David has worked not only in the Czech Republic but also in Australia, Romania, and Bulgaria in various positions for various large international corporations.  Most recently, he left his CFO role for a private foreign TV and media company to embark on business in SIMPLEBEEZ. From auditing and accounting, David naturally progressed on to operations, managing critical projects, restructuring firms, and devising and implementing new group practices and systems."
 												id="about:david.description"
+												values={{
+													b: (...chunks) => <b>{chunks}</b>,
+												}}
 											/>
 										</p>
 										<p>
 											<FormattedMessage
 												defaultMessage="As a born optimist, David finds inspiration everywhere around him. „Every good idea is worth thinking about and starting to change things for the better, even if it requires short-term uncertainty and stepping outside our comfort zone.“ Such conviction and energy David brings to SIMPLEBEEZ. „I will be glad to work with and along those who want to progress and give us a chance to be with them at this transformation.”"
 												id="about:david.description2"
+												values={{
+													b: (...chunks) => <b>{chunks}</b>,
+												}}
 											/>{" "}
 											{!expand.david && (
 												<a
