@@ -99,7 +99,7 @@ const ClientCarousel = () => {
 						<div className="text-center">
 							<Image
 								alt="Rádio Rebel"
-								src="/clients/radio-rebel.png"
+								src="/clients/radio-rebel.jpg"
 								height="150px"
 								width="150px"
 							/>
