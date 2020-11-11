@@ -209,14 +209,14 @@ const OneStream = () => {
 				<div id="it4finance" className="container">
 					<h1 className="underlined center">
 						<FormattedMessage
-							defaultMessage="IT 4 FIN"
+							defaultMessage="IT 4 FINANCE"
 							id="onestream:it4fin.title"
 						/>
 					</h1>
 					<br />
 					<p className="center">
 						<FormattedMessage
-							defaultMessage="Presentations and videos which were used during the IT 4 Finance virtual conference which took place on 12 November 2020 where SIMPLEBEEZ talked about advantages, unique opportunities in managing your business from one unified platform Onestream."
+							defaultMessage="Presentations and videos which were used during the <b>IT 4 Finance</b> virtual conference which took place on 12 November 2020 where <b>SIMPLEBEEZ</b> talked about advantages, unique opportunities in managing your business from one unified platform <b>Onestream</b>."
 							id="onestream:it4fin.description"
 							values={{
 								b: (...chunks) => <b>{chunks}</b>,
@@ -225,10 +225,10 @@ const OneStream = () => {
 					</p>
 					<br />
 					<div className="downloads">
-						<a href="/OneStream overview.pdf" traget="_blank">
+						<a href="/OneStream overview.pdf" target="_blank">
 							<FontAwesomeIcon icon={faFilePdf} /> Onestream Overview
 						</a>
-						<a href="/OneStream-Brochure.pdf" traget="_blank">
+						<a href="/OneStream-Brochure.pdf" target="_blank">
 							<FontAwesomeIcon icon={faFilePdf} /> Onestream Brochure
 						</a>
 						<a
@@ -236,7 +236,7 @@ const OneStream = () => {
 								id: "onestream:it4fin.slidesSource",
 								defaultMessage: "/IT4FIN_slides_selection_english.ppsx",
 							})}
-							traget="_blank"
+							target="_blank"
 						>
 							<FontAwesomeIcon icon={faFilePdf} />{" "}
 							<FormattedMessage
@@ -250,6 +250,7 @@ const OneStream = () => {
 							<iframe
 								width="560"
 								height="315"
+								maxWidth="80%"
 								src="https://www.youtube.com/embed/VpXP0tVG7Uw"
 								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -270,6 +271,9 @@ const OneStream = () => {
 				</div>
 			</div>
 			<style jsx>{`
+				iframe {
+					max-width: 100%;
+				}
 				.downloads {
 					background: black;
 					padding: 15px 30px;

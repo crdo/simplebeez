@@ -71,14 +71,41 @@ const Footer = () => {
 								id="footer:cashflowTool"
 							/>
 						</FileDownloadModal>
-						<a
-							href={intl.formatMessage({
-								id: "header:privacyPolicySource",
-								defaultMessage: "/Privacy_Policy_ENG.pdf",
-							})}
-						>
-							<FontAwesomeIcon icon={faFilePdf} /> Privacy Policy
-						</a>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "header:privacyPolicySource",
+									defaultMessage: "/Privacy_Policy_ENG.pdf",
+								})}
+							>
+								<FontAwesomeIcon icon={faFilePdf} /> Privacy Policy
+							</a>
+						</div>
+						<div>
+							<a href="/OneStream overview.pdf" target="_blank">
+								<FontAwesomeIcon icon={faFilePdf} /> Onestream Overview
+							</a>
+						</div>
+						<div>
+							<a href="/OneStream-Brochure.pdf" target="_blank">
+								<FontAwesomeIcon icon={faFilePdf} /> Onestream Brochure
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.slidesSource",
+									defaultMessage: "/IT4FIN_slides_selection_english.ppsx",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Slides"
+									id="onestream:it4fin.slides"
+								/>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className="contact-form">
