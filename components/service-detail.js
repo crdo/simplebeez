@@ -1,5 +1,4 @@
-import useTranslation from "next-translate/useTranslation";
-import ReactHtmlParser from "react-html-parser";
+import { FormattedMessage } from "react-intl"
 
 const ServiceDetail = ({
 	title,
@@ -10,7 +9,6 @@ const ServiceDetail = ({
 	solutions,
 	id,
 }) => {
-	const { t } = useTranslation();
 	return (
 		<div id={id} className="spacing-wrapper">
 			<div className="card">
@@ -19,8 +17,13 @@ const ServiceDetail = ({
 						<h1>{title}</h1>
 						<div className="flex">
 							<div className="service-detail-problem">
-								<h2>{t("services:commonChallenges")}</h2>
-								<div>{ReactHtmlParser(problems)}</div>
+								<h2>
+									<FormattedMessage
+										defaultMessage="Common challenges"
+										id="services:commonChellenges"
+									/>
+								</h2>
+								<div>{problems}</div>
 							</div>
 							<div className="service-detail-img">
 								<img src={logo} alt={title} />
@@ -32,8 +35,13 @@ const ServiceDetail = ({
 								<img src={background} alt={title} />
 							</div>
 							<div className="service-detail-solutions">
-								<h2>{t("services:howWeCanHelp")}</h2>
-								<ul>{ReactHtmlParser(solutions)}</ul>
+								<h2>
+									<FormattedMessage
+										defaultMessage="How we can help"
+										id="services:howWeCanHelp"
+									/>
+								</h2>
+								<ul>{solutions}</ul>
 							</div>
 						</div>
 					</div>
@@ -45,7 +53,7 @@ const ServiceDetail = ({
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default ServiceDetail;
+export default ServiceDetail

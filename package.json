@@ -3,8 +3,8 @@
   "version": "1.2.1",
   "main": "index.js",
   "scripts": {
-    "dev": "next-translate && next dev",
-    "build": "next-translate && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
   },
   "repository": {
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/crdo/simplebeez#readme",
   "description": "",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-react-intl": "8.2.10"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -29,11 +31,11 @@
     "@sendgrid/mail": "^7.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "next": "^9.3.5",
-    "next-translate": "^0.15.0",
+    "next": "^10.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",
+    "react-intl": "5.8.8",
     "react-modal": "^3.11.2",
     "react-responsive-carousel": "3.2.5",
     "react-scroll": "^1.7.16",

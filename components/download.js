@@ -1,21 +1,33 @@
-import FileDownloadModal from "./modal";
-import useTranslation from "next-translate/useTranslation";
+import FileDownloadModal from "./modal"
+import { FormattedMessage } from "react-intl"
 
-const Download = (props) => {
-	const { t } = useTranslation();
+const Download = () => {
 	return (
 		<div className="download" id="download">
-			<h3>{t("download:title")}</h3>
+			<h3>
+				<FormattedMessage
+					defaultMessage="Tool for operating cash flow planning"
+					id="download:title"
+				/>
+			</h3>
 			<div className="button">
 				<FileDownloadModal
 					fileName="Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
 					filePath="/Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
 				>
-					{t("download:download")}
+					<FormattedMessage defaultMessage="Download" id="download:download" />
 				</FileDownloadModal>
 			</div>
-			<p>{t("download:description")}</p>
-			<div className="version">{t("download:version")} 1.0</div>
+			<p>
+				<FormattedMessage
+					defaultMessage="We have prepared for you a clear model of cash flow planning for businesses as well as self-employed persons.  All this in the most popular and widespread analytical tool, MS Excel."
+					id="download:description"
+				/>
+			</p>
+			<div className="version">
+				<FormattedMessage defaultMessage="version" id="download:version" />
+				1.0
+			</div>
 			<div className="date">8. 4. 2020</div>
 			<style global jsx>{`
 				.version {
@@ -59,7 +71,7 @@ const Download = (props) => {
 				}
 			`}</style>
 		</div>
-	);
-};
+	)
+}
 
-export default Download;
+export default Download

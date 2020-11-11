@@ -1,5 +1,4 @@
-import { Link } from "react-scroll";
-import ReactHtmlParser from "react-html-parser";
+import { Link } from "react-scroll"
 
 export default function Service({ title, img, description, href }) {
 	return (
@@ -19,7 +18,7 @@ export default function Service({ title, img, description, href }) {
 				<h2>{title}</h2>
 			</div>
 			<div className="service-description">
-				<p>{ReactHtmlParser(description)}</p>
+				<p>{description}</p>
 			</div>
 
 			<style global jsx>{`
@@ -47,5 +46,5 @@ export default function Service({ title, img, description, href }) {
 				}
 			`}</style>
 		</Link>
-	);
+	)
 }

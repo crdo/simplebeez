@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config()
 
 module.exports = {
 	env: {
@@ -6,4 +6,18 @@ module.exports = {
 		DEFAULT_LANGUAGE: process.env.DEFAULT_LANGUAGE,
 		OTHER_LANGUAGE: process.env.OTHER_LANGUAGE,
 	},
-};
+	i18n: {
+		locales: ["en", "cs"],
+		defaultLocale: "cs",
+		domains: [
+			{
+				domain: "simplebeez.com",
+				defaultLocale: "en",
+			},
+			{
+				domain: "simplebeez.cz",
+				defaultLocale: "cs",
+			},
+		],
+	},
+}

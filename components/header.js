@@ -1,8 +1,9 @@
 import { useEffect, useState, useContext } from "react"
 import { Link } from "react-scroll"
-import useTranslation from "next-translate/useTranslation"
+import { FormattedMessage } from "react-intl"
 import Hamburger from "./hamburger"
 import { TabContext } from "../context/tabContext"
+import LanguageSwitcher from "./LanguageSwitcher"
 
 const Header = (props) => {
 	useEffect(() => {
@@ -21,7 +22,6 @@ const Header = (props) => {
 		}
 	}
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const { t, lang } = useTranslation()
 	const [activeTab, setActiveTab] = useContext(TabContext)
 	const handleTabLinkClick = (activeTab) => {
 		setIsMenuOpen(false)
@@ -36,6 +36,22 @@ const Header = (props) => {
 					</a>
 				</div>
 				<ul className={"navigation " + (isMenuOpen && "is-open")}>
+					<li>
+						<Link
+							activeClass="active"
+							spy={true}
+							smooth={true}
+							offset={-70}
+							onClick={() => setIsMenuOpen(false)}
+							duration={500}
+							to="onestream"
+						>
+							<FormattedMessage
+								defaultMessage="OneStream"
+								id="header:oneStream"
+							/>
+						</Link>
+					</li>
 					<li className="dropdown">
 						<Link
 							activeClass="active"
@@ -46,7 +62,10 @@ const Header = (props) => {
 							duration={500}
 							to="services"
 						>
-							{t("header:services")}
+							<FormattedMessage
+								defaultMessage="Our services"
+								id="header:services"
+							/>
 						</Link>
 						<ul className="dropdown-menu">
 							<li>
@@ -59,7 +78,10 @@ const Header = (props) => {
 									duration={500}
 									to="finance-transformation"
 								>
-									{t("header:financeTransformation")}
+									<FormattedMessage
+										defaultMessage="Finance transformation"
+										id="header:financeTransformation"
+									/>
 								</Link>
 							</li>
 							<li>
@@ -72,7 +94,10 @@ const Header = (props) => {
 									duration={500}
 									to="business-process-management"
 								>
-									{t("header:businessProcessManagement")}
+									<FormattedMessage
+										defaultMessage="Business process management"
+										id="header:businessProcessManagement"
+									/>
 								</Link>
 							</li>
 							<li>
@@ -85,23 +110,13 @@ const Header = (props) => {
 									duration={500}
 									to="interim-management"
 								>
-									{t("header:interimManagement")}
+									<FormattedMessage
+										defaultMessage="Interim management"
+										id="header:interimManagement"
+									/>
 								</Link>
 							</li>
 						</ul>
-					</li>
-					<li>
-						<Link
-							activeClass="active"
-							spy={true}
-							smooth={true}
-							offset={-70}
-							onClick={() => setIsMenuOpen(false)}
-							duration={500}
-							to="onestream"
-						>
-							{t("header:oneStream")}
-						</Link>
 					</li>
 					<li className="dropdown">
 						<Link
@@ -113,7 +128,7 @@ const Header = (props) => {
 							duration={500}
 							to="about"
 						>
-							{t("header:about")}
+							<FormattedMessage defaultMessage="About us" id="header:about" />
 						</Link>
 						<ul className="dropdown-menu">
 							<li>
@@ -126,7 +141,10 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:vision")}
+									<FormattedMessage
+										defaultMessage="Vision"
+										id="header:vision"
+									/>
 								</Link>
 							</li>
 							<li>
@@ -139,7 +157,10 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:mission")}
+									<FormattedMessage
+										defaultMessage="Mission"
+										id="header:mission"
+									/>
 								</Link>
 							</li>
 							<li>
@@ -152,7 +173,10 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:team")}
+									<FormattedMessage
+										defaultMessage="Our Team"
+										id="header:team"
+									/>
 								</Link>
 							</li>
 							<li>
@@ -165,22 +189,9 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:whyUs")}
+									<FormattedMessage defaultMessage="Why Us" id="header:whyUs" />
 								</Link>
 							</li>
-							{/* <li>
-								<Link
-									activeClass="active"
-									spy={false}
-									smooth={true}
-									offset={-70}
-									onClick={() => handleTabLinkClick(5)}
-									duration={500}
-									to="about"
-								>
-									{t("header:references")}
-								</Link>
-							</li> */}
 							<li>
 								<Link
 									activeClass="active"
@@ -191,7 +202,7 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:news")}
+									<FormattedMessage defaultMessage="News" id="header:news" />
 								</Link>
 							</li>
 							<li>
@@ -204,7 +215,10 @@ const Header = (props) => {
 									duration={500}
 									to="about"
 								>
-									{t("header:downloads")}
+									<FormattedMessage
+										defaultMessage="Useful Resources"
+										id="header:downloads"
+									/>
 								</Link>
 							</li>
 						</ul>
@@ -219,7 +233,10 @@ const Header = (props) => {
 							duration={500}
 							to="references"
 						>
-							{t("header:references")}
+							<FormattedMessage
+								defaultMessage="References and clients"
+								id="header:references"
+							/>
 						</Link>
 					</li>
 					<li>
@@ -231,11 +248,11 @@ const Header = (props) => {
 							duration={500}
 							to="kontakt"
 						>
-							{t("header:contact")}
+							<FormattedMessage defaultMessage="Contact" id="header:contact" />
 						</Link>
 					</li>
 					<li>
-						<a href={lang == "cs" ? "en" : "/"}>{t("header:switchLanguage")}</a>
+						<LanguageSwitcher />
 					</li>
 				</ul>
 				<Hamburger isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
