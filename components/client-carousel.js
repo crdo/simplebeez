@@ -41,7 +41,7 @@ const ClientCarousel = () => {
 				<div className="slider">
 					<Slider {...settings}>
 						<div>
-							<img
+							<Image
 								alt="Zásilkovna"
 								src="/clients/zasilkovna.png"
 								height="150px"
@@ -49,7 +49,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Rádio Čas"
 								src="/clients/radio-cas.jpg"
 								height="150px"
@@ -57,7 +57,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Solar Turbines"
 								src="/clients/solar-turbines.jpg"
 								height="150px"
@@ -65,7 +65,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Campbells"
 								src="/clients/campbells.png"
 								height="150px"
@@ -73,7 +73,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Rádio Relax"
 								src="/clients/radio-relax.jpg"
 								height="150px"
@@ -81,7 +81,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="CME"
 								src="/clients/cme.jpg"
 								height="150px"
@@ -89,7 +89,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Bolthouse Farms"
 								src="/clients/bolthouse-farms.png"
 								height="150px"
@@ -97,7 +97,7 @@ const ClientCarousel = () => {
 							/>
 						</div>
 						<div>
-							<img
+							<Image
 								alt="Rádio Rebel"
 								src="/clients/radio-rebel.png"
 								height="150px"
@@ -111,11 +111,11 @@ const ClientCarousel = () => {
 				.container {
 					position: relative;
 				}
-				img {
+				Image {
 					height: 150px;
 					filter: grayscale(100%);
 				}
-				img:hover {
+				Image:hover {
 					filter: none;
 				}
 				.card {
@@ -190,20 +190,5 @@ function ChevronLeft(props) {
 		</svg>
 	)
 }
-
-// function Dot(props) {
-// 	return (
-// 		<svg
-// 			width="1em"
-// 			height="1em"
-// 			viewBox="0 0 16 16"
-// 			className="prefix__bi prefix__bi-dot"
-// 			fill="currentColor"
-// 			{...props}
-// 		>
-// 			<path fillRule="evenodd" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-// 		</svg>
-// 	)
-// }
 
 export default ClientCarousel
