@@ -40,7 +40,7 @@ const ClientCarousel = () => {
 				</h1>
 				<div className="slider">
 					<Slider {...settings}>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Zásilkovna"
 								src="/clients/zasilkovna.png"
@@ -48,7 +48,7 @@ const ClientCarousel = () => {
 								width="150px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Rádio Čas"
 								src="/clients/radio-cas.jpg"
@@ -56,7 +56,7 @@ const ClientCarousel = () => {
 								width="150px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Solar Turbines"
 								src="/clients/solar-turbines.jpg"
@@ -64,7 +64,7 @@ const ClientCarousel = () => {
 								width="260px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Campbells"
 								src="/clients/campbells.png"
@@ -72,7 +72,7 @@ const ClientCarousel = () => {
 								width="197px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Rádio Relax"
 								src="/clients/radio-relax.jpg"
@@ -80,7 +80,7 @@ const ClientCarousel = () => {
 								width="150px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="CME"
 								src="/clients/cme.jpg"
@@ -88,7 +88,7 @@ const ClientCarousel = () => {
 								width="287px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Bolthouse Farms"
 								src="/clients/bolthouse-farms.png"
@@ -96,7 +96,7 @@ const ClientCarousel = () => {
 								width="268px"
 							/>
 						</div>
-						<div>
+						<div className="text-center">
 							<Image
 								alt="Rádio Rebel"
 								src="/clients/radio-rebel.png"
@@ -108,14 +108,17 @@ const ClientCarousel = () => {
 				</div>
 			</div>
 			<style jsx>{`
+				.text-center {
+					text-align: center;
+				}
 				.container {
 					position: relative;
 				}
-				Image {
+				:global(.slider img) {
 					height: 150px;
 					filter: grayscale(100%);
 				}
-				Image:hover {
+				:global(.slider img:hover) {
 					filter: none;
 				}
 				.card {
