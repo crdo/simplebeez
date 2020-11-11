@@ -1,4 +1,5 @@
 import { FormattedMessage } from "react-intl"
+import Image from "next/image"
 
 const ServiceDetail = ({
 	title,
@@ -26,7 +27,7 @@ const ServiceDetail = ({
 								<div>{problems}</div>
 							</div>
 							<div className="service-detail-img">
-								<img src={logo} alt={title} />
+								<Image src={logo} alt={title} width="100%" height="auto" />
 							</div>
 						</div>
 						<div className="service-detail-claim">{claim}</div>

@@ -1,6 +1,7 @@
 import React from "react"
 import Slider from "react-slick"
 import { FormattedMessage } from "react-intl"
+import Image from "next/image"
 
 const ClientCarousel = () => {
 	const settings = {
@@ -40,28 +41,52 @@ const ClientCarousel = () => {
 				<div className="slider">
 					<Slider {...settings}>
 						<div>
-							<img alt="Zásilkovna" src="/clients/zasilkovna.png" />
+							<Image
+								alt="Zásilkovna"
+								src="/clients/zasilkovna.png"
+								height="150px"
+							/>
 						</div>
 						<div>
-							<img alt="Rádio Čas" src="/clients/radio-cas.jpg" />
+							<Image alt="Rádio Čas" src="/clients/radio-cas" height="150px" />
 						</div>
 						<div>
-							<img alt="Solar Turbines" src="/clients/solar-turbines.jpg" />
+							<Image
+								alt="Solar Turbines"
+								src="/clients/solar-turbines"
+								height="150px"
+							/>
 						</div>
 						<div>
-							<img alt="Campbells" src="/clients/campbells.png" />
+							<Image
+								alt="Campbells"
+								src="/clients/campbells.png"
+								height="150px"
+							/>
 						</div>
 						<div>
-							<img alt="Rádio Relax" src="/clients/radio-relax.jpg" />
+							<Image
+								alt="Rádio Relax"
+								src="/clients/radio-relax"
+								height="150px"
+							/>
 						</div>
 						<div>
-							<img alt="CME" src="/clients/cme.jpg" />
+							<Image alt="CME" src="/clients/cme.jpg" height="150px" />
 						</div>
 						<div>
-							<img alt="Bolthouse Farms" src="/clients/bolthouse-farms.png" />
+							<Image
+								alt="Bolthouse Farms"
+								src="/clients/bolthouse-farms"
+								height="150px"
+							/>
 						</div>
 						<div>
-							<img alt="Rádio Rebel" src="/clients/radio-rebel.jpg" />
+							<Image
+								alt="Rádio Rebel"
+								src="/clients/radio-rebel"
+								height="150px"
+							/>
 						</div>
 					</Slider>
 				</div>
