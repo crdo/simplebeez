@@ -83,12 +83,12 @@ const Footer = () => {
 						</div>
 						<div>
 							<a href="/OneStream overview.pdf" target="_blank">
-								<FontAwesomeIcon icon={faFilePdf} /> Onestream Overview
+								<FontAwesomeIcon icon={faFilePdf} /> OneStream Overview
 							</a>
 						</div>
 						<div>
 							<a href="/OneStream-Brochure.pdf" target="_blank">
-								<FontAwesomeIcon icon={faFilePdf} /> Onestream Brochure
+								<FontAwesomeIcon icon={faFilePdf} /> OneStream Brochure
 							</a>
 						</div>
 						<div>

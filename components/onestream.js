@@ -216,7 +216,7 @@ const OneStream = () => {
 					<br />
 					<p className="center">
 						<FormattedMessage
-							defaultMessage="Presentations and videos which were used during the <b>IT 4 Finance</b> virtual conference which took place on 12 November 2020 where <b>SIMPLEBEEZ</b> talked about advantages, unique opportunities in managing your business from one unified platform <b>Onestream</b>."
+							defaultMessage="Presentations and videos which were used during the <b>IT 4 Finance</b> virtual conference which took place on 12 November 2020 where <b>SIMPLEBEEZ</b> talked about advantages, unique opportunities in managing your business from one unified platform <b>OneStream</b>."
 							id="onestream:it4fin.description"
 							values={{
 								b: (...chunks) => <b>{chunks}</b>,
@@ -226,10 +226,10 @@ const OneStream = () => {
 					<br />
 					<div className="downloads">
 						<a href="/OneStream overview.pdf" target="_blank">
-							<FontAwesomeIcon icon={faFilePdf} /> Onestream Overview
+							<FontAwesomeIcon icon={faFilePdf} /> OneStream Overview
 						</a>
 						<a href="/OneStream-Brochure.pdf" target="_blank">
-							<FontAwesomeIcon icon={faFilePdf} /> Onestream Brochure
+							<FontAwesomeIcon icon={faFilePdf} /> OneStream Brochure
 						</a>
 						<a
 							href={intl.formatMessage({
