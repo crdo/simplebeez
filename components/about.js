@@ -2,7 +2,6 @@ import { useState, useContext } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { FormattedMessage } from "react-intl"
-import Image from "next/image"
 
 import Download from "./download"
 import { TabContext } from "../context/tabContext"
@@ -184,7 +183,7 @@ const About = () => {
 							<div className="profile-list">
 								<div className="profile">
 									<div className="profile-img">
-										<Image src="/martin.jpg" alt="Martin Prášek" />
+										<img src="/martin.jpg" alt="Martin Prášek" />
 									</div>
 									<div className="profile-text">
 										<h3>
@@ -297,7 +296,7 @@ const About = () => {
 								</div>
 								<div className="profile">
 									<div className="profile-img">
-										<Image src="/david.jpg" alt="David Štěpán" />
+										<img src="/david.jpg" alt="David Štěpán" />
 									</div>
 									<div className="profile-text">
 										<h3>
