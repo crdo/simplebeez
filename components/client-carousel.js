@@ -41,51 +41,67 @@ const ClientCarousel = () => {
 				<div className="slider">
 					<Slider {...settings}>
 						<div>
-							<Image
+							<img
 								alt="Zásilkovna"
 								src="/clients/zasilkovna.png"
 								height="150px"
+								width="150px"
 							/>
 						</div>
 						<div>
-							<Image alt="Rádio Čas" src="/clients/radio-cas" height="150px" />
-						</div>
-						<div>
-							<Image
-								alt="Solar Turbines"
-								src="/clients/solar-turbines"
+							<img
+								alt="Rádio Čas"
+								src="/clients/radio-cas.jpg"
 								height="150px"
+								width="150px"
 							/>
 						</div>
 						<div>
-							<Image
+							<img
+								alt="Solar Turbines"
+								src="/clients/solar-turbines.jpg"
+								height="150px"
+								width="260px"
+							/>
+						</div>
+						<div>
+							<img
 								alt="Campbells"
 								src="/clients/campbells.png"
 								height="150px"
+								width="197px"
 							/>
 						</div>
 						<div>
-							<Image
+							<img
 								alt="Rádio Relax"
-								src="/clients/radio-relax"
+								src="/clients/radio-relax.jpg"
 								height="150px"
+								width="150px"
 							/>
 						</div>
 						<div>
-							<Image alt="CME" src="/clients/cme.jpg" height="150px" />
+							<img
+								alt="CME"
+								src="/clients/cme.jpg"
+								height="150px"
+								width="287px"
+							/>
 						</div>
 						<div>
-							<Image
+							<img
 								alt="Bolthouse Farms"
-								src="/clients/bolthouse-farms"
+								src="/clients/bolthouse-farms.png"
 								height="150px"
+								width="268px"
 							/>
 						</div>
 						<div>
-							<Image
+							<img
 								alt="Rádio Rebel"
-								src="/clients/radio-rebel"
+								src="/clients/radio-rebel.png"
 								height="150px"
+								width="150px"
 							/>
 						</div>
 					</Slider>

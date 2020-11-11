@@ -31,7 +31,7 @@ const ServiceList = () => {
 								/>
 							}
 							href="finance-transformation"
-							img="finance-transformations.svg"
+							img="/finance-transformations.svg"
 							description={
 								<FormattedMessage
 									defaultMessage="We stand by your side during the journey of finance transformation and associated implementations of IT solutions and process work-flows. We contribute to a definition of a transformation concept and strategy, we help to design and choose the right solutions, not limited to IT, and oversee the implementation to ensure success."
@@ -47,7 +47,7 @@ const ServiceList = () => {
 								/>
 							}
 							href="business-process-management"
-							img="business-process-management.svg"
+							img="/business-process-management.svg"
 							description={
 								<FormattedMessage
 									defaultMessage="We implement effective Business Process Management (BPM) and re-design your processes for upcoming transformations and automations (“order to cash”, “procure to pay” and “record to report”)."
@@ -63,7 +63,7 @@ const ServiceList = () => {
 								/>
 							}
 							href="interim-management"
-							img="interim-management.svg"
+							img="/interim-management.svg"
 							description={
 								<FormattedMessage
 									defaultMessage="We work with experienced professionals, who will support your team and take the lead in challenging times in core business areas such as finance, IT, sales, marketing, HR and production."

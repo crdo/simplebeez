@@ -25,14 +25,14 @@ const Services = () => {
 							}}
 						/>
 					}
-					logo="finance-transformations.svg"
+					logo="/finance-transformations.svg"
 					claim={
 						<FormattedMessage
 							defaultMessage="We connect the world of business, finance and IT."
 							id="services:financeTransformations.claim"
 						/>
 					}
-					background="finance-transformations.jpeg"
+					background="/finance-transformations.jpeg"
 					solutions={
 						<FormattedMessage
 							defaultMessage="<li>We strive for and support a transformation of the finance process from “bookkeeping and reporting” towards true <b>“business partnering”</b>.</li><li>We stand by your side during the journey of finance transformation and associated implementations of IT solutions and process work-flows. We contribute to a definition of a <b>transformation concept and strategy</b>, we <b>help to design and choose the right solutions</b>, not limited to IT, and oversee the implementation to ensure success.</li><li>We cooperate with the Beyond Budgeting Round Table institute, which for more than two decades has been building and continuously improving their holistic approach to Finance and leadership, or the so called “Beyond Budgeting”. We help you to move and deploy the <b>agile method for financial management and planning</b>.</li><li>We leverage our broad experience with functional design and modelling of IT solutions with a link to Finance and <b>bridge the gap between business leadership, finance and IT</b>.</li>"
@@ -61,14 +61,14 @@ const Services = () => {
 							}}
 						/>
 					}
-					logo="business-process-management.svg"
+					logo="/business-process-management.svg"
 					claim={
 						<FormattedMessage
 							defaultMessage="We connect the world of business, finance and IT."
 							id="services:businessProcessManagement.claim"
 						/>
 					}
-					background="business-process-management.jpeg"
+					background="/business-process-management.jpeg"
 					solutions={
 						<FormattedMessage
 							defaultMessage="<li>We conduct a <b>comprehensive analysis of your core activities and processes</b> and strive to make the most out of your internal limited resources and people where they bring the most value to your business. The goal is to do things faster, smarter and more transparently so that you as a team can make better decisions and respond to new opportunities.</li><li>We will help with the introduction of the concept of <b>continuous improvements by using Lean and 6 Sigma methodology</b>. We strongly believe that releasing your peoples hands (not only from the finance department) by removing inefficiencies or with smarter, not just technological improvements, is absolutely critical to improving their motivation for larger and strategic transformational activities. Less is often more.</li><li>We implement effective Business Process Management (BPM) and <b>re-design your processes for upcoming transformations and automations</b> (“order to cash”, “procure to pay” and “record to report”).</li><li>We help you to transition from a functionally-oriented towards a process-oriented organizational structure, with clearly defined ultimate process owners.</li><li>We are ready to step into ongoing projects that may not be moving forward as expected due to <b>various process constraints</b>.</li>"
@@ -97,14 +97,14 @@ const Services = () => {
 							}}
 						/>
 					}
-					logo="interim-management.svg"
+					logo="/interim-management.svg"
 					claim={
 						<FormattedMessage
 							defaultMessage="A good partnership is the key."
 							id="services:interimManagement.claim"
 						/>
 					}
-					background="interim-management.jpeg"
+					background="/interim-management.jpeg"
 					solutions={
 						<FormattedMessage
 							defaultMessage="<li><b>We work with experienced professionals</b>, who <b>will support your team and take the lead</b> in challenging times in core business areas such as finance, IT, sales, marketing, HR and production.</li><li>We are not only consultants. We are people who have been through our own professional challenges, <b>who led or have been core members</b> on transformations or other projects of various scale and nature, both at a domestic and international level.</li><li>We help you with both short-term and long-term projects, by providing either the <b>consultancy</b> or the senior <b>interim manager</b>.</li><li>We focus on <b>supporting the change management</b> related to transformational activities and projects and providing services to <b>ensure stability</b> during the interim period.</li>"
