@@ -5,9 +5,9 @@ import Hamburger from "./hamburger"
 import { TabContext } from "../context/tabContext"
 import LanguageSwitcher from "./LanguageSwitcher"
 
-const Header = (props) => {
+const Header = () => {
 	useEffect(() => {
-		window.addEventListener("scroll", resizeHeaderOnScroll)
+		window.addEventListener("scroll", resizeHeaderOnScroll, { passive: true })
 	}, [])
 
 	function resizeHeaderOnScroll() {
