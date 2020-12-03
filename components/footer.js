@@ -62,8 +62,8 @@ const Footer = () => {
 					</h2>
 					<div className="downloads">
 						<FileDownloadModal
-							fileName="Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
-							filePath="/Simplebeez_CF_Soubor_v1.0_08-04-2020.xlsx"
+							fileName="Simplebeez_CF_v8.0.xlsx"
+							filePath="/Simplebeez_CF_v8.0.xlsx"
 						>
 							<FontAwesomeIcon icon={faFileExcel} />
 							<FormattedMessage
