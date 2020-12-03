@@ -183,7 +183,7 @@ const About = () => {
 							<div className="profile-list">
 								<div className="profile">
 									<div className="profile-img">
-										<img src="/martin.jpg" alt="Martin Prášek" layout="fill" />
+										<img src="/martin.jpg" alt="Martin Prášek" />
 									</div>
 									<div className="profile-text">
 										<h3>
@@ -296,7 +296,7 @@ const About = () => {
 								</div>
 								<div className="profile">
 									<div className="profile-img">
-										<img src="/david.jpg" alt="David Štěpán" layout="fill" />
+										<img src="/david.jpg" alt="David Štěpán" />
 									</div>
 									<div className="profile-text">
 										<h3>
