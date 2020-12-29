@@ -1,6 +1,6 @@
 import { useIntl, FormattedMessage } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons"
+import { faFilePdf, faFilePptx } from "@fortawesome/free-solid-svg-icons"
 
 const OneStreamCard = ({ title, description }) => {
 	return (
@@ -225,25 +225,99 @@ const OneStream = () => {
 					</p>
 					<br />
 					<div className="downloads">
-						<a href="/OneStream overview.pdf" target="_blank">
-							<FontAwesomeIcon icon={faFilePdf} /> OneStream Overview
-						</a>
-						<a href="/OneStream-Brochure.pdf" target="_blank">
-							<FontAwesomeIcon icon={faFilePdf} /> OneStream Brochure
-						</a>
-						<a
-							href={intl.formatMessage({
-								id: "onestream:it4fin.slidesSource",
-								defaultMessage: "/IT4FIN_slides_selection_english.ppsx",
-							})}
-							target="_blank"
-						>
-							<FontAwesomeIcon icon={faFilePdf} />{" "}
-							<FormattedMessage
-								defaultMessage="Slides"
-								id="onestream:it4fin.slides"
-							/>
-						</a>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.slidesSource",
+									defaultMessage: "/IT4FIN_slides_selection_english.ppsx",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Slides"
+									id="onestream:it4fin.slides"
+								/>
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.unifiedPlatformSource",
+									defaultMessage:
+										"/EN_A Unified Platform for consolidation reporting and planning.pdf",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Onestream Unified Platform for consolidation reporting and planning"
+									id="onestream:it4fin.unifiedPlatform"
+								/>
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.bringingDataSource",
+									defaultMessage:
+										"/EN_Bringing Data Integration to the next level.pdf",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Onestream - Bringing Data Integration to the next level"
+									id="onestream:it4fin.bringingData"
+								/>
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.financeUnleashedSource",
+									defaultMessage:
+										"/EN_Finance Unleashed - Enabling Modern Finance with CPM 2.0 Platforms.pdf",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Finance Unleashed - Enabling Modern Finance with CPM 2.0 Platforms"
+									id="onestream:it4fin.financeUnleashed"
+								/>
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.leadingAtSpeedSource",
+									defaultMessage: "/EN_Leading at speed.pdf",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Leading at speed"
+									id="onestream:it4fin.leadingAtSpeed"
+								/>
+							</a>
+						</div>
+						<div>
+							<a
+								href={intl.formatMessage({
+									id: "onestream:it4fin.overviewSource",
+									defaultMessage: "/EN_OneStream overview.pdf",
+								})}
+								target="_blank"
+							>
+								<FontAwesomeIcon icon={faFilePdf} />{" "}
+								<FormattedMessage
+									defaultMessage="Overview"
+									id="onestream:it4fin.overview"
+								/>
+							</a>
+						</div>
 					</div>
 					<div className="video">
 						<div>
