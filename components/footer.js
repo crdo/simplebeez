@@ -118,6 +118,11 @@ const Footer = () => {
 					<MailForm />
 				</div>
 			</div>
+			<style global jsx>{`
+				.social {
+					font-size: 25px;
+				}
+			`}</style>
 		</footer>
 	)
 }

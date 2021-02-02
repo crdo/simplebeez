@@ -48,7 +48,7 @@ const Services = () => {
 					id="business-process-management"
 					title={
 						<FormattedMessage
-							defaultMessage="Finance transformations"
+							defaultMessage="Business process management"
 							id="services:businessProcessManagement.title"
 						/>
 					}
@@ -64,7 +64,7 @@ const Services = () => {
 					logo="/business-process-management.svg"
 					claim={
 						<FormattedMessage
-							defaultMessage="We connect the world of business, finance and IT."
+							defaultMessage="Work smart, not hard."
 							id="services:businessProcessManagement.claim"
 						/>
 					}
