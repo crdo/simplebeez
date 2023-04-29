@@ -10,6 +10,7 @@ import About from "../components/about"
 import { TabProvider } from "../context/tabContext"
 import OneStream from "../components/onestream"
 import ClientCarousel from "../components/client-carousel"
+import EntryModal from "../components/entryModal"
 
 const Home = () => {
 	const intl = useIntl()
@@ -48,6 +49,7 @@ const Home = () => {
 					rel="stylesheet"
 				/>
 			</Head>
+			<EntryModal/>
 			<TabProvider>
 				<Header />
 				<Hero />
@@ -136,6 +138,13 @@ const Home = () => {
 				}
 				.slick-slide img {
 					margin: auto;
+				}
+
+				.ReactModal__Content {
+					max-width: 75vw;
+				}
+				.ReactModal__Overlay {
+					z-index: 1000;
 				}
 			`}</style>
 		</>
